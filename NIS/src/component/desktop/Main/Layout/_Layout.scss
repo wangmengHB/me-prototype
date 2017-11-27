@@ -1,0 +1,44 @@
+.nis {
+    .layout {
+        .body {
+            top: 60px;
+            bottom: 0;
+            width: 100%;
+            position: absolute;
+
+            background-color: rgb(204, 231, 242);
+               
+
+            .side-menu{
+                width: 270px;
+                margin-top: 2px;
+                margin-right: 8px;
+                min-width: 60px;
+                font-size: 16px;
+                line-height: 16px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background-color: white;
+                border-top-right-radius: 24px;
+                transition: width 0.5s;
+            }
+
+            .page-container{
+                position: absolute;
+                left: 278px;
+                right: 0;
+                height: 100%;
+                background-color: white;
+                transition: left 0.5s;
+                padding: 20px;
+
+                &.collapse {
+                    left: 68px;
+                }
+            }
+
+        }
+    }
+}

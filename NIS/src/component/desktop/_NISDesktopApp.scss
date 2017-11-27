@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    height: 100%;
+    position: static;
+    color: #3e4752;
+    background: #ececec;
+
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+
+    user-select: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background-color: #F0F0F0;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover,
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    width: 12px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background-color: #C8C8C8;
+}
+
+ ::-webkit-scrollbar-thumb:vertical:hover {
+    min-height: 50px;
+    border-radius: 8px;
+    width: 12px;
+    margin-left: 2px;
+    background-color: #CCE7F2;
+    /* hover thumb styles */
+}
+
+ ::-webkit-scrollbar-thumb:horizontal:active,
+ ::-webkit-scrollbar-thumb:vertical:active {
+    min-height: 50px;
+    border-radius: 8px;
+    width: 12px;
+    margin-left: 2px;
+    background-color: #017FBA;
+    /* active thumb styles */
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background: url(./images/BackgroundImg/scroll_down_normal.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-button:vertical:increment:hover {
+    background: url(./images/BackgroundImg/scroll_down_highlight.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-button:vertical:increment:active {
+    background: url(./images/BackgroundImg/scroll_down_press.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background: url(./images/BackgroundImg/scroll_up_normal.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-button:vertical:decrement:hover {
+    background: url(./images/BackgroundImg/scroll_up_highlight.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-button:vertical:decrement:active {
+    background: url(./images/BackgroundImg/scroll_up_press.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.nis {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+}

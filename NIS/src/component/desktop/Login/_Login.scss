@@ -1,0 +1,89 @@
+.nis {
+    .login {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        .main{
+            position: absolute;
+            top: 0;
+            bottom: 877px;
+            width: 100%;
+            height: 100%;
+            background: url('../images/BackgroundImg/NIS_Login_top.png');
+
+
+            .title {
+                position: absolute;
+                left: 25%;
+                top: 45%;
+                width: 600px;
+                font-size: 40px;
+                line-height: 80px;
+                color: rgb(255, 255, 255);
+            }
+
+
+            .login-box {
+                position: absolute;
+                left: 57%;
+                top: 20%;
+                width: 400px;
+                height: 464px;
+                background: url('../images/BackgroundImg/NIS_Login-input.png');
+                line-height: 17px;
+                font-size: 13px;
+
+                .account {
+                    position: absolute;
+                    height: 30px;
+                    width: 246px;
+                    left: 88px;
+                    top: 312px;
+                }
+
+                .password {
+                    position: absolute;
+                    height: 30px;
+                    width: 246px;
+                    left: 88px;
+                    top: 358px
+                }
+
+                .login-btn {
+                    display: block;
+                    position: absolute;
+                    width: 48px;
+                    height: 48px;
+                    left: 298px;
+                    top: 404px;
+
+                    background: url('../images/BackgroundImg/login_btn_disabled.png');
+                    &.enable{
+                        background: url('../images/BackgroundImg/login_btn_normal.png');
+                        &:hover {
+                            background: url('../images/BackgroundImg/login_btn_highlight.png');
+                        }
+                        &:active {
+                            background: url('../images/BackgroundImg/login_btn_press.png');
+                        }
+                    }                    
+                }
+
+            }
+
+        }
+
+
+        .bottom {
+            position: absolute;
+            width: 100%;
+            top: calc(100% - 97px);
+            bottom: 0;
+            background: url('../images/BackgroundImg/NIS_Login_down.png');
+        }
+
+    }    
+}
