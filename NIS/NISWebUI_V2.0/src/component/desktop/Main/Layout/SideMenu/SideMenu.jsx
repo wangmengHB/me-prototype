@@ -15,6 +15,7 @@ import {
     URL_MYSPACE
 } from '../../../../../constant/url.js';
 import './_SideMenu.scss';
+import NaviTree from './NaviTree/NaviTree.jsx';
 
 
 
@@ -46,29 +47,7 @@ export default class SideMenu extends React.Component {
                 {`Hello, ${user}`}
             </div>
             <div className="content">
-                <ul>
-                    <li><NavLink to={URL_HOME}>home page</NavLink></li>
-                    <li>
-                        <NavLink to={URL_MONITOR}>System Monitroing</NavLink>
-                        <ul>
-                            <li><NavLink to={URL_MONITOR_DEVICE}>Device Monitor</NavLink></li>
-                            <li><NavLink to={URL_MONITOR_STATION}>Station Monitor</NavLink></li>
-                            <li><NavLink to={URL_MONITOR_DISK}>Disk Monitor</NavLink></li>
-                        </ul>
-                    </li>
-                    <li><NavLink to={URL_STATISTICS}>System Statistics</NavLink></li>
-                    <li><NavLink to={URL_USER_MNG}>Use Management</NavLink></li>
-                    <li><NavLink to={URL_IMG_MNG}>Image Management</NavLink></li>
-                    <li><NavLink to={URL_ASSET_MNG}>Asset Mangement</NavLink></li>
-                    <li><NavLink to={URL_TIP_MNG}>TIP Management</NavLink></li>
-                    <li><NavLink to={URL_SYS_SETTING}>System Setting</NavLink></li>
-                    <li><NavLink to={URL_LOG_MNG}>Log Management</NavLink></li>
-                    <li><NavLink to={URL_MAINTAIN}>Maintain Management</NavLink></li>
-                    <li><NavLink to={URL_MYSPACE}>My Space</NavLink></li>
-                </ul>
-                {/* <div style={{backgroundColor:'black', height:'2000px', width: '100%'}}>
-                </div> */}
-
+                <NaviTree/>
             </div>
           </div>
         );

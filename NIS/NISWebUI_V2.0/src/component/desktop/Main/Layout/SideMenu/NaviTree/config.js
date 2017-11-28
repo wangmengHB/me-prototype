@@ -1,15 +1,15 @@
 import {
     URL_HOME,
     URL_MONITOR, URL_MONITOR_DEVICE, URL_MONITOR_STATION, URL_MONITOR_DISK,
-    URL_STATISTICS,
-    URL_USER_MNG,
+    URL_STATISTICS, URL_STATISTICS_DEVICE, URL_STATISTICS_PERSONEL, URL_STATISTICS_STATION, URL_STATISTICS_REPORT,
+    URL_USER_MNG, URL_USER_MNG_GROUP, URL_USER_MNG_ACCOUNT, URL_USER_MNG_ROLE,
     URL_IMG_MNG, URL_IMG_MNG_PASSENGER,
-    URL_ASSET_MNG,
-    URL_TIP_MNG,
-    URL_SYS_SETTING,
-    URL_LOG_MNG,
-    URL_MAINTAIN,
-    URL_MYSPACE
+    URL_ASSET_MNG, URL_ASSET_MNG_TUNNEL, URL_ASSET_MNG_EQUIP, URL_ASSET_MNG_STATION, 
+    URL_TIP_MNG, URL_TIP_MNG_LIBRARY, URL_TIP_MNG_EXAM_PLAN, URL_TIP_MNG_EXAM_RESULT,
+    URL_SYS_SETTING, URL_SYS_SETTING_DEVICE_JUDGE_MAP, URL_SYS_SETTING_JUDGE_MAP, URL_SYS_SETTING_UNPACK, URL_SYS_SETTING_STORAGE, URL_SYS_SETTING_MODE,
+    URL_LOG_MNG, URL_LOG_MNG_DEVICE, URL_LOG_MNG_SYS, URL_LOG_MNG_USER_OPERATION, 
+    URL_MAINTAIN, URL_MAINTAIN_UPGRADE, URL_MAINTAIN_UPGRADE_SETUP, URL_MAINTAIN_LOG, 
+    URL_MYSPACE, URL_MYSPACE_IMG, URL_MYSPACE_TIP, URL_MYSPACE_INFO
 } from '../../../../constant/url.js';
 
 import IMG_MONITOR from '../../images/ControlImg/tree_monitor_sel.png';
@@ -26,8 +26,8 @@ import IMG_MYSPACE from '../../images/ControlImg/tree_myzone_sel.png';
 
 
 let naviItem = {
-    title: "Sytem Monitor",
-    icon: IMG_MONITOR,
+    title: "Sytem Monitoring",
+    klass: 'monitor',
     nodeUrl: URL_MONITOR,
     subItems: [{
         title: 'Device Monitor',
@@ -44,7 +44,7 @@ let naviItem = {
 
 
 let navi = [
-    naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, 
+    naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem, naviItem,
 ];
 
 

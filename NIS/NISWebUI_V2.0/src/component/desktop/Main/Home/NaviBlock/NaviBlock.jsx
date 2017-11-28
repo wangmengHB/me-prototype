@@ -14,6 +14,7 @@ export default class NaviBlock extends React.Component {
         subItems.forEach((item, index) => {
             let leaf = (
             <li key={`navi-block-${index}`}> 
+                <div className="splitter"/>
                 <Link to={item.url}>{item.title}</Link>
             </li>
             );
@@ -23,13 +24,15 @@ export default class NaviBlock extends React.Component {
     }
 
     render() {
-        let {title, icon, nodeUrl, subItems} = this.props;
+        let {title, activeIcon, url, subItems} = this.props;
 
         return (
             <div className="navi-block">
                 <ul>
-                    <span><img src={icon}/></span>
-                    <Link to={nodeUrl}>{title}</Link>
+                    <span className="title">
+                        <img src={activeIcon}/>
+                        <Link to={url}>{title}</Link>
+                    </span>
                     {this.renderItems(subItems)}
                 </ul>
             </div>

@@ -1,0 +1,51 @@
+.nis {
+    .layout{
+        .body{
+            .side-menu {
+                .content {
+                    .navi-tree {
+
+                        list-style: none;
+                        margin-left: -30px;
+                        ul {
+                            margin-left: -30px;
+                        }
+
+                        li {
+
+                            a {
+                                display: block;
+                                height: 30px;
+                                font-size: 18px;
+                                line-height: 30px;
+                                padding-left: 40px;
+
+                                &.active {
+                                    color: blue;
+                                    background-color: rgb(217,217,217);
+
+                                    +ul {
+                                        display: block;
+                                    }
+                                }
+                                &:hover {
+                                    background-color: rgb(217,217,217);
+                                }
+                            }
+
+                            ul {
+                                display: none;
+                            }
+
+                        }
+                        
+                        
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}

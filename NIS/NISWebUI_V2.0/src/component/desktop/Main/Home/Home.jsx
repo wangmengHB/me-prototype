@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import config from './config.js';
+// import config from './config.js';
 import './_Home.scss';
 import NaviBlock from './NaviBlock/NaviBlock.jsx';
+import getDefaultNavi from '../../../../config/navi.js';
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -11,14 +12,14 @@ export default class Home extends React.Component {
 
 
     render() {
-        let items = config;
+        let items = getDefaultNavi();
         let nodes = [];
         items.forEach((item, index) => {
         let block = (
           <NaviBlock 
             title={item.title} 
-            icon={item.icon} 
-            nodeUrl={item.nodeUrl}
+            activeIcon={item.activeIcon} 
+            url={item.url}
             subItems={item.subItems}
             key={`home-navi-${index}`}
           />

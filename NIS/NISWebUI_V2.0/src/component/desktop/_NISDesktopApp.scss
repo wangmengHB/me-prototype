@@ -16,8 +16,24 @@ body {
     user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     cursor: pointer;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -112,5 +128,83 @@ a:hover {
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */  
+    user-select: none;          /* Likely future */ 
+    
+    
+    .navi-home {
+        background: url('./images/ControlImg/tree_home.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_home_sel.png') no-repeat;
+        }
+    }
+
+    .navi-monitor {
+        background: url('./images/ControlImg/tree_monitor.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_monitor_sel.png') no-repeat;
+        }
+    }
+
+    .navi-statistics {
+        background: url('./images/ControlImg/tree_statistics.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_statistics_sel.png') no-repeat;
+        }
+    }
+
+    .navi-user-mng {
+        background: url('./images/ControlImg/tree_global.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_global_sel.png') no-repeat;
+        }
+    }
+
+    .navi-img-mng {
+        background: url('./images/ControlImg/tree_storage.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_storage_sel.png') no-repeat;
+        }
+    }
+
+    .navi-asset {
+        background: url('./images/ControlImg/tree_maintain.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_maintain_sel.png') no-repeat;
+        }
+    }
+
+    .navi-tip {
+        background: url('./images/ControlImg/tree_tip.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_tip_sel.png') no-repeat;
+        }
+    }
+
+    .navi-sys-setting {
+        background: url('./images/ControlImg/tree_maintain.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_maintain_sel.png') no-repeat;
+        }
+    }
+
+    .navi-log {
+        background: url('./images/ControlImg/tree_log.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_log_sel.png') no-repeat;
+        }
+    }
+
+    .navi-maintain {
+        background: url('./images/ControlImg/tree_maintain.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_maintain_sel.png') no-repeat;
+        }
+    }
+
+    .navi-myspace {
+        background: url('./images/ControlImg/tree_myzone.png') no-repeat;
+        &.active {
+            background: url('./images/ControlImg/tree_myzone_sel.png') no-repeat;
+        }
+    }
 }
