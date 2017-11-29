@@ -28,7 +28,7 @@ export default class Login extends React.Component {
         let {success} = this.state;
         if (success) {
             return (
-                <Redirect to={{ pathname: '/main', state: {loginInfo: 'xyz'}}}/>
+                <Redirect to={{ pathname: '/main/home', state: {loginInfo: 'xyz'}}}/>
             );
         }
 
