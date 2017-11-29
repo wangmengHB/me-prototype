@@ -8,42 +8,43 @@
                        
 
                         li {
-                            .link {
-                                display: inline-block;
-                                height: 30px;
-                                font-size: 18px;
-                                line-height: 30px;
-                                padding-left: 40px;
-                                &.active {
-                                    color: blue;
-                                }      
-                            }
+                            
 
                             .wrapper {
                                 display: block;
+                                line-height: 45px;
+                                height: 45px;
                                 &:hover {
                                     background-color: rgb(217,217,217);
                                 }
 
+                                .link {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    height: 30px;
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    padding-left: 40px;
+                                    &.active {
+                                        color: blue;
+                                    }      
+                                }
+
                                 .node {
+                                    vertical-align: middle;
                                     display: inline-block;
                                     width: 18px;
                                     height: 20px;
+                                    padding-left: 5px;
                                 }
                                 
-                                .node-expand {
-                                    display: inline-block;
-                                    width: 18px;
-                                    height: 20px;
+                                .expand {
                                     background-image: url('../../../../images/BackgroundImg/arrows.png');
                                     background-repeat: no-repeat;
                                     background-position: -18px 0;
                                 }
 
-                                .node-collapse {
-                                    display: inline-block;
-                                    width: 18px;
-                                    height: 20px;
+                                .collapse {
                                     background-image: url('../../../../images/BackgroundImg/arrows.png');
                                     background-repeat: no-repeat;
                                     background-position: 0 0;

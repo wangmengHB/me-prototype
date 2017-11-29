@@ -50,7 +50,7 @@ export default class NaviTree extends React.Component {
         return (
             <li key={key}>
                 <div className="wrapper" onClick={this.toggleItem.bind(null, navi)}>
-                    <i className={len == 0? 'node': (collapsed? 'node-collapse':'node-expand') }></i>
+                    <i className={`node${len == 0 ? '' : (collapsed ? ' collapse' : ' expand')}` }></i>
                     <NavLink
                       to={navi.url} 
                       activeClassName={'active'} 
