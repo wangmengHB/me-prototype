@@ -34,6 +34,7 @@ a:link {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 
@@ -129,6 +130,15 @@ ul {
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */ 
+
+
+    .hide {
+        display: none !important;
+    }
+
+    .show {
+        display: block !important;
+    }
     
     
     .navi-home {

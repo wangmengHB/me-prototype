@@ -5,39 +5,60 @@
                 .content {
                     .navi-tree {
 
-                        list-style: none;
-                        margin-left: -30px;
-                        ul {
-                            margin-left: -30px;
-                        }
+                       
 
                         li {
-
-                            a {
-                                display: block;
+                            .link {
+                                display: inline-block;
                                 height: 30px;
                                 font-size: 18px;
                                 line-height: 30px;
                                 padding-left: 40px;
-
                                 &.active {
                                     color: blue;
-                                    background-color: rgb(217,217,217);
+                                }      
+                            }
 
-                                    +ul {
-                                        display: block;
-                                    }
-                                }
+                            .wrapper {
+                                display: block;
                                 &:hover {
                                     background-color: rgb(217,217,217);
                                 }
+
+                                .node {
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 20px;
+                                }
+                                
+                                .node-expand {
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 20px;
+                                    background-image: url('../../../../images/BackgroundImg/arrows.png');
+                                    background-repeat: no-repeat;
+                                    background-position: -18px 0;
+                                }
+
+                                .node-collapse {
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 20px;
+                                    background-image: url('../../../../images/BackgroundImg/arrows.png');
+                                    background-repeat: no-repeat;
+                                    background-position: 0 0;
+                                }
+
+                                
+                                
+                                
                             }
 
-                            ul {
-                                display: none;
-                            }
+                            
 
                         }
+
+                        
                         
                         
 

@@ -62,10 +62,9 @@
                 .content {
                     overflow-y: auto;
                     overflow-x: hidden; 
-                    width: 100%;
-                    height: 100%;
-                    padding-left: 8px;
+                    height: calc(100% - 80px);
                     padding-bottom: 50px;
+                    padding-left: 5px;
                 }
 
 
