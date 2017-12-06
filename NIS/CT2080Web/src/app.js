@@ -19,6 +19,7 @@ config.init().then(() => {
         );
 
         notifier.register(store.dispatch);
+        notifier.init();
 
 
 
