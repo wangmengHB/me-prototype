@@ -4,12 +4,14 @@ import Header from './Header/Header.jsx';
 import SideMenu from './SideMenu/SideMenu.jsx';
 import PageContainer from './PageContainer/PageContainer.jsx';
 import './_Layout.scss';
+import RedirectToLogin from '../../Login/RedirectToLogin.jsx';
 
 export default class Layout extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            collapse: false
+            collapse: false,
+            isLogin: true,
         };
         this.handleCollapse = this.handleCollapse.bind(this);
     }
@@ -21,16 +23,17 @@ export default class Layout extends React.Component {
     }
 
     render() {
-        let {collapse} = this.state;
+        let {collapse, isLogin} = this.state;
         return (
             <div className="layout">
-                <Header/>
+                <Header {...this.props}/>
                 <div className="body">
-                    <SideMenu collapse={collapse} onCollapse={this.handleCollapse}/>
-                    <PageContainer collapse={collapse}>
+                    <SideMenu {...this.props} collapse={collapse} onCollapse={this.handleCollapse}/>
+                    <PageContainer {...this.props} collapse={collapse}>
                         {this.props.children}
                     </PageContainer>
                 </div>
+                {!isLogin && <RedirectToLogin />}
             </div>
         );
     }

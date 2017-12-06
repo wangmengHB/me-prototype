@@ -1,0 +1,2721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration> 
+  <!--index.html-->  
+  <add key="Index_Shutdown" value="确认关机吗？"/>  
+  <add key="Shutdown" value="关机"/>  
+  <add key="PopWin_Validator" value="名称不能重复，请重新输入"/>  
+  <!-- 公共使用-->  
+  <add key="System_Hints" value="系统提示"/>  
+  <add key="System_Error_503" value="网络连接出现问题，请检查网络设置！"/>  
+  <add key="System_Error_0" value="网络状态不佳，请稍候在试并检查本地连接！"/>  
+  <add key="System_Yes_Button_text" value="确定"/>  
+	<add key="System_Cancel_Button_text" value="取消"/>
+  <add key="System_PageDisplayCount" value="每页显示"/>  
+  <add key="System_ExportMsg" value="正在导出，请稍候..."/>  
+  <add key="System_ExportReport" value="导出报表"/>  
+  <add key="System_ShowImage" value="图像展示"/>  
+  <add key="System_Unavailable" value="没有权限"/>
+  <!-- 登陆界面-->  
+  <add key="LoginView_Title" value="成都海关闸机控制系统"/>  
+  <add key="LoginView_FormTitle" value="用户登录"/>  
+  <add key="LoginView_empty_username" value="请输入用户名"/>  
+  <add key="LoginView_blank_username" value="请输入用户名"/>  
+  <add key="LoginView_empty_password" value="请输入密码"/>  
+  <add key="LoginView_blank_password" value="请输入密码"/>  
+  <add key="LoginView_btn_login" value="登录"/>  
+  <!-- 主页面-->  
+  <add key="Main_Title" value="成都海关闸机控制系统"/>  
+  <add key="Main_Informationbtn" value="报警信息"/>  
+  <add key="Main_ChangeTipState" value="TIP开关"/>  
+  <add key="Main_IPS3DSwitch" value="切换IPS3D"/>  
+  <add key="Main_Cancellation" value="注销系统"/>  
+  <add key="Main_Tree_top_user" value="你好"/>  
+  <add key="Main_Logoff_Msg" value="确认注销系统吗？"/>  
+  <!-- 版权界面-->  
+  <add key="Main_Edition_Title" value="关于 成都海关闸机控制系统"/>  
+  <add key="Main_Edition_Version" value=" 版本"/>  
+  <add key="Main_Edition_Explain" value=" 同方威视技术股份有限公司 版权所有"/>  
+  <!-- 报警信息-->  
+  <add key="WarningInfoView_Title" value="报警信息"/>  
+  <add key="WarningInfoView_QueryCondition" value=" 查询条件"/>  
+  <add key="WarningInfoView_emptyText" value=" 全部"/>  
+  <add key="WarningInfoView_Input_Level" value=" 等级"/>  
+  <add key="WarningInfoView_Input_Source" value=" 来源"/>  
+  <add key="WarningInfoView_Input_Status" value=" 状态"/>  
+  <add key="WarningInfoView_Button_Solve" value=" 解决"/>  
+  <add key="WarningInfoView_Button_Ignore" value=" 忽略"/>  
+  <add key="WarningInfoView_Button_UnSolve" value="未解决"/>
+  <add key="WarningInfoView_AlarmInfo" value=" 报警信息"/>  
+  <add key="WarningInfoView_Grid_Level" value=" 等级"/>  
+  <add key="WarningInfoView_Grid_Source" value=" 来源"/>  
+  <add key="WarningInfoView_Grid_EventID" value=" 事件"/>  
+  <add key="WarningInfoView_Grid_StartTime" value=" 开始时间"/>  
+  <add key="WarningInfoView_Grid_EndTime" value=" 结束时间"/>  
+  <add key="WarningInfoView_Grid_Description" value=" 描述"/>  
+  <add key="WarningInfoView_Grid_Status" value="状态"/>  
+  <add key="WarningInfoView_Alarm_DetailInfo" value="详细信息"/>  
+  <!-- 部门管理-->  
+  <add key="GroupView_Title" value="部门管理"/>  
+  <add key="GroupView_Info" value="部门信息"/>  
+	<add key="GroupView_TeamName" value="部门名称"/>
+  <add key="GroupView_Add" value="增加部门"/>  
+	<add key="GroupView_Update" value="修改部门"/>
+  <add key="GroupView_Del" value="删除部门"/>  
+  <add key="GroupView_SelectAll" value="全选"/>  
+  <add key="GroupView_InputBlank" value="部门不能为空"/>  
+  <add key="GroupView_InputMinLength" value="最小位数是1位"/>  
+  <add key="GroupView_InputMaxLength" value="最大位数是32位"/>  
+	<add key="GroupView_InputReg" value="不能包含特殊字符,最大位数32位,请重新输入"/>
+  <add key="GroupView_NotPriority" value="你无部门信息修改权限"/>  
+  <add key="GroupView_NameRepetition" value="该部门名称已经存在，请重新输入"/>  
+  <add key="GroupView_SaveMsg" value="是否保存部门-"/>  
+  <add key="GroupView_DelMsg" value="确认删除{0}个部门？"/>  
+  <add key="GroupView_SaveSucceed" value="保存部门信息成功！"/>  
+  <add key="GroupView_SaveFailure" value="保存部门信息失败！"/>  
+  <!-- 用户管理-->  
+  <add key="UserView_Title" value="用户管理"/>  
+  <add key="UserView_QueryCondition" value="查询条件"/>  
+  <add key="UserView_Condition_InputKeyword" value="请输入关键字"/>  
+  <add key="UserView_Condition_QueryType" value="全部"/>  
+  <add key="UserView_AddBtn" value="增加用户"/>  
+  <add key="UserView_UpdateBtn" value="修改用户"/>  
+  <add key="UserView_DelBtn" value="删除用户"/>  
+  <add key="UserView_ResetPassBtn" value="重置密码"/>  
+  <add key="UserView_ResetRole" value="重新分配角色"/>  
+  <add key="UserView_ImportBtn" value="导入用户"/>  
+  <add key="UserView_ExportBtn" value="导出用户"/>  
+  <add key="UserView_ForbiddenBtn" value="禁用"/>  
+  <add key="UserView_UsingBtn" value="启用"/>  
+  <add key="UserView_UserInfo" value="用户信息"/>  
+  <add key="UserView_Grid_UserID" value="用户名"/>  
+  <add key="UserView_Grid_UserIndicia" value="用户编号"/>  
+  <add key="UserView_Grid_TrueName" value="真实姓名"/>  
+  <add key="UserView_Grid_Phone" value="联系方式"/>  
+  <add key="UserView_Grid_RoleName" value="角色"/>  
+  <add key="UserView_Grid_Grade" value="用户等级"/>  
+  <add key="UserView_Grid_Grade_Low" value="低级"/>  
+  <add key="UserView_Grid_Grade_Medium" value="中级"/>  
+  <add key="UserView_Grid_Grade_Advanced" value="高级"/>  
+  <add key="UserView_Grid_TeamID" value="部门"/>  
+  <add key="UserView_Grid_CustomsGrade" value="关别"/>  
+  <add key="UserView_Grid_IdentityCard" value="身份证号码"/>  
+  <add key="UserView_Grid_UserDescription" value="描述"/>  
+  <add key="UserView_Grid_IsAvailable" value="使用状态"/>  
+  <add key="UserView_Grid_IsAvailable_Off" value="禁用"/>  
+  <add key="UserView_Grid_IsAvailable_On" value="启用"/>  
+  <add key="UserView_QueryTypeUser" value="按用户"/>  
+  <add key="UserView_QueryTypeRole" value="按角色"/>  
+  <add key="UserView_QueryTypeRealName" value="按真实姓名"/>  
+  <add key="UserView_QueryTypeUserDepartment" value="按部门"/>  
+  <add key="UserView_UserNotExist" value="该用户不存在"/>  
+  <!-- 增加用户-->  
+  <add key="UserAddView_Title" value="添加用户"/>  
+  <add key="UserAddView_UserId" value="用户名"/>  
+  <add key="UserAddView_InputEmptyUserId" value="请输入用户名"/>  
+  <add key="UserAddView_InputBlankUserId" value="用户名不能为空"/>  
+  <add key="UserAddView_InputVtypeUserId" value="用户名只能输入字母和数字以及下划线，必须以字母开头"/>  
+  <add key="UserAddView_MaxLengthUserId" value="用户名最大输入16个字符"/>  
+  <add key="UserAddView_ResetRegUserId" value="该用户名已经被注册"/>  
+  <add key="UserAddView_UserIndicia" value="用户编号"/>  
+  <add key="UserAddView_InputEmptyUserIndicia" value="请输入编号"/>  
+  <add key="UserAddView_InputBlankUserIndicia" value="用户编号不能为空"/>  
+  <add key="UserAddView_InputVtypeUserIndicia" value="用户编号只能包含数字和字母"/>  
+  <add key="UserAddView_MaxLengthUserIndicia" value="用户编号最大输入30个字符"/>  
+  <add key="UserAddView_ResetRegUserIndicia" value="该用户编号已存在"/>  
+  <add key="UserAddView_TrueName" value="真实姓名"/>  
+  <add key="UserAddView_InputEmptyTrueName" value="请输入真实姓名"/>  
+  <add key="UserAddView_InputBlankTrueName" value="真实姓名不能为空"/>  
+  <add key="UserAddView_InputRegTrueName" value="真实姓名只能输入汉字或者字母，汉字最大输入15个，字母最大输入30个"/>  
+  <add key="UserAddView_Password" value="密码"/>  
+  <add key="UserAddView_InputEmptyPassword" value="请输入密码"/>  
+  <add key="UserAddView_MinLengthPassword" value="最小位数是6位"/>  
+  <add key="UserAddView_MaxLengthPassword" value="最大位数是16位"/>
+  <add key="UserAddView_ResetRegPassword" value="密码由数字和字母组成"/>
+  <add key="UserAddView_InputBlankPassword" value="密码不能为空"/>  
+  <add key="UserAddView_ConfirmPassword" value="确认密码"/>  
+  <add key="UserAddView_InputEmptyConfirmPassword" value="请输入密码"/>  
+  <add key="UserAddView_MinLengthConfirmPassword" value="最小位数是6位"/>  
+  <add key="UserAddView_MaxLengthConfirmPassword" value="最大位数是16位"/>
+  <add key="UserAddView_ResetRegConfirmPassword" value="密码由数字和字母组成"/>
+  <add key="UserAddView_InputBlankConfirmPassword" value="密码不能为空"/>  
+  <add key="UserAddView_InputVtypeConfirmPassword" value="两次密码输入不一致，请重新输入"/>  
+  <add key="UserAddView_Grade" value="用户等级"/>  
+  <add key="UserAddView_InputGrade" value="请选择等级"/>  
+  <add key="UserAddView_RoleID" value="用户角色"/>  
+  <add key="UserAddView_InputRoleID" value="请选择角色"/>  
+  <add key="UserAddView_TeamID" value="用户部门"/>  
+  <add key="UserAddView_InputTeamID" value="请选择部门"/>  
+  <add key="UserAddView_Phone" value="联系电话"/>  
+  <add key="UserAddView_InputEmptyPhone" value="请输入联系电话"/>  
+  <add key="UserAddView_InputBlankPhone" value="联系电话不能为空"/>  
+  <add key="UserAddView_ResetRegPhone" value="请输入格式正确的联系方式例如[010-56895542]或者[13511111111]"/>  
+  <add key="UserAddView_IdentityCard" value="身份证号码"/>  
+  <add key="UserAddView_InputEmptyIdentityCard" value="请输入身份证号码"/>  
+  <add key="UserAddView_InputBlankIdentityCard" value="身份证号码不能为空"/>  
+  <add key="UserAddView_ResetRegIdentityCard" value="请输入格式正确的身份证号码"/>  
+  <add key="UserAddView_RepeatIdentityCard" value="身份证号码不能重复"/>  
+  <add key="UserAddView_UserDescription" value="描述"/>  
+  <add key="UserAddView_UserDescriptionMaxLengthText" value="最多输入64个字符"/>  
+  <add key="UserAddView_GradeCustoms" value="用户关别"/>  
+  <add key="UserAddView_InputGradeCustoms" value="请选择用户关别"/>   
+  <add key="UserAddView_SaveButton" value="保存"/>  
+  <add key="UserAddView_ReturnButton" value="返回"/>  
+  <!--修改用户-->  
+  <add key="UserUpdateView_Title" value="修改用户信息"/>  
+  <add key="UserUpdateView_UserId" value="用户名"/>  
+  <add key="UserUpdateView_UserIndicia" value="用户编号"/>  
+  <add key="UserUpdateView_TrueName" value="真实姓名"/>  
+  <add key="UserUpdateView_InputEmptyTrueName" value="请输入真实姓名"/>  
+  <add key="UserUpdateView_InputBlankTrueName" value="真实姓名不能为空"/>  
+  <add key="UserUpdateView_Grade" value="用户等级"/>  
+  <add key="UserUpdateView_InputGrade" value="请选择等级"/>  
+  <add key="UserUpdateView_RoleID" value="用户角色"/>  
+  <add key="UserUpdateView_InputRoleID" value="请选择角色"/>  
+  <add key="UserUpdateView_TeamID" value="用户部门"/>  
+  <add key="UserUpdateView_InputTeamID" value="请选择部门"/>  
+  <add key="UserUpdateView_Phone" value="联系电话"/>  
+  <add key="UserUpdateView_InputEmptyPhone" value="请输入联系电话"/>  
+  <add key="UserUpdateView_InputBlankPhone" value="联系电话不能为空"/>  
+  <add key="UserUpdateView_ResetRegPhone" value="请输入格式正确的联系方式例如[010-56895542]或者[13511111111]"/>  
+  <add key="UserUpdateView_IdentityCard" value="身份证号码"/>  
+  <add key="UserUpdateView_InputEmptyIdentityCard" value="请输入身份证号码"/>  
+  <add key="UserUpdateView_InputBlankIdentityCard" value="身份证号码不能为空"/>  
+  <add key="UserUpdateView_ResetRegIdentityCard" value="请输入格式正确的身份证号码"/>  
+  <add key="UserUpdateView_RepeatIdentityCard" value="身份证号码不能重复"/>  
+  <add key="UserUpdateView_UserDescription" value="描述"/>  
+  <add key="UserUpdateView_SaveButton" value="保存"/>  
+  <add key="UserUpdateView_ReturnButton" value="返回"/>  
+  <!--更改密码-->  
+  <add key="ResetPasswordView_Title" value="更改密码"/>  
+  <add key="ResetPasswordView_Password" value="新密码"/>  
+  <add key="ResetPasswordView_InputEmptyPassword" value="请输入密码"/>  
+  <add key="ResetPasswordView_MinLengthPassword" value="最小位数是6位"/>  
+  <add key="ResetPasswordView_MaxLengthPassword" value="最大位数是16位"/>
+  <add key="ResetPasswordView_ResetRegPassword" value="密码由数字和字母组成"/>
+  <add key="ResetPasswordView_InputBlankPassword" value="密码不能为空"/>  
+  <add key="ResetPasswordView_SaveButton" value="确定"/>  
+  <add key="ResetPasswordView_CancelButton" value="取消"/>  
+  <!--更改角色-->  
+  <add key="AssignRoleView_Title" value="更改角色"/>  
+  <add key="AssignRoleView_RoleID" value="用户角色"/>  
+  <add key="AssignRoleView_InputRoleID" value="请选择角色"/>  
+  <add key="AssignRoleView_SaveButton" value="确定"/>  
+  <add key="AssignRoleView_CancelButton" value="取消"/>  
+  <!--角色权限管理-->  
+  <add key="RolePermissionView_Title" value="角色和权限管理"/>  
+  <add key="RolePermissionView_AddButton" value="增加角色"/>  
+  <add key="RolePermissionView_UpdateButton" value="修改角色"/>  
+  <add key="RolePermissionView_DelButton" value="删除角色"/>  
+  <add key="RolePermissionView_SaveButton" value="保存"/>  
+  <!--角色用户部门控制器-->  
+  <add key="UserController_MaxDisableUserNum" value="单次禁用用户数目不得超过500"/>
+  <add key="UserController_MaxEnableUserNum" value="单次启用用户数目不得超过500"/>
+  <add key="UserController_IsDeleteMsg" value="确认删除{0}个用户？"/>  
+  <add key="UserController_DeleteSucceed" value="删除成功！"/>  
+  <add key="UserController_CreateNewRole" value="新增角色"/>  
+  <add key="UserController_ModifyRole" value="修改角色"/>  
+  <add key="UserController_CreateNewRoleName" value="角色名"/>  
+  <add key="UserController_DelRoleErrMsg" value="该角色正在使用中，无法删除！"/>  
+  <add key="UserController_ModifyIng" value="正在修改，请稍候"/>  
+  <add key="UserController_SaveIng" value="正在保存，请稍候"/>  
+  <add key="UserController_SaveSucceed" value="保存成功！"/>  
+  <add key="UserController_SaveFail" value="保存失败，请稍候再试！"/>  
+  <add key="UserController_DelRole" value="确认删除角色{0}？"/>  
+  <add key="UserController_UserOn" value="确认启用{0}个用户？"/>  
+  <add key="UserController_UserOFF" value="确认禁用{0}个用户？"/>  
+  <add key="UserController_UserImportSuccess" value="导入成功"/>  
+  <add key="UserController_UserExportSuccess" value="导出成功"/>  
+  <add key="UserController_UserImportFailure" value="导入失败，请稍候再试"/>  
+  <add key="UserController_UserExportFailure" value="导出失败，请稍候再试"/>  
+  <add key="UserController_Timeout" value="超时，请稍候再试"/>  
+  <add key="UserController_NotDelUser" value="当前登陆用户，无法删除"/>  
+  <add key="UserController_NotDelInitUser" value="属于系统内置用户，无法删除"/>  
+  <add key="UserController_NotChageInitUser" value="属于系统内置用户，无法更改角色"/>  
+  <add key="UserController_NotDisableInitUser" value="属于系统内置用户，无法禁用"/>  
+  <add key="UserController_NotDisableUser" value="是当前登陆用户，无法禁用"/>  
+  <add key="UserController_NotChangeRole" value="是当前登陆用户，无法更改角色"/>  
+  <!-- Equipment-->  
+  <!--设备分组增加界面-->  
+  <add key="EquipmentAddTeamView_EquipmentTeamNameNotNull" value="设备分组名称不能为空"/>  
+  <add key="EquipmentAddTeamView_TeamName" value="组名称"/>  
+  <add key="EquipmentAddTeamView_TeamNameFormat" value="组名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="EquipmentAddTeamView_EquipmentTeamNameNotRepeat" value="设备分组名称不能重复，请重新输入！"/>  
+  <add key="EquipmentAddTeamView_Save" value="保存"/>  
+  <add key="EquipmentAddTeamView_Cancel" value="取消"/>  
+  <!--设备管理控制器-->  
+  <add key="EquipmentController_AddEquipmentTeam" value="新增设备分组"/>  
+  <add key="EquipmentController_TeamName" value="组名称"/>  
+  <add key="EquipmentController_ErrorHints" value="错误提示"/>  
+  <add key="EquipmentController_ModifyEquipmentTeam" value="修改设备分组"/>  
+  <add key="EquipmentController_SystemHints" value="系统提示"/>  
+  <add key="EquipmentController_DetermineDeleteThis" value="确认删除设备分组{0}？"/>  
+  <add key="EquipmentController_DeleteFailRetry" value="删除失败，请稍候再试！"/>  
+  <add key="EquipmentController_PendingAttestation" value="待认证"/>  
+  <add key="EquipmentController_PendingAttestationErrMsg" value="设备分组不能选择待认证，请重新选择"/>  
+  <add key="EquipmentController_ModifyEquipmentInfo" value="修改设备信息"/>  
+  <add key="EquipmentController_Saving" value="正在保存，请稍后..."/>  
+  <add key="EquipmentController_SaveSucceed" value="保存成功！"/>  
+  <add key="EquipmentController_ModifyTeam" value="修改分组"/>  
+  <add key="EquipmentController_ModifyTunnel" value="修改业务群"/>  
+  <add key="EquipmentController_ModifyTeamSucceed" value="分组修改成功"/>  
+  <add key="EquipmentController_ModifyTunnelSucced" value="业务群修改成功！"/>  
+  <add key="EquipmentController_DetermineDisableEquipment" value="确认禁用设备吗？"/>  
+  <add key="EquipmentController_DisableFail" value="禁用失败！"/>  
+  <add key="EquipmentController_DetermineEnableEquipment" value="确认启用设备吗？"/>  
+  <add key="EquipmentController_EnableFail" value="启用失败！"/>  
+  <add key="EquipmentController_DetermineDelete" value="确认删除{0}台设备？"/>  
+  <add key="EquipmentController_DeleteFail" value="删除失败！"/>  
+  <add key="EquipmentController_DeviceVersionErrorMsg" value="该设备没有内部版本记录文件"/>  
+  <add key="EquipmentController_EquipmentNOAuth" value="您所选择的设备包含未认证设备，无法修改业务群！"/>  
+  <!--设备gridview-->  
+  <add key="EquipmentGridView_EquipmentType" value="设备类型"/>  
+  <add key="EquipmentGridView_EquipmentSerialNumber" value="设备编号"/>  
+  <add key="EquipmentGridView_Position" value="设备位置"/>  
+  <add key="EquipmentGridView_EquipmentName" value="设备标识"/>  
+  <add key="EquipmentGridView_ClientID" value="设备唯一码"/>  
+  <add key="EquipmentGridView_EquipmentIP" value="设备IP"/>  
+  <add key="EquipmentGridView_EquipmentGrade" value="设备关别"/>  
+  <add key="EquipmentGridView_UploadFolder" value="上传文件夹"/>  
+  <add key="EquipmentGridView_Createtime" value="注册时间"/>  
+  <add key="EquipmentGridView_Tunnel" value="设备所属业务群"/>  
+  <add key="EquipmentGridView_Decription" value="描述"/>  
+  <add key="EquipmentGridView_TipState" value="Tip状态"/>  
+  <add key="EquipmentGridView_SoftwareVersion" value="软件版本"/>  
+  <add key="EquipmentGridView_AlgorithmVersion" value="算法版本"/>  
+  <!--EquipmentInfoUpdateView 设备信息修改界面-->  
+  <add key="EquipmentInfoUpdateView_CustomerIdentifier" value="设备标识"/>  
+  <add key="EquipmentInfoUpdateView_MinimumNumberIsOne" value="最小位数是1位"/>  
+  <add key="EquipmentInfoUpdateView_CustomerIdentifierNotNull" value="设备标识不能为空"/>  
+  <add key="EquipmentInfoUpdateView_EquipmentTeam" value="设备分组"/>  
+  <add key="EquipmentInfoUpdateView_GradeCustoms" value="请选择关别"/>  
+  <add key="EquipmentInfoUpdateView_SelectTeam" value="请选择分组"/>  
+  <add key="EquipmentInfoUpdateView_Tunnel" value="设备所属业务群"/>  
+  <add key="EquipmentInfoUpdateView_SelectTunnel" value="请选择业务群"/>  
+  <add key="EquipmentInfoUpdateView_BeinPosition" value="所处位置"/>  
+  <add key="EquipmentInfoUpdateView_Position" value="请填写设备所处位置"/>  
+  <add key="EquipmentInfoUpdateView_UploadFolder" value="上传文件夹"/>  
+  <add key="EquipmentInfoUpdateView_SelectUploadFolder" value="请选择上传文件夹"/>  
+  <add key="EquipmentInfoUpdateView_Decription" value="描述"/>  
+  <add key="EquipmentInfoUpdateView_Purpose" value="设备用途"/>  
+  <add key="EquipmentInfoUpdateView_Hold_Baggage" value="托运行李"/>  
+  <add key="EquipmentInfoUpdateView_Cabin_Baggage" value="手提行李"/>  
+  <add key="EquipmentInfoUpdateView_Save" value="保存"/>  
+  <add key="EquipmentInfoUpdateView_Back" value="返回"/>  
+  <add key="EquipmentInfoUpdateView_CustomerIdentifierRepeat" value="用户标识不能重复，请重新输入"/>  
+  <!--EquipmentInfoView 设备管理主界面-->  
+  <add key="EquipmentInfoView_EquipmentManage" value="设备管理"/>  
+  <add key="EquipmentInfoView_AddTeam" value="增加组"/>  
+  <add key="EquipmentInfoView_RenameTeam" value="重命名组"/>  
+  <add key="EquipmentInfoView_DeleteTeam" value="删除组"/>  
+  <add key="EquipmentInfoView_ModifyEquipmentInfo" value="修改设备信息"/>  
+  <add key="EquipmentInfoView_ModifyTeam" value="修改分组"/>  
+  <add key="EquipmentInfoView_ModifyTunnel" value="修改业务群"/>  
+  <add key="EquipmentInfoView_Certification" value="进行认证"/>  
+  <add key="EquipmentInfoView_DisableEquipment" value="禁用设备"/>  
+  <add key="EquipmentInfoView_EnableEquipment" value="重新启用"/>  
+  <add key="EquipmentInfoView_DeleteEquipment" value="删除设备"/>  
+  <add key="EquipmentInfoView_DeviceVersionSee" value="查看设备内部版本"/>  
+  <!--EquipmentTeamUpdateView 设备分组修改界面-->  
+  <add key="EquipmentTeamUpdateView_EquipmentTeam" value="设备分组"/>  
+  <add key="EquipmentTeamUpdateView_SelectTeam" value="请选择分组"/>  
+  <add key="EquipmentTeamUpdateView_Save" value="保存"/>  
+  <add key="EquipmentTeamUpdateView_Cancel" value="取消"/>  
+  <!--EquipmentTunnelUpdateView 设备业务群修改界面-->  
+  <add key="EquipmentTunnelUpdateView_Tunnel" value="设备业务群"/>  
+  <add key="EquipmentTunnelUpdateView_SelectTunnel" value="请选择业务群"/>  
+  <add key="EquipmentTunnelUpdateView_Save" value="保存"/>  
+  <add key="EquipmentTunnelUpdateView_Back" value="返回"/>  
+  <!-- Station-->  
+  <!--StationAddTeamView 站点分组增加界面-->  
+  <add key="StationAddTeamView_StationTeamNameNotNull" value="站点分组名称不能为空"/>  
+  <add key="StationAddTeamView_TeamName" value="组名称"/>  
+  <add key="StationAddTeamView_TeamNameFormat" value="组名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="StationAddTeamView_StationTeamNameNotRepeat" value="站点分组名称不能重复，请重新输入！"/>  
+  <add key="StationAddTeamView_Save" value="保存"/>  
+  <add key="StationAddTeamView_Cancel" value="取消"/>  
+  <!--StationController 站点控制器-->  
+  <add key="StationController_AddStationTeam" value="新增站点分组"/>  
+  <add key="StationController_TeamName" value="组名称"/>  
+  <add key="StationController_SystemHints" value="系统提示"/>  
+  <add key="StationController_ModifyStationTeam" value="修改站点分组"/>  
+  <add key="StationController_DetermineDeleteThis" value="确认删除站点分组：{0}？"/>  
+  <add key="StationController_DeleteFailRetry" value="删除失败，请稍候再试！"/>  
+  <add key="StationController_ModifyStationInfo" value="修改站点信息"/>  
+  <add key="StationController_Saving" value="正在保存，请稍后..."/>  
+  <add key="StationController_SystemException" value="系统异常："/>  
+  <add key="StationController_ModifyTeam" value="修改分组"/>  
+  <add key="StationController_ModifyTunnel" value="修改业务群"/>  
+  <add key="StationController_ModifyTeamSucceed" value="分组修改成功！"/>  
+  <add key="StationController_ModifyTunnelSucced" value="业务群修改成功！"/>  
+  <add key="StationController_DetermineDisableStation" value="确认禁用站点？"/>  
+  <add key="StationController_DisableFail" value="禁用失败！"/>  
+  <add key="StationController_DetermineEnableStation" value="确认启用站点？"/>  
+  <add key="StationController_DetermineDelete" value="确认删除{0}个站点？"/>  
+  <add key="StationController_DeleteFail" value="删除失败！"/>  
+  <add key="StationController_StationNOAuth" value="您所选择的站点包含未认证站点，无法修改业务群！"/>  
+  <!--StationGridView 站点gridview-->  
+  <add key="StationGridView_StationNum" value="站点唯一码"/>  
+  <add key="StationGridView_Position" value="所处位置"/>  
+  <add key="StationGridView_StationType" value="站点类型"/>  
+  <add key="StationGridView_2DJudgeGraphicsStation" value="2D判图站"/>  
+  <add key="StationGridView_OpenPackageStation" value="开包站"/>  
+  <add key="StationGridView_3DJudgeGraphicsStation" value="3D判图站"/>  
+  <add key="StationGridView_JudgeGraphicsManage" value="管理站"/>  
+  <add key="StationGridView_MaintenanceStation" value="培训站"/>  
+  <add key="StationGridView_JudgeAdminStation" value="判图管理站"/>  
+  <add key="StationGridView_CustomerIdentifier" value="站点标识"/>  
+  <add key="StationGridView_StationDepartment" value="站点部门"/>  
+  <add key="StationGridView_StationFunction" value="站点功能"/>  
+  <add key="StationGridView_Tunnel" value="站点所属业务群"/>  
+  <add key="StationGridView_StationLevel" value="站点等级"/>  
+  <add key="StationGridView_MNSStation" value="管理站"/>  
+  <add key="StationGridView_ITS3DStation" value="培训站"/>
+  <add key="StationGridView_MNS3DStation" value="3D管理站"/>
+  <add key="StationGridView_SOUTStation" value="分拣站"/>
+  <!--StationInfoUpdateView-->  
+  <add key="StationInfoUpdateView_OneLevel" value="一级"/>  
+  <add key="StationInfoUpdateView_SecondLevel" value="二级"/>  
+  <add key="StationInfoUpdateView_ThreeLevel" value="三级"/>  
+  <add key="StationInfoUpdateView_CustomerIdentifier" value="站点标识"/>  
+  <add key="StationInfoUpdateView_MinimumNumberIsOne" value="最小位数是1位"/>  
+  <add key="StationInfoUpdateView_PositionMaxText" value="站点所处位置最多输入60个字符"/>  
+  <add key="StationInfoUpdateView_CustomerIdentifierNotNull" value="站点标识不能为空"/>  
+  <add key="StationInfoUpdateView_Tunnel" value="站点所属业务群"/>  
+  <add key="StationInfoUpdateView_SelectTunnel" value="请选择业务群"/>  
+  <add key="StationInfoUpdateView_Position" value="所处位置"/>  
+  <add key="StationInfoUpdateView_StationPosition" value="请填写站点所处位置"/>  
+  <add key="StationInfoUpdateView_StationLevel" value="站点等级"/>  
+  <add key="StationInfoUpdateView_SelectStationLevel" value="请选择站点等级"/>  
+  <add key="StationInfoUpdateView_Save" value="保存"/>  
+  <add key="StationInfoUpdateView_Back" value="返回"/>  
+  <!--StationInfoView-->  
+  <add key="StationInfoView_StationManage" value="站点管理"/>  
+  <add key="StationInfoView_AddTeam" value="增加组"/>  
+  <add key="StationInfoView_RenameTeam" value="重命名组"/>  
+  <add key="StationInfoView_DeleteTeam" value="删除组"/>  
+  <add key="StationInfoView_ModifyStationInfo" value="修改站点信息"/>  
+  <add key="StationInfoView_ModifyTeam" value="修改分组"/>  
+  <add key="StationInfoView_ModifyTunnel" value="修改业务群"/>  
+  <add key="StationInfoView_DisableStation" value="禁用站点"/>  
+  <add key="StationInfoView_EnableStation" value="重新启用"/>  
+  <add key="StationInfoView_DeleteStation" value="删除站点"/>  
+  <!-- StationTeamUpdateView-->  
+  <add key="StationTeamUpdateView_StationTeam" value="站点分组"/>  
+  <add key="StationTeamUpdateView_SelectStation" value="请选择站点"/>  
+  <add key="StationTeamUpdateView_Save" value="保存"/>  
+  <add key="StationTeamUpdateView_Back" value="返回"/>  
+  <!-- StationTunnelUpdateView-->  
+  <add key="StationTunnelUpdateView_StationTunnel" value="站点业务群"/>  
+  <add key="StationTunnelUpdateView_SelectStationTunnel" value="请选择站点业务群"/>  
+  <add key="StationTunnelUpdateView_Save" value="保存"/>  
+  <add key="StationTunnelUpdateView_Back" value="返回"/>  
+  <!-- TunnelManage-->  
+  <!-- TunnelAddView-->  
+  <add key="TunnelAddView_AddTunnelInfo" value="增加业务群信息"/>  
+  <add key="TunnelAddView_TunnelName" value="业务群名称"/>  
+  <add key="TunnelAddView_TunnelNameNotNull" value="业务群名称不能为空"/>  
+  <add key="TunnelAddView_TunnelNameFormat" value="业务群名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="TunnelAddView_TunnelNameNotRepeat" value="业务群名称不能重复，请重新输入！"/>  
+  <add key="TunnelAddView_TunnelDecription" value="业务群描述"/>  
+  <add key="TunnelAddView_ProcessMode" value="工作模式"/>  
+  <add key="TunnelAddView_SelectProcessMode" value="请选择工作模式"/>  
+  <add key="TunnelAddView_Position" value="业务群位置"/>  
+  <add key="TunnelAddView_TunnelPositionFormat" value="业务群位置只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="TunnelAddView_TunnelPositionNotNull" value="业务群位置不能为空"/>  
+  <add key="TunnelAddView_Save" value="保存"/>  
+  <add key="TunnelAddView_Back" value="返回"/>  
+  <!-- TunnelManageController-->  
+  <add key="TunnelManageController_Saving" value="正在保存，请稍后..."/>  
+  <add key="TunnelManageController_SystemHints" value="系统提示"/>  
+  <add key="TunnelManageController_ModifyTunnelSucced" value="修改业务群成功！"/>  
+  <add key="TunnelManageController_ErrorHints" value="错误提示"/>  
+  <add key="TunnelManageController_SystemException" value="系统异常："/>  
+  <add key="TunnelManageController_AddTunnelSucced" value="增加业务群成功"/>  
+  <add key="TunnelManageController_DetermineDelete" value="确认删除{0}个业务群？"/>  
+  <add key="TunnelManageController_ConfirmAllocationStation" value="您选择的部分站点被其他业务群占用，请确认是否进行迁移调整"/>  
+  <add key="TunnelManageController_ConfirmAllocationEquipment" value="您选择的部分设备被其他业务群占用，请确认是否进行迁移调整"/>  
+  <add key="TunnelManageController_ConfirmAllocationEquipment" value="您选择的部分设备被其他业务群占用，请确认是否进行迁移调整"/>  
+  <add key="TunnelManageController_AllocationEquipmentListTitle" value="设备调整"/>  
+  <add key="TunnelManageController_AllocationStationTitle" value="您选择的部分设备被其他业务群占用，请确认是否进行迁移调整"/>  
+  <add key="TunnelManageController_DetermineDelete" value="请确认是否删除业务群."/>  
+  <!-- TunnelManageView-->  
+  <add key="TunnelManageView_TunnelManage" value="业务群管理"/>  
+  <add key="TunnelManageView_AddTunnel" value="增加业务群"/>  
+  <add key="TunnelManageView_ModifyTunnel" value="修改业务群信息"/>  
+  <add key="TunnelManageView_DeleteTunnel" value="删除业务群"/>  
+  <add key="TunnelManageView_TunnelName" value="业务群名称"/>  
+  <add key="TunnelManageView_Decription" value="描述"/>  
+  <add key="TunnelManageView_ProcessMode" value="工作模式"/>  
+  <add key="TunnelManageView_CentralJudgeGraphics" value="集中判图"/>  
+  <add key="TunnelManageView_UniteJudgeGraphics" value="联合判图"/>  
+  <add key="TunnelManageView_CentralMultiLevelJudGra(General)" value="集中多级判图（常规）"/>  
+  <add key="TunnelManageView_CentralMultiLevelJudGra(Station)" value="集中多级判图（按站点类型）"/>  
+  <add key="TunnelManageView_Location" value="位置"/>  
+  <add key="TunnelManageView_DeviceName" value="设备"/>  
+  <add key="TunnelManageView_StationName" value="站点"/>  
+  <add key="TunnelManageView_ClickModifyDevice" value="点击调整设备"/>  
+  <add key="TunnelManageView_ClickModifyStation" value="点击调整站点"/>  
+  <!-- TunnelUpdateView-->  
+  <add key="TunnelUpdateView_ModifyTunnel" value="修改业务群信息"/>  
+  <add key="TunnelUpdateView_TunnelName" value="业务群名称"/>  
+  <add key="TunnelUpdateView_TeamNameFormat" value="组名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="TunnelUpdateView_TunnelNameNotNull" value="业务群名称不能为空"/>  
+  <add key="TunnelUpdateView_TunnelNameNotRepeat" value="业务群名称不能重复，请重新输入！"/>  
+  <add key="TunnelUpdateView_TunnelDecription" value="业务群描述"/>  
+  <add key="TunnelUpdateView_ProcessMode" value="工作模式"/>  
+  <add key="TunnelUpdateView_SelectProcessMode" value="请选择工作模式"/>  
+  <add key="TunnelUpdateView_TunnelPosition" value="业务群位置"/>  
+  <add key="TunnelUpdateView_TunnelPositionNotNull" value="业务群位置不能为空"/>  
+  <add key="TunnelUpdateView_Save" value="保存"/>  
+  <add key="TunnelUpdateView_Back" value="返回"/>  
+  
+  
+  <!--CC 关别管理 2017-06-30 -->
+    <!--CustomsManageView-->
+  <add key="CustomsManageView_Title" value="关别管理"/>
+  <add key="CustomsManageView_Name" value="关别名称"/>
+  <add key="CustomsManageView_Code" value="关别代号"/>
+  <add key="CustomsManageView_Describe" value="关别描述"/>
+  
+    <!-- CustomsManageController-->
+  <add key="CustomsManageController_Saving" value="正在保存，请稍后..."/>
+  <add key="CustomsManageController_SystemHints" value="系统提示"/>
+  <add key="CustomsManageController_ModifySucced" value="修改信息成功！"/>
+  <add key="CustomsManageController_ErrorHints" value="错误提示"/>
+  <add key="CustomsManageController_SystemException" value="系统异常："/>
+  <add key="CustomsManageController_AddSucced" value="增加信息成功"/>
+  <add key="CustomsManageController_DetermineDelete" value="确认删除{0}个信息？？"/>
+  
+    <!-- CustomsAddView-->
+  <add key="CustomsAddView_Title" value="添加关别信息"/>
+  <add key="CustomsAddView_Name" value="关别名称"/>
+  <add key="CustomsAddView_Code" value="关别代号"/>
+  <add key="CustomsAddView_Describe" value="关别描述"/>
+  <add key="CustomsAddView_Save" value="保存"/>
+  <add key="CustomsAddView_Back" value="返回"/>
+  <add key="CustomsAddView_NameNotRepeat" value="关别名称不能重复，请重新输入！"/>
+  <add key="CustomsAddView_TeamNameFormat" value="关别名称只能输入汉字，数字，字母和下划线；长度不能超过32位和少于2位"/>  
+  <add key="CustomsAddView_DescribeFormat" value="关别描述只能输入汉字，数字，字母和下划线；长度不能超过256位"/>  
+
+    <!-- CustomsAddChildView-->
+  <add key="CustomsAddChildView_Title" value="添加子关别信息"/>
+  <add key="CustomsAddChildView_Name" value="关别名称"/>
+  <add key="CustomsAddChildView_Code" value="关别代号"/>
+  <add key="CustomsAddChildView_Describe" value="关别描述"/>
+  <add key="CustomsAddChildView_Save" value="保存"/>
+  <add key="CustomsAddChildView_Back" value="返回"/>
+  <add key="CustomsAddChildView_VmNameNotRepeat" value="名称不能重复，请重新输入！"/>
+  
+     <!-- CustomsUpdateView-->
+  <add key="CustomsUpdateView_UpdateCd" value="修改子关别信息"/>
+  <add key="CustomsUpdateView_CdNameNotRepeat" value="关别名称不能重复，请重新输入！"/>
+  <add key="CustomsUpdateView_CdID" value="关别机ID"/>
+  <add key="CustomsUpdateView_CdNotNull" value="关别ID不能为空"/>
+  <add key="CustomsUpdateView_CdFormat" value="关别名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>
+  <add key="CustomsUpdateView_Cdname" value="关别名称"/>
+  <add key="CustomsUpdateView_Code" value="关别代号"/>
+  <add key="CustomsUpdateView_Describe" value="关别描述"/>  
+  <add key="CustomsUpdateView_Name" value="父级关别列表"/>  
+  <add key="CustomsUpdateView_SelectName" value="请选择父级关别"/>  
+  <add key="CustomsUpdateView_Save" value="保存"/>
+  <add key="CustomsUpdateView_Back" value="返回"/>
+  
+     <!-- CustomsUpdateParentView-->
+  <add key="CustomsUpdateParentView_UpdateCustoms" value="修改关别信息"/>
+  <add key="CustomsUpdateParentView_NameNotRepeat" value="关别名称不能重复，请重新输入！"/>
+  <add key="CustomsUpdateParentView_Code" value="虚拟机ID"/>
+  <add key="CustomsUpdateParentView_NotNull" value="关别名称不能为空"/>
+  <add key="CustomsUpdateParentView_Format" value="关别名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>
+  <add key="CustomsUpdateParentView_Name" value="关别名称"/>
+  <add key="CustomsUpdateParentView_Code" value="关别代号"/>
+  <add key="CustomsUpdateParentView_Describe" value="关别描述"/>  
+  <add key="CustomsUpdateParentView_Save" value="保存"/>
+  <add key="CustomsUpdateParentView_Back" value="返回"/>
+  
+  
+  
+  
+  
+  
+  
+  
+    <!--QXH 视频 -->
+  <!-- HostManageView-->
+  <add key="HostManageView_Title" value="主机和虚拟机管理"/>
+  <add key="HostManageView_HostName" value="主机名称"/>
+  <add key="HostManageView_HostIP" value="主机IP"/>
+  <add key="HostManageView_HostUserName" value="当前登录人"/>
+  <add key="HostManageView_VmRunningStatus" value="开启"/>
+  <add key="HostManageView_VmCloseStatus" value="关闭"/>
+  <add key="HostManageView_VmSuspendStatus" value="挂起"/>
+  <add key="HostManageView_VmPauseStatus" value="暂停"/>
+  <!-- HostAddView-->
+  <add key="HostAddView_Title" value="添加主机信息"/>
+  <add key="HostAddView_HostName" value="主机名称"/>
+  <add key="HostAddView_HostIP" value="主机IP"/>
+  <add key="HostAddView_HostUserName" value="当前登录人"/>
+  <add key="HostAddView_HostPassword" value="主机密码"/>
+  <add key="HostAddView_Save" value="保存"/>
+  <add key="HostAddView_Back" value="返回"/>
+  <add key="HostAddView_HostNameNotRepeat" value="主机名称不能重复，请重新输入！"/>
+  <add key="HostAddView_TeamNameFormat" value="登录名称只能输入汉字，数字，字母和下划线；长度不能超过32位和少于2位"/>  
+   <!-- VmUpdateView-->
+  <add key="VmUpdateView_UpdateVm" value="修改虚拟机信息"/>
+  <add key="VmUpdateView_VmNameNotRepeat" value="虚拟机名称不能重复，请重新输入！"/>
+  <add key="VmUpdateView_VmID" value="虚拟机ID"/>
+  <add key="VmUpdateView_VmNotNull" value="虚拟机ID不能为空"/>
+  <add key="VmUpdateView_VmFormat" value="虚拟机名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>
+  <add key="VmUpdateView_Vmname" value="虚拟机名称"/>
+  <add key="VmUpdateView_Vmip" value="虚拟机IP"/>
+  <add key="VmUpdateView_Status" value="虚拟机状态"/>  
+  <add key="VmUpdateView_Name" value="主机列表"/>  
+  <add key="VmUpdateView_SelectName" value="请选择主机"/>  
+  <add key="VmUpdateView_Save" value="保存"/>
+  <add key="VmUpdateView_Back" value="返回"/>
+   <!-- HostUpdateView-->
+  <add key="HostUpdateView_UpdateHost" value="修改主机信息"/>
+  <add key="HostUpdateView_HostNameNotRepeat" value="主机名称不能重复，请重新输入！"/>
+  <add key="HostUpdateView_HostID" value="虚拟机ID"/>
+  <add key="HostUpdateView_HostNotNull" value="主机名称不能为空"/>
+  <add key="HostUpdateView_HostFormat" value="主机名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>
+  <add key="HostUpdateView_Hostname" value="主机名称"/>
+  <add key="HostUpdateView_Hostip" value="主机IP"/>
+  <add key="HostUpdateView_UserName" value="当前登录者"/>  
+  <add key="HostUpdateView_Save" value="保存"/>
+  <add key="HostUpdateView_Back" value="返回"/>
+  <!-- HostManageController-->
+  <add key="HostManageController_Saving" value="正在保存，请稍后..."/>
+  <add key="HostManageController_SystemHints" value="系统提示"/>
+  <add key="HostManageController_ModifySucced" value="修改信息成功！"/>
+  <add key="HostManageController_ErrorHints" value="错误提示"/>
+  <add key="HostManageController_SystemException" value="系统异常："/>
+  <add key="HostManageController_AddSucced" value="增加信息成功"/>
+  <add key="HostManageController_DetermineDelete" value="确认删除{0}个信息？？"/>
+  <add key="HostManageController_DetermineCloseVm" value="确认关闭虚拟机？"/>
+  <add key="HostManageController_DetermineStartVm" value="确认开启虚拟机？"/>
+  <add key="HostManageController_DetermineRestartVm" value="确认重启虚拟机？"/>
+  <!-- VmAddView-->
+  <add key="VmAddView_Title" value="添加虚拟机信息"/>
+  <add key="VmAddView_VmName" value="虚拟机名称"/>
+  <add key="VmAddView_VmIP" value="虚拟机IP"/>
+  <add key="VmAddView_VmStatus" value="虚拟机状态"/>
+  <add key="VmAddView_Save" value="保存"/>
+  <add key="VmAddView_Back" value="返回"/>
+  <add key="VmAddView_VmNameNotRepeat" value="名称不能重复，请重新输入！"/>
+  <!-- PcManageView-->
+  <add key="PcManageView_Title" value="PC信息管理"/>
+  <add key="PcManageView_Name" value="PC名称"/>
+  <add key="PcManageView_IpBox" value="编码器主机IP"/>
+  <add key="PcManageView_IpKb" value="鼠标键盘服务主机IP"/>
+  <add key="PcManageView_Status" value="PC状态"/>
+  <add key="PcManageView_NumConn" value="连入编码器主机客户端数"/>
+  <add key="PcManageView_SelectTitle" value="查询条件"/>
+  <add key="PcManageView_AddPC" value="鼠标键盘服务所在主机的IP"/>
+  <add key="PcManageView_UpdatePC" value="PC状态"/>
+  <add key="PcManageView_DelPC" value="连入编码器主机客户端数"/>
+  <add key="PcManageView_QueryPC" value="查询条件"/>
+
+  <add key="PcManageView_AddPcInfo" value="增加PC信息"/>
+  <add key="PcManageView_UpdatePcInfo" value="修改PC信息"/>
+  <add key="PcManageView_DeletePcInfo" value="删除PC信息"/>
+  <add key="PcManageView_Save" value="保存"/>
+  <add key="PcManageView_Return" value="返回"/>
+  <!-- PcAddView-->
+  <add key="PcAddView_title" value="添加PC信息"/>
+  <add key="PcAddView_namenotnull" value="PC名称不能为空"/>
+  <!-- PcUpdateView-->
+  <add key="PcUpdateView_title" value="修改PC信息"/>
+  <add key="PcUpdateView_NameNotRepeat" value="PC名称重复"/>
+ <!-- PcManageController-->
+  <add key="PcManageController_Saving" value="正在保存..."/>
+  <add key="PcManageController_SystemHints" value="系统提示"/>
+  <add key="PcManageController_SystemException" value="异常提示"/>
+  <add key="PcManageController_AddPcSuccess" value="添加pc信息成功"/>
+  <add key="PcManageController_ModifyPcSuccess" value="修改pc信息成功"/>
+  <add key="PcManageController_DetermineDelete" value="确认删除?"/>
+
+  <!-- IdentityManageView-->
+  <add key="IdentityManageView_Title" value="认证信息管理"/>
+  <add key="IdentityManageView_Identities" value="认证ID"/>
+  <add key="IdentityManageView_Clientname" value="客户端名称"/>
+  <add key="IdentityManageView_Clientip" value="客户端IP"/>
+  <add key="IdentityManageView_PrivilegeLevel" value="权限属性"/>
+  <add key="IdentityManageView_AllowUseAppType" value="app型号"/>
+ <add key="IdentityManageView_SelectTitle" value="查询条件"/>
+  
+  <!-- IdentityAddView-->
+  <add key="IdentityAddView_AddIdentity" value="添加认证信息"/>
+  <add key="IdentityAddView_IdentityNameNotRepeat" value="认证ID不能重复，请重新输入！"/>
+  <add key="IdentityAddView_Identities" value="认证ID"/>
+  <add key="IdentityAddView_IdentitiesNotNull" value="认证ID不能为空"/>
+  <add key="IdentityAddView_ClientNameNotNull" value="认证名称不能为空"/>
+  <add key="IdentityAddView_ClientNameNotRepeat" value="认证名称不能为空，请重新输入！"/>
+  <add key="IdentityAddView_IdentitiesFormat" value="认证ID只能输入汉字，数字，字母和下划线；长度不能超过32位"/>
+  <add key="IdentityAddView_Clientname" value="客户端名称"/>
+  <add key="IdentityAddView_Clientip" value="客户端IP"/>
+  <add key="IdentityAddView_PrivilegeLevel" value="权限属性"/>
+  <add key="IdentityAddView_AllowUseAppType" value="app型号"/>
+  <add key="IdentityAddView_Save" value="保存"/>
+  <add key="IdentityAddView_Back" value="返回"/>
+  <!-- IdentityUpdateView-->
+  <add key="IdentityUpdateView_AddIdentity" value="修改认证信息"/>
+  <add key="IdentityUpdateView_IdentityNameNotRepeat" value="认证ID不能重复，请重新输入！"/>
+  <add key="IdentityUpdateView_Identities" value="认证ID"/>
+  <add key="IdentityUpdateView_IdentitiesNotNull" value="认证ID不能为空"/>
+  <add key="IdentityUpdateView_ClientNameNotNull" value="认证名称不能为空"/>
+  <add key="IdentityUpdateView_ClientNameNotRepeat" value="认证名称不能为空，请重新输入！"/>
+  <add key="IdentityUpdateView_IdentitiesFormat" value="认证ID只能输入汉字，数字，字母和下划线；长度不能超过32位"/>
+  <add key="IdentityUpdateView_Clientname" value="客户端名称"/>
+  <add key="IdentityUpdateView_Clientip" value="客户端IP"/>
+  <add key="IdentityUpdateView_PrivilegeLevel" value="权限属性"/>
+  <add key="IdentityUpdateView_AllowUseAppType" value="app型号"/>
+  <add key="IdentityUpdateView_Save" value="保存"/>
+  <add key="IdentityUpdateView_Back" value="返回"/>
+  <!-- IdentityManageController-->
+  <add key="IdentityManageController_Saving" value="正在保存，请稍后..."/>
+  <add key="IdentityManageController_SystemHints" value="系统提示"/>
+  <add key="IdentityManageController_ModifyIdentitySucced" value="修改认证信息成功！"/>
+  <add key="IdentityManageController_ErrorHints" value="错误提示"/>
+  <add key="IdentityManageController_SystemException" value="系统异常："/>
+  <add key="IdentityManageController_AddIdentitySucced" value="增加认证信息成功"/>
+  <add key="IdentityManageController_DetermineDelete" value="确认删除认证项？"/>    
+<!--RecordManageView-->
+   <add key="RecordManageView_Title" value="记录统计管理"/>  
+   <add key="RecordManageView_QueryCondition" value="查询条件"/>  
+  <add key="RecordManageView_SelectUser" value="选择用户"/>  
+  <add key="RecordManageView_AllUser" value="所有用户"/>  
+  <add key="RecordManageView_StartTime" value="开始时间"/>  
+  <add key="RecordManageView_SelectVm" value="选择虚拟机"/>  
+  <add key="RecordManageView_SelectVmName" value="全部"/>  
+  <add key="RecordManageView_SelectVmIp" value="选择虚拟机IP"/>  
+  <add key="RecordManageView_SelectVm_Ip" value="全部"/>  
+  <add key="RecordManageView_EndTime" value="结束时间"/>  
+  <add key="RecordManageView_QueryTime" value="查询时段"/>  
+  <add key="RecordManageView_Today" value="本日"/>    
+  <add key="RecordManageView_Query" value="查询"/>  
+  <add key="RecordManageView_StatisticChart" value="统计图"/>  
+  <add key="RecordManageView_Reset" value="重置"/>  
+  
+  <add key="RecordManageView_RecordDataShow" value="记录统计数据展示"/>    
+  <add key="RecordManageView_SeqNum" value="序号"/>  
+  <add key="RecordManageView_UserName" value="用户"/> 
+  <add key="RecordManageView_VmName" value="虚拟机名称"/>  
+  <add key="RecordManageView_VmIp" value="虚拟机ip"/> 
+  <add key="RecordManageView_StartTime" value="开始时间"/>  
+  <add key="RecordManageView_EndTime" value="结束时间"/>  
+  <add key="RecordManageView_ContinueTime" value="持续时间"/>  
+  
+  <!--RiskStragery-->
+  <!--RiskStrategyManageHomeView-->
+  <add key="RiskStrategyManageHomeView_selectTitle" value="查询条件"/>  
+  <add key="RiskStrategyManageHomeView_Code" value="布控策略编码"/>  
+  <add key="RiskStrategyManageHomeView_RiskName" value="布控策略名称"/>  
+  <add key="RiskStrategyManageHomeView_RiskStrongName" value="布控策略强命名"/>  
+  <add key="RiskStrategyManageHomeView_Priority" value="优先级"/>    
+  <add key="RiskStrategyManageHomeView_abled" value="是否启用"/>  
+  <add key="RiskStrategyManageHomeView_Title" value="布控策略设置"/>  
+  <add key="RiskStrategyManageHomeView_AddFunc" value="添加布控策略设置"/> 
+  <add key="RiskStrategyManageHomeView_UpdateFunc" value="修改布控策略设置"/> 
+  <add key="RiskStrategyManageHomeView_DelFunc" value="删除布控策略设置"/> 
+  
+  
+  <!--AddRiskStrategyInfo-->
+  <add key="AddRiskStrategyInfo_addAddRiskStrategyTitle" value="添加布控策略信息"/>  
+  <add key="AddRiskStrategyInfo_selectTitle" value="查询条件"/>  
+  <add key="AddRiskStrategyInfo_Code" value="布控策略编码"/>  
+  <add key="AddRiskStrategyInfo_RiskName" value="布控策略名称"/>  
+  <add key="AddRiskStrategyInfo_RiskStrongName" value="策略强命名"/>  
+  <add key="AddRiskStrategyInfo_Priority" value="优先级"/>    
+  <add key="AddRiskStrategyInfo_abled" value="是否启用"/>  
+  <add key="AddRiskStrategyInfo_Title" value="布控策略设置"/>  
+  <add key="AddRiskStrategyInfo_Save" value="保存"/>  
+  <add key="AddRiskStrategyInfo_Return" value="返回"/> 
+  <add key="RiskStrategyManageController_saving" value="正在保存，请稍后..."/>
+  <add key="RiskStrategyManageController_SystemHints" value="系统提示"/>
+  <add key="RiskStrategyManageController_AddRiskStrategySuccess" value="添加信息成功"/>
+  <add key="RiskStrategyManageController_SystemException" value="系统异常："/>
+ <!--UpdateRiskStrategyInfo-->
+  <add key="UpdateRiskStrategyInfo_UpdateRiskStrategyTitle" value="修改布控策略信息"/>  
+  <add key="UpdateRiskStrategyInfo_selectTitle" value="查询条件"/>  
+  <add key="UpdateRiskStrategyInfo_Code" value="布控策略编码"/>  
+  <add key="UpdateRiskStrategyInfo_RiskName" value="布控策略名称"/>  
+  <add key="UpdateRiskStrategyInfo_RiskStrongName" value="策略强命名"/>  
+  <add key="UpdateRiskStrategyInfo_Priority" value="优先级"/>    
+  <add key="UpdateRiskStrategyInfo_abled" value="是否启用"/>  
+  <add key="UpdateRiskStrategyInfo_Title" value="布控策略设置"/>  
+  <add key="UpdateRiskStrategyInfo_Save" value="保存"/>  
+  <add key="UpdateRiskStrategyInfo_Return" value="返回"/> 
+  <add key="UpdateRiskStrategyInfo_saving" value="正在保存，请稍后..."/>
+  <add key="UpdateRiskStrategyInfo_SystemHints" value="系统提示"/>
+  <add key="UpdateRiskStrategyInfo_AddRiskStrategySuccess" value="更新信息成功"/>
+  <add key="UpdateRiskStrategyInfo_SystemException" value="系统异常："/>
+  <!--DeleteRiskStrageryView-->
+  <add key="DeleteRiskStrageryView_ConfirmDelete" value="确认删除？"/>
+  <add key="DeleteRiskStrageryView_saving" value="正在保存，请稍后..."/>
+  <add key="DeleteRiskStrageryView_SystemHints" value="系统提示"/>
+  <add key="DeleteRiskStrageryView_AddRiskStrategySuccess" value="添加信息成功"/>
+  <add key="DeleteRiskStrageryView_SystemException" value="系统异常"/>
+  <!--RedBlackListHomeView-->
+  <add key="RedBlackListHomeView_KeyValueSetting" value="关键字布控名单设置"/>  
+  <add key="RedBlackListHomeView_HostoryKeyValueSetting" value="历史关键字布控名单查询"/>  
+  <!--RedBlackListRiskSettingsView-->
+  <add key="RedBlackListRiskSettingsView_selectTitle" value="查询条件"/>  
+  <add key="RedBlackListRiskSettingsView_ID" value="名单序号"/>  
+  <add key="RedBlackListRiskSettingsView_KeyWord" value="关键字"/>  
+  <add key="RedBlackListRiskSettingsView_Result" value="布控动作"/>  
+  <add key="RedBlackListRiskSettingsView_VaildTime" value="有效时间"/>    
+  <add key="RedBlackListRiskSettingsView_User_ID" value="操作人员"/>  
+  <add key="RedBlackListRiskSettingsView_OperationTime" value="操作时间"/>
+  <add key="RedBlackListRiskSettingsView_Title" value="关键字布控名单设置"/>  
+  <add key="RedBlackListRiskSettingsView_AddFunc" value="添加关键字布控策略"/> 
+  <add key="RedBlackListRiskSettingsView_UpdateFunc" value="修改关键字布控策略"/> 
+  <add key="RedBlackListRiskSettingsView_DelFunc" value="删除关键字布控策略"/> 
+  <!--QueryHostoryRedBlackListView-->
+  <add key="QueryHostoryRedBlackListView_selectTitle" value="查询条件"/>  
+  <add key="QueryHostoryRedBlackListView_ID" value="名单序号"/>  
+  <add key="QueryHostoryRedBlackListView_KeyWord" value="关键字"/>  
+  <add key="QueryHostoryRedBlackListView_Result" value="布控动作"/>  
+  <add key="QueryHostoryRedBlackListView_VaildTimeRange" value="有效时间范围"/>    
+  <add key="QueryHostoryRedBlackListView_VaildTime" value="有效时间"/>    
+  <add key="QueryHostoryRedBlackListView_User_ID" value="操作人员"/>  
+  <add key="QueryHostoryRedBlackListView_OperationTime" value="操作时间"/>
+  <add key="QueryHostoryRedBlackListView_OperationTimeRange" value="操作时间范围"/>
+  <add key="QueryHostoryRedBlackListView_Title" value="历史关键字布控名单查询"/>  
+  <add key="QueryHostoryRedBlackListView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <!--AddRedBlackInfo-->
+  <add key="AddRedBlackInfo_addAddRiskStrategyTitle" value="添加布控策略信息"/>  
+  <add key="AddRedBlackInfo_selectTitle" value="查询条件"/>  
+  <add key="AddRedBlackInfo_keyword" value="关键字"/>  
+  <add key="AddRedBlackInfo_result" value="布控动作"/>  
+  <add key="AddRedBlackInfo_validtime" value="有效时间"/>  
+  <add key="AddRedBlackInfo_userid" value="操作人员"/>    
+  <add key="AddRedBlackInfo_operationtime" value="操作时间"/>   
+  <add key="AddRedBlackInfo_Save" value="保存"/>  
+  <add key="AddRedBlackInfo_Return" value="返回"/> 
+  <add key="RedBlackListController_saving" value="正在保存，请稍后..."/>
+  <add key="RedBlackListController_SystemHints" value="系统提示"/>
+  <add key="RedBlackListController_AddRedBlackSuccess" value="添加信息成功"/>
+  <add key="RedBlackListController_SystemException" value="系统异常"/>
+  
+  <!--UpdateRedBlackInfo-->
+  <add key="UpdateRedBlackInfo_addAddRiskStrategyTitle" value="修改布控策略信息"/>  
+  <add key="UpdateRedBlackInfo_selectTitle" value="查询条件"/>  
+  <add key="UpdateRedBlackInfo_keyword" value="关键字"/>  
+  <add key="UpdateRedBlackInfo_result" value="布控动作"/>  
+  <add key="UpdateRedBlackInfo_validtime" value="有效时间"/>  
+  <add key="UpdateRedBlackInfo_userid" value="操作人员"/>    
+  <add key="UpdateRedBlackInfo_operationtime" value="操作时间"/>   
+  <add key="UpdateRedBlackInfo_Save" value="保存"/>  
+  <add key="UpdateRedBlackInfo_Return" value="返回"/>   
+  <add key="RedBlackListController_updateRedBlackSuccess" value="修改信息成功"/>
+  
+  
+   <!--DeleteRedBlackListView-->
+  <add key="DeleteRedBlackListView_ConfirmDelete" value="确认删除？"/>
+  <add key="DeleteRedBlackListView_saving" value="正在保存，请稍后..."/>
+  <add key="DeleteRedBlackListView_SystemHints" value="系统提示"/>
+  <add key="DeleteRedBlackListView_AddRiskStrategySuccess" value="添加信息成功"/>
+  <add key="DeleteRedBlackListView_SystemException" value="系统异常"/>
+  <!-- CheckImgManage-->  
+  <!-- SecurityManageView-->  
+  <add key="SecurityManageView_All" value="全部"/>  
+  <add key="SecurityManageView_NoSuspicion" value="安全"/>  
+  <add key="SecurityManageView_Suspicion" value="嫌疑"/>  
+  <add key="SecurityManageView_OpenPackagePicQuery" value="开包图像查询"/>  
+  <add key="SecurityManageView_QueryCondition" value="查询条件"/>  
+  <add key="SecurityManageView_DeviceList" value="设备列表"/>  
+  <add key="SecurityManageView_CounterNumber" value="柜台号"/> 
+  <add key="SecurityManageView_FlightNumber" value="航班号"/>  
+  <add key="SecurityManageView_PassengerName" value="旅客姓名"/>  
+  <add key="SecurityManageView_StartMember" value="操作员"/>  
+  <add key="SecurityManageView_SecurityConclusion" value="判图结果"/>  
+  <add key="SecurityManageView_StartTime" value="开始时间"/>  
+  <add key="SecurityManageView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="SecurityManageView_EndTime" value="结束时间"/>  
+  <add key="SecurityManageView_Extension" value="扩展"/>  
+  <add key="SecurityManageView_ScreenImg" value="抓屏图像"/>  
+  <add key="SecurityManageView_Barcode" value="条形码"/>  
+  <add key="SecurityManageView_QueryResult" value="查询结果"/>  
+  <!-- PassengerInfoDetailView-->  
+  <add key="PassengerInfoDetailView_PassegerInfo" value="旅客信息"/>  
+  <add key="PassengerInfoDetailView_LocalName" value="姓名"/> 
+  <add key="PassengerInfoDetailView_EnglishName" value="姓名英文"/> 
+  <add key="PassengerInfoDetailView_Nation" value="国籍"/> 
+  <add key="PassengerInfoDetailView_Gender" value="性别"/> 
+  <add key="PassengerInfoDetailView_BirthDate" value="出生日期"/> 
+  <add key="PassengerInfoDetailView_Nationality" value="民族"/> 
+  <add key="PassengerInfoDetailView_Profession" value="职业"/> 
+  <add key="PassengerInfoDetailView_CredentialsType" value="证件类型"/> 
+  <add key="PassengerInfoDetailView_CredentialsNumber" value="证件号"/> 
+  <add key="PassengerInfoDetailView_IssuedDate" value="签发日期"/> 
+  <add key="PassengerInfoDetailView_Issuer" value="发证机关"/> 
+  <add key="PassengerInfoDetailView_Expiry" value="有效期限"/> 
+  <add key="PassengerInfoDetailView_Address" value="地址"/> 
+  <add key="PassengerInfoDetailView_Remark" value="备注"/> 
+  <!-- SecurityManageGridView-->  
+  <add key="SecurityManageGridView_DeleteImg" value="删除图像"/>  
+  <add key="SecurityManageGridView_ManualSave" value="保存图像到我的空间"/>  
+  <add key="SecurityManageGridView_TipResource" value="加入违禁品资源库"/>  
+  <add key="SecurityManageGridView_ExportImage" value="导出图像"/>  
+  <add key="SecurityManageGridView_LockImage" value="锁定图像"/>  
+  <add key="SecurityManageGridView_UnlockImage" value="解锁图像"/>  
+  <add key="SecurityManageGridView_LuggageImage" value="行李图像"/>  
+  <add key="SecurityManageGridView_CounterNumber" value="柜台号"/>  
+  <add key="SecurityManageGridView_PassengerName" value="旅客姓名"/>  
+  <add key="SecurityManageGridView_FlightNumber" value="航班号"/>  
+  <add key="SecurityManageGridView_IATA" value="IATA"/>
+  <add key="SecurityManageGridView_BarCode" value="条形码"/>
+  <add key="SecurityManageGridView_CustomerIdentifier" value="设备标识"/>
+  <add key="SecurityManageGridView_AutoConclusion" value="设备判图结论"/>  
+  <add key="SecurityManageGridView_JudgeGraphicsConclusion" value="人工判图结论"/>  
+  <add key="SecurityManageGridView_UltimatelyConclusion" value="开包结论"/>  
+  <add key="SecurityManageGridView_IsLocked" value="是否锁定"/>  
+  <add key="SecurityManageGridView_YesLocked" value="是"/>  
+  <add key="SecurityManageGridView_NoLocked" value="否"/>  
+  <add key="SecurityManageGridView_CreateTime" value="创建时间"/>  
+  <add key="SecurityManageGridView_LockImageSuccess" value="图像锁定成功"/> 
+  <add key="SecurityManageGridView_UnLockImageSuccess" value="图像解锁成功"/> 
+  <!-- CheckImgManageController-->  
+  <add key="CheckImgManageController_ExportImage" value="正在导出图像，请稍后"/>  
+  <add key="CheckImgManageController_SystemHints" value="系统提示"/>  
+  <add key="CheckImgManageController_ExportSucceed" value="导出成功"/>  
+  <add key="CheckImgManageController_ExportFail" value="导出失败"/>  
+  <add key="CheckImgManageController_FTPloginFailed" value="ftp登录失败"/>  
+  <add key="CheckImgManageController_Export" value="正在导出，请稍候"/>  
+  <add key="JudgeImgManageController_ConfirmDel" value="确认删除{0}幅图像？"/>  
+  <add key="CheckImgManageController_Delete" value="正在删除，请稍候"/>  
+  <add key="CheckImgManageController_Save" value="正在保存，请稍候"/>  
+  <add key="CheckImgManageController_Import" value="正在导入，请稍候"/>  
+  <!-- JudgeImgManage-->  
+  <!-- JudgeImgManageController-->  
+  <add key="JudgeImgManageController_ExportImage" value="正在导出图像，请稍后"/>  
+  <add key="JudgeImgManageController_SystemHints" value="系统提示"/>  
+  <add key="JudgeImgManageController_ExportSucceed" value="导出成功"/>  
+  <add key="JudgeImgManageController_ExportFail" value="导出失败"/>  
+  <add key="JudgeImgManageController_Export" value="正在导出，请稍候"/>  
+  <add key="JudgeImgManageController_Delete" value="正在删除，请稍候"/>  
+  <add key="JudgeImgManageController_Save" value="正在保存，请稍候"/>  
+  <add key="JudgeImgManageController_Import" value="正在导入，请稍候"/>  
+  <add key="JudgeImgManageController_SelectCountMsg" value="最多选择10条！"/>  
+  <add key="JudgeImgManageController_ImageExportSuccess" value="导出图像成功"/>  
+  <add key="JudgeImgManageController_ImageExportFailure" value="导出图像失败，请稍候再试"/>  
+  <add key="JudgeImgManageController_ImageShowTitle" value="图片展示"/>  
+  <!-- SecurityManageGridView-->  
+  <add key="SecurityManageGridView_FinalConclusion" value="最终结论"/>  
+  <!-- SecurityManageView-->  
+  <add key="SecurityManageView_AllClear" value="放行"/>  
+  <add key="SecurityManageView_Check" value="开检"/>  
+  <add key="SecurityManageView_JudgePicQuery" value="判图图像查询"/>  
+  <add key="SecurityManageView_JudgeGraphics" value="判图员"/>  
+  <!-- MyImage-->  
+  <!-- PublicSharedWindowView-->  
+  <add key="PublicSharedWindowView_SelectSharetype" value="请选择共享类型"/>  
+  <add key="PublicSharedWindowView_TeamShare" value="组共享"/>  
+  <add key="PublicSharedWindowView_PublicShare" value="公共共享"/>  
+  <!-- MyImageController-->  
+  <add key="MyImageController_Export" value="正在导出，请稍候"/>  
+  <add key="MyImageController_Import" value="正在导入，请稍候"/>  
+  <add key="MyImageController_ConfirmDel" value="确认删除{0}幅图像？"/>  
+  <add key="MyImageController_Delete" value="正在删除，请稍候"/>  
+  <add key="MyImageController_Share" value="正在分享，请稍候"/>  
+  <add key="MyImageController_ShareFail" value="分享失败！"/>  
+  <add key="MyImageController_CancelSharing" value="取消分享中，请稍候"/>  
+  <add key="MyImageController_CancelShareFail" value="取消分享失败！"/>  
+  <add key="MyImageController_AllShare" value="正在共享，请稍候..."/>  
+  <add key="MyImageController_ChangePasswordSucceed" value="修改密码成功！"/>  
+  <add key="MyImageController_ChangePasswordFail" value="修改密码失败！"/>  
+  <!-- MyImageGridView-->  
+  <add key="MyImageGridView_Share" value="分享"/>  
+  <add key="MyImageGridView_CancelShare" value="取消分享"/>  
+  <add key="MyImageGridView_AllShare" value="共享"/>  
+  <add key="MyImageGridView_DeleteImg" value="删除图像"/>  
+  <add key="MyImageGridView_ImportTipResource" value="加入违禁品资源库"/>  
+  <add key="MyImageGridView_ExportImage" value="导出"/>  
+  <add key="MyImageGridView_Image" value="图像"/>  
+  <add key="MyImageGridView_AutoConclusion" value="自动结论"/>  
+  <add key="MyImageGridView_JudgeGraphicsConclusion" value="判图结论"/>  
+  <add key="MyImageGridView_UltimatelyConclusion" value="最终结论"/>  
+  <add key="MyImageGridView_IsShared" value="是否分享"/>  
+  <add key="MyImageGridView_YesShared" value="已分享"/>  
+  <add key="MyImageGridView_NoShared" value="未分享"/>  
+  <add key="MyImageGridView_SaveTime" value="保存时间"/>  
+  <add key="MyImageGridView_Note" value="标签"/>  
+  <add key="MyImageGridView_NoteClick" value="标签（单击修改）"/>  
+  <!-- MyImageView-->  
+  <add key="MyImageView_All" value="全部"/>  
+  <add key="MyImageView_AllClear" value="放行"/>  
+  <add key="MyImageView_Check" value="开检"/>  
+  <add key="MyImageView_ShareOver" value="已分享"/>  
+  <add key="MyImageView_NotShare" value="未分享"/>  
+  <add key="MyImageView_MyImage" value="重点关注"/>  
+  <add key="MyImageView_QueryCondition" value="查询条件"/>  
+  <add key="MyImageView_SecurityConclusion" value="查验结果"/>  
+  <add key="MyImageView_StartTime" value="开始时间"/>  
+  <add key="MyImageView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="MyImageView_EndTime" value="结束时间"/>  
+  <add key="MyImageView_IsShared" value="是否分享"/>  
+  <add key="MyImageView_QueryResult" value="查询结果"/>  
+  <!-- MyInformationView-->  
+  <add key="MyInformationView_myinformation" value="我的资料"/>  
+  <add key="MyInformationView_save" value="保存"/>  
+  <add key="MyInformationView_ChangePassword" value="密码修改"/>  
+  <add key="MyInformationView_OldPassword" value="旧密码"/>  
+  <add key="MyInformationView_InputOldPassword" value="请输入旧密码"/>  
+  <add key="MyInformationView_NewPassword" value="新密码"/>  
+  <add key="MyInformationView_InputPassword" value="请输入密码"/>  
+  <add key="MyInformationView_MinNumber" value="最小位数是6位"/>  
+  <add key="MyInformationView_MaxNumber" value="最大位数是16位"/>
+  <add key="MyInformationView_PasswordFormat" value="密码由数字和字母组成"/>
+  <add key="MyInformationView_PasswordNotNull" value="密码不能为空"/>  
+  <add key="MyInformationView_NewPasswordNotSameOld" value="新密码不能和旧密码相同，请重新输入"/>  
+  <add key="MyInformationView_ConfirmNewPassword" value="确认新密码"/>  
+  <add key="MyInformationView_TwoInputInconsistent" value="两次密码输入不一致，请重新输入"/>  
+  <add key="MyInformationView_OldPassError" value="旧密码输入有误，请重新输入"/>  
+  <!-- TipImage-->  
+  <!-- TipImageController-->  
+  <add key="TipImageController_Export" value="正在导出，请稍候"/>  
+  <add key="TipImageController_ConfirmDel" value="确认删除{0}幅图像？"/>  
+  <add key="TipImageController_Delete" value="正在删除，请稍候"/>  
+  <add key="TipImageController_AddTrainImageSucceed" value="图像增加到培训图库成功"/>  
+  <add key="TipImageController_AddTrainImageFailure" value="图像增加到培训图库失败"/>  
+  <add key="TipImageController_OpenImageError" value="图像打开失败，请稍候再试"/>  
+  <!-- TipImageGridView-->  
+  <add key="TipImageGridView_DeleteImg" value="删除图像"/>  
+  <add key="TipImageGridView_Export" value="导出"/>  
+  <add key="TipImageGridView_Image" value="图像"/>
+  <add key="TipImageGridView_Prn" value="包裹号"/>  
+  <add key="TipImageGridView_AutoConclusion" value="自动结论"/>  
+  <add key="TipImageGridView_JudgeGraphicsConclusion" value="判图结论"/>  
+  <add key="TipImageGridView_UltimatelyConclusion" value="最终结论"/>  
+  <add key="TipImageGridView_SaveTime" value="保存时间"/>  
+  <add key="TipImageGridView_AddTrainImageLib" value="增加到培训图库"/>  
+  <!-- TipImageView-->  
+  <add key="TipImageView_All" value="全部"/>  
+  <add key="TipImageView_AllClear" value="放行"/>  
+  <add key="TipImageView_Check" value="开检"/>  
+  <add key="TipImageView_MyResource" value="我的资源库"/>  
+  <add key="TipImageView_QueryCondition" value="查询条件"/>  
+  <add key="TipImageView_SecurityConclusion" value="查验结果"/>  
+  <add key="TipImageView_StartTime" value="开始时间"/>  
+  <add key="TipImageView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="TipImageView_EndTime" value="结束时间"/>  
+  <add key="TipImageView_QueryResult" value="查询结果"/>  
+	<!-- ImageShowListModifyView-->
+	<add key="ImageShowListModifyView_Weight" value="权重值"/>
+	<add key="ImageShowListModifyView_StandardLib" value="标准图库"/>
+	<add key="ImageShowListModifyView_CustomLib" value="用户图库"/>
+	<add key="ImageShowListModifyView_LibType" value="图库类别"/>
+	<add key="ImageShowListModifyView_TypeDesc" value="类别描述"/>
+	<add key="ImageShowListModifyView_ImageIdentification" value="图像标识"/>
+	<add key="ImageShowListModifyView_ImageName" value="图像名称"/>
+	<add key="ImageShowListModifyView_ImageAngel" value="图像视角"/>
+	<add key="ImageShowListModifyView_ImageDifficult" value="图像难度"/>
+	<add key="ImageShowListModifyView_ImageDesc" value="图像描述"/>
+
+		<!-- ImageShowListModifyViewWindow-->
+	<add key="ImageShowListModifyViewWindow_ImageAdjustWeight" value="图像权重调节"/>
+	<add key="ImageShowListModifyViewWindow_AdjustWeight" value="调节权重"/>
+  <!-- SystemSetting-->  
+  <!--SortingStationParameterConfiguration-->
+  <add key="SortingStationParameterConfiguration_Title" value="分拣站参数配置"/>
+	<add key="SortingStationParameterConfiguration_SaveButton" value="保存"/>
+  <add key="SortingStationParameterConfiguration_SortTime" value="分拣站参数配置"/>
+	<add key="SortingStationParameterConfiguration_SortTime" value="查询时长(分)"/>
+  <add key="SortingStationParameterConfiguration_SelSortTime" value="请选择查询时长"/>
+	<add key="SortingStationParameterConfiguration_SelSortTimeSet" value="查询时长不能小于最查询时长，请重新选择或输入"/>
+  <add key="SortingStationParameterConfiguration_RegexText" value="只能输入数字"/>
+	<add key="SortingStationParameterConfiguration_SortNum" value="查询个数"/>
+  <add key="SortingStationParameterConfiguration_SelSortNum" value="请选择查询个数"/>
+	<add key="" value="保存"/>
+  <!-- ContrabandCategoryAddView-->  
+  <add key="ContrabandCategoryAddView_ContrabandTypeAdd" value="违禁品类型添加"/>  
+  <add key="ContrabandCategoryAddView_ContrabandType" value="违禁品类型"/>  
+  <add key="ContrabandCategoryAddView_ContrabandTypeNotNull" value="违禁品类型不能为空"/>  
+  <add key="ContrabandCategoryAddView_ContrabandNameFormat" value="名称只能输入汉字，数字，字母和下划线，长度不能超过32位"/>  
+  <add key="ContrabandCategoryAddView_ContrabandTypeNotRepeat" value="违禁品类型不能重复，请重新输入！"/>  
+  <add key="ContrabandCategoryAddView_ContrabandName" value="违禁品名称"/>  
+  <add key="ContrabandCategoryAddView_ContrabandNameNotNull" value="违禁品名称不能为空"/>  
+  <add key="ContrabandCategoryAddView_Save" value="保存"/>  
+  <add key="ContrabandCategoryAddView_Cancel" value="取消"/>  
+  <!-- ContrabandNameAddView-->  
+  <add key="ContrabandNameAddView_ContrabandNameAdd" value="违禁品名称添加"/>  
+  <add key="ContrabandNameAddView_ContrabandType" value="违禁品类型"/>  
+  <add key="ContrabandNameAddView_ContrabandTypeNotNull" value="违禁品类型不能为空"/>  
+  <add key="ContrabandNameAddView_ContrabandTypeName" value="违禁品名称"/>  
+  <add key="ContrabandNameAddView_ContrabandNameNotNull" value="违禁品名称不能为空"/>  
+  <add key="ContrabandNameAddView_ContrabandTypeNameFormat" value="名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="ContrabandNameAddView_ContrabandNameNotRepeat" value="违禁品名称不能重复，请重新输入！"/>  
+  <add key="ContrabandNameAddView_Save" value="保存"/>  
+  <add key="ContrabandNameAddView_Cancel" value="取消"/>  
+  <!-- JudgeMapView-->  
+  <add key="JudgeMapView_Unlimited" value="不限制"/>  
+  <add key="JudgeMapView_Second" value="秒"/>  
+  <add key="JudgeMapView_AllClear" value="放行"/>  
+  <add key="JudgeMapView_Check" value="开检"/>  
+  <add key="JudgeMapView_OutTime" value="超时"/>  
+  <add key="JudgeMapView_Automatic" value="设备自动结论"/>
+  <add key="JudgeMapView_JudgeGraphicsSet" value="判图设置"/>  
+  <add key="JudgeMapView_Save" value="保存"/>  
+  <add key="JudgeMapView_CentralJudgeGraphics" value="集中判图"/>  
+  <add key="JudgeMapView_MinJudgeGraphicsTime" value="最小判图时间(秒)"/>  
+  <add key="JudgeMapView_SelMinJudgeGraphicsTime" value="请选择最小判图时间"/>  
+  <add key="JudgeMapView_JudgeGraphicsTime" value="判图站判图时长(秒)"/>  
+  <add key="JudgeMapView_SelJudgeGraphicsTime" value="系统允许查验时长"/>  
+  <add key="JudgeMapView_SelJudgeGraphicsTimeSet" value="系统允许查验时长不能小于判图站判图时长，请重新选择或输入"/>  
+  <add key="JudgeMapView_MaxJudgeGraphicsTime" value="系统允许查验时长(秒)"/>  
+  <add key="JudgeMapView_SelMaxJudgeGraphicsTime" value="请选择最大判图时长"/>  
+  <add key="JudgeMapView_MaxJudgeGraphicsTimeSet" value="系统允许查验时长不能小于判图站判图时长，请重新选择或输入"/>  
+  <add key="JudgeMapView_FigureTimeout" value="判图超时结论"/>  
+  <add key="JudgeMapView_SelFigureTimeout" value="请选择判图超时结论"/>  
+  <add key="JudgeMapView_CentralMultiLevelJudGraSet" value="集中多级判图"/>  
+  <add key="JudgeMapView_OneMinJudgeGraphicsTime" value="一级最小判图时长(秒)"/>  
+  <add key="JudgeMapView_OneJudgeGraphicsTime" value="一级判图站判图时长(秒)"/>  
+  <add key="JudgeMapView_OneMaxJudgeGraphicsTime" value="系统允许查验时长(秒)"/>  
+  <add key="JudgeMapView_OneFigureTimeout" value="一级判图超时结论"/>  
+  <add key="JudgeMapView_TwoMinJudgeGraphicsTime" value="二级最小判图时长(秒)"/>  
+  <add key="JudgeMapView_TwoJudgeGraphicsTime" value="二级判图站判图时长(秒)"/>&gt; 
+  <add key="JudgeMapView_TwoMaxJudgeGraphicsTime" value="二级最大判图时长(秒)"/>  
+  <add key="JudgeMapView_TwoFigureTimeout" value="二级判图超时结论"/>  
+  <add key="JudgeMapView_UniteJudgeGraphics" value="联合判图"/>  
+  <add key="JudgeMapView_SecurityCheck" value="通关"/>  
+  <add key="JudgeMapView_Customs" value="海关"/>  
+  <add key="JudgeMapView_InspectionQuarantine" value="检验检疫"/>  
+  <add key="JudgeMapView_RegexText" value="只能输入数字"/>  
+  <!-- StorageSettingsView-->  
+  <add key="StorageSettingsView_StorageSetting" value="存储设置"/>  
+  <add key="StorageSettingsView_Save" value="保存"/>  
+  <add key="StorageSettingsView_IsEnableStorageSwitch" value="是否启用智能切换"/>  
+  <add key="StorageSettingsView_IncreaseFreeSpace" value="切换门限（%）"/>  
+  <add key="StorageSettingsView_SwitchToFreepartition" value=" 当分区容量达到该上限时，切换到其他空闲分区"/>  
+  <add key="StorageSettingsView_ImageSave" value="图像保存时限（天）"/>  
+  <add key="StorageSettingsView_Day" value=""/>  
+  <add key="StorageSettingsView_ImageAutoClearTime" value="图像自动清理时间段："/>  
+  <!-- WorkShiftSettingsView-->
+  <add key="WorkShiftLockScreenSettingsView_WorkShiftLockScreenSetting" value="轮岗锁屏参数设置"/>
+  <add key="WorkShiftSettingsView_WorkShiftSetting" value="轮岗参数设置"/>
+  <add key="WorkShiftSettingsView_Save" value="保存"/>
+  <add key="WorkShiftSettingsView_IsEnableWorkShiftSwitch" value="是否启用轮岗:"/>
+  <add key="WorkShiftSettingsView_WorkShiftWarnTime" value="轮岗提示时间(分钟)"/>
+  <add key="WorkShiftSettingsView_WorkShiftTime" value="强制注销时间(分钟)"/>
+  <add key="WorkShiftSettingsView_WarnTimeLager" value="轮岗提示时间不能大于轮岗时间"/>
+  <add key="WorkShiftSettingsView_NoAllowTip" value="输入的时间范围必须是10-60"/>
+  <add key="WorkShiftRemindSettingsView_NoAllowTip" value="输入的时间范围必须是1-5"/>
+  <!-- LockScreenSettingsView-->
+  <add key="LockScreenSettingsView_LockScreenSetting" value="锁屏参数设置"/>
+  <add key="LockScreenSettingsView_Save" value="保存"/>
+  <add key="LockScreenSettingsView_IsEnableWorkShiftSwitch" value="是否启用锁屏:"/>
+  <add key="LockScreenSettingsView_LockScreenTime" value="自动注销时间(分钟)"/>
+  <add key="LockScreenSettingsView_NoAllowTip" value="输入的时间范围必须是1-30"/>
+  <!-- SystemSettingController-->  
+  <add key="SystemSettingController_Saving" value="正在保存，请稍后"/>  
+  <add key="SystemSettingController_SystemHints" value="系统提示"/>  
+  <add key="SystemSettingController_CentralJudgeGraphics" value="集中判图设置保存成功！"/>  
+  <add key="SystemSettingController_Exception" value="异常,请稍候再试！"/>  
+  <add key="SystemSettingController_CentralMultiLevelJudGraSet" value="集中多级判图设置保存成功！"/>  
+  <add key="SystemSettingController_UniteJudgeGraphics" value="联合判图设置保存成功！"/>  
+  <add key="SystemSettingController_BasicSettings" value="基本设置保存成功！"/>  
+  <add key="SystemSettingController_TipSetting" value="TIP设置保存成功！"/>  
+  <add key="SystemSettingController_ContrabandNameMaxAdd" value="违禁品名称最多添加{0}个！"/>  
+  <add key="SystemSettingController_ConfirmDel" value="确认删除危险品{0}？"/>  
+  <add key="SystemSettingController_DeleteFailRetry" value="删除失败，请稍候再试！"/>  
+  <add key="SystemSettingController_AddSuc" value="添加成功！"/>  
+  <add key="SystemSettingController_ModifySucced" value="修改成功！"/>  
+  <add key="SystemSettingController_TimeError" value="请选择图像自动清理时间段！"/>  
+  <add key="SystemSettingController_ExceptionModifyFail" value="系统异常：修改失败！"/>  
+  <add key="SystemSettingController_LocalJudgeGraphics" value="设备判图设置保存成功！"/>  
+  <add key="SystemSettingController_WorkShift" value="轮岗参数设置保存成功！"/>
+  <add key="SystemSettingController_LockScreen" value="锁屏参数设置保存成功！"/>
+  <!-- TipOverallSetView-->  
+  <add key="TipOverallSetView_Set" value="主动CTI判图参数"/>  
+  <add key="TipOverallSetView_Save" value="保存"/>  
+  <add key="TipOverallSetView_InitialJudgeTime" value="默认初始判图时间（秒）"/>  
+  <add key="TipOverallSetView_SelInitialJudgeTime" value="请选择初始判图时间"/>  
+  <add key="TipOverallSetView_SelInitialJudgeTime" value="Please select initial decision time."/>  
+  <add key="TipOverallSetView_DangerousGoodsJudgeTime" value="默认危险品判图时间（秒）"/>  
+  <add key="TipOverallSetView_SelDangerousGoodsJudgeTime" value="请输入危险品判图时间"/>  
+  <add key="TipOverallSetView_ScreenRemainTime" value="默认屏幕停留时间（秒）"/>  
+  <add key="TipOverallSetView_SelScreenRemainTime" value="请选择屏幕停留时间"/>  
+  <add key="TipOverallSetView_SelScreenRemainTime" value="Please select screen remaining time."/>  
+  <!-- UnpackSetView-->  
+  <add key="UnpackSetGridView_Minutes" value="分"/>  
+  <add key="UnpackSetGridView_Hour" value="小时"/>  
+  <add key="UnpackSetGridView_OpenPackageSet" value="开包设置"/>  
+  <add key="UnpackSetGridView_Save" value="保存"/>  
+  <add key="UnpackSetGridView_BasicSettings" value="基本设置"/>  
+  <add key="UnpackSetGridView_ValidUnpackTime" value="有效开包时间"/>  
+  <add key="UnpackSetGridView_SelValidUnpackTime" value="请选择有效开包时间"/>  
+  <add key="UnpackSetGridView_UnpackNum" value="开包个数"/>  
+  <add key="UnpackSetGridView_SelUnpackNum" value="请选择最大开包图像数"/>  
+  <add key="UnpackSetGridView_ContrabandSet" value="违禁品设置"/>  
+  <add key="UnpackSetGridView_AddContraband" value="增加违禁品"/>  
+  <!-- DeviceStatistics-->  
+  <!-- DeviceStatisticsPieView-->  
+  <add key="DeviceStatisticsPieView_ProportionMsg" value="{0}:{1}，所占比例：{2}"/>  
+  <!-- DeviceStatisticsView-->  
+  <add key="DeviceStatisticsView_Title" value="设备工作统计"/>  
+  <add key="DeviceStatisticsView_QueryCondition" value="查询条件"/>  
+  <add key="DeviceStatisticsView_StartTime" value="开始时间"/>  
+  <add key="DeviceStatisticsView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="DeviceStatisticsView_EndTime" value="结束时间"/>  
+  <add key="DeviceStatisticsView_Device" value="设备"/>  
+  <add key="DeviceStatisticsView_SelectDevice" value="请选择设备"/>  
+  <add key="DeviceStatisticsView_FiveDeviceQuery" value="最多支持五台设备同时查询"/>  
+  <add key="DeviceStatisticsView_Hints" value="系统提示"/>  
+  <add key="DeviceStatisticsView_PerformanceStatistics" value="工作统计信息"/>  
+  <add key="DeviceStatisticsView_LuggageCount" value="行李计数"/>  
+  <add key="DeviceStatisticsView_Hours" value="按时"/>  
+  <add key="DeviceStatisticsView_Days" value="按天"/>  
+  <add key="DeviceStatisticsView_Months" value="按月"/>  
+	<add key="DeviceStatisticsView_SecurityBagsSumNum" value="安全行李数(设备自动判图)"/>
+	<add key="DeviceStatisticsView_SuspectedLuggageSumNum" value="自动报警总数"/>
+	<add key="DeviceStatisticsView_SumNum" value="过机总数"/>
+    <!-- DeviceStatisticsHomeView-->
+	<add key="DeviceStatisticsHomeView_DeviceStatisticView" value="设备工作统计"/>
+        <add key="DeviceStatisticsHomeView_DeviceOverallStaView" value="过机数据粒度统计"/>
+
+	<!-- DeviceStatisticsOverallView-->
+	<add key="DeviceStatisticsOverallView_QueryCondition" value="查询条件"/>
+    <add key="DeviceStatisticsOverallView_StatisticType" value="统计粒度"/>
+	<add key="DeviceStatisticsOverallView_StatisticTypeblackText" value="请选择统计粒度"/>	
+	<add key="StationStatisticsView_Period" value="时间"/>	
+	<add key="StationStatisticsView_SwitchChartAndTable" value="图表切换"/>	
+  <!-- DeviceStatisticsController-->  
+  <add key="DeviceStatisticsController_ChartBagsTitle" value="设备行李数目图"/>  
+	<add key="DeviceStatisticsController_LineChartBagsTitle" value="过机数据粒度统计图"/>
+  <add key="DeviceStatisticsController_ChartDuartionTitle" value="设备运行时长图"/>  
+  <add key="DeviceStatisticsController_LuggageCount" value="包裹数量"/>  
+  <add key="DeviceStatisticsController_BeingQueried" value="正在查询，请稍候"/>  
+  <add key="DeviceStatisticsController_Number" value="件行李"/>  
+	<add key="DeviceStatisticsController_OneMinute" value="1分钟"/>
+	<add key="DeviceStatisticsController_FiveMinute" value="5分钟"/>
+	<add key="DeviceStatisticsController_TenMinute" value="10分钟"/>
+  <!-- DiskManage-->  
+  <!-- DiskCapacityMgrView-->  
+  <add key="DiskCapacityMgrView_DiskManage" value="磁盘容量管理"/>  
+  <add key="DiskCapacityMgrView_Refresh" value="刷新"/>  
+  <add key="DiskCapacityMgrView_Used" value="已用"/>  
+  <add key="DiskCapacityMgrView_pProgID" value="剩余"/>  
+  <add key="DiskCapacityMgrView_InAll" value="共计"/>  
+  <!-- PersonnelStatistics-->  
+  <!-- PersonnelStatisticsController-->  
+  <add key="PersonnelStatisticsController_BeingQueried" value="正在查询，请稍候"/>  
+  <add key="PersonnelStatisticsController_TureName" value="人员姓名"/>  
+  <add key="PersonnelStatisticsController_Title" value="人员工作统计图"/>  
+  <!-- PersonnelStatisticsPieView-->  
+  <add key="PersonnelStatisticsLineView_ProportionMsg" value="{0}:{1}，所占比例：{2}"/>  
+  <!-- PersonnelStatisticsView-->  
+  <add key="PersonnelStatisticsView_personnelstatistics" value="人员工作统计"/>  
+  <add key="PersonnelStatisticsView_StartTime" value="开始时间"/>  
+  <add key="PersonnelStatisticsView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="PersonnelStatisticsView_EndTime" value="结束时间"/>  
+  <add key="PersonnelStatisticsView_User" value="用户名"/>  
+  <add key="PersonnelStatisticsView_SelectUser" value="请选择用户"/>  
+  <add key="PersonnelStatisticsView_FiveUserQuery" value="最多支持五位用户同时查询"/>  
+  <add key="PersonnelStatisticsView_Hints" value="系统提示"/>  
+  <add key="PersonnelStatisticsView_Hours" value="按时"/>  
+  <add key="PersonnelStatisticsView_Days" value="按天"/>  
+  <add key="PersonnelStatisticsView_Months" value="按月"/>  
+  <!-- State-->  
+  <!-- DeviceReportView-->  
+  <add key="DeviceReportView_DeviceReportStore" value="设备诊断报告"/>  
+  <add key="DeviceReportView_ReportTime" value="报告时间"/>  
+  <add key="DeviceReportView_DeviceType" value="设备型号"/>  
+  <add key="DeviceReportView_DeviceID" value="设备唯一码"/>  
+  <add key="DeviceReportView_TotalRunTime" value="总运行时间"/>  
+  <add key="DeviceReportView_SoftwareVersion" value="软件版本"/>  
+  <add key="DeviceReportView_TotalGrantryTime" value="滑环转动时间"/>  
+  <add key="DeviceReportView_DeviceLocation" value="设备位置"/>  
+  <add key="DeviceReportView_TotalMotorTime" value="皮带传送时间"/>  
+  <add key="DeviceReportView_DiskSpace" value="磁盘容量"/>  
+  <add key="DeviceReportView_TotalCTXrayTime" value="CT出束时间"/>  
+  <add key="DeviceReportView_EStopState" value="急停状态"/>  
+  <add key="DeviceReportView_TotalDRXrayATime" value="DR1出束时间"/>  
+  <add key="DeviceReportView_TotalDRXrayBTime" value="DR2出束时间"/>  
+  <add key="DeviceReportView_DCMandOISState" value="DCM与OIS通讯状态"/>  
+  <add key="DeviceReportView_NoInfo" value="NA"/>
+  <add key="DeviceReportView_BHSState" value="BHS通讯状态"/>  
+  <add key="DeviceReportView_UCMandOISState" value="UCM与OIS通讯状态"/>  
+  <add key="DeviceReportView_MotorInvertorState" value="电动滚筒变频器"/>  
+  <add key="DeviceReportView_SPMandOISState" value="SPM与OIS通讯状态"/>  
+  <add key="DeviceReportView_MotorEncoderState" value="电动滚筒编码器"/>  
+  <add key="DeviceReportView_SlipRingTransducer" value="滑环变频器"/>  
+  <add key="DeviceReportView_SlipRingEncoder" value="滑环编码器"/>  
+  <add key="DeviceReportView_MotorState" value="皮带运行状态"/>  
+  <add key="DeviceReportView_GantryState" value="滑环运行状态"/>  
+  <add key="DeviceReportView_X-rayEmitter" value="CT X光机就绪状态"/>  
+  <add key="DeviceReportView_CTDetector" value="CT探测器"/>  
+  <add key="DeviceReportView_DR1XEmitter" value="DR1 X光机就绪状态"/>  
+  <add key="DeviceReportView_DR1Ddetector" value="DR1探测器"/>  
+  <add key="DeviceReportView_DR2XEmitter" value="DR2 X光机就绪状态"/>  
+  <add key="DeviceReportView_DR2Ddetector" value="DR2探测器"/>  
+  <add key="DeviceReportView_CTXrayState" value=" CT X光机运行状态"/>  
+  <add key="DeviceReportView_DRXrayAState" value="DR1 X光机运行状态"/>  
+  <add key="DeviceReportView_DRXrayBState" value="DR2 X光机运行状态"/>  
+  <!-- DeviceStateView-->  
+  <add key="DeviceStateView_DeviceMonitor" value="设备监控"/>  
+  <add key="DeviceStateView_Remotediagnosis" value="远程诊断"/>  
+  <add key="DeviceStateView_TipStateOpen" value="设备TIP开启"/>  
+  <add key="DeviceStateView_TipStateClose" value="设备TIP关闭"/>
+  <add key="DeviceStateView_ChangeRunMode" value="切换设备模式"/>
+  <add key="DeviceStateView_RunMode_StraightMode" value="直通模式"/>
+  <add key="DeviceStateView_RunMode_ScanningMode" value="扫描模式"/>
+  <add key="DeviceStateView_Save" value="确定"/>
+  <add key="DeviceStateView_Cancel" value="取消"/>
+  <add key="DeviceStateView_RunModeName" value="设置运行模式"/>
+  <add key="DeviceStateView_DiagramModeName" value="设置判图模式"/>
+  <add key="DeviceStateView_DiagramMode_LocalSettingMode" value="按设备本地设置"/>
+  <add key="DeviceStateView_DiagramMode_SuspicionMode" value="嫌疑图像判图"/>
+  <add key="DeviceStateView_DiagramMode_ArtificialMode" value="全图像判图"/>
+  <add key="DeviceStateView_HandOutOK" value="设备模式切换消息发送成功，请稍后在设备监控中查看"/>
+  <add key="DeviceStateView_HandOutFail" value="设备模式切换消息发送失败"/>
+  <add key="DeviceStateView_Viewreport" value="查看报告"/>  
+  <add key="DeviceStateView_SoftThrough" value="软直通"/>
+  <add key="DeviceStateView_Invalidation" value="无效"/>  
+  <add key="DeviceStateView_Scan" value="扫描"/>  
+  <add key="DeviceStateView_OffLine" value="离线"/>  
+  <add key="DeviceStateView_Diagnosis" value="诊断"/>  
+  <add key="DeviceStateView_Exception" value="异常"/>  
+  <add key="DeviceStateView_OnLine" value="在线"/>  
+  <add key="DeviceStateView_Emergency" value="急停"/>  
+  <add key="DeviceStateView_Idle" value="待机"/>  
+  <add key="DeviceStateView_Init" value="初始化"/>  
+  <add key="DeviceStateView_MachineGrouping" value="设备分组"/>  
+  <add key="DeviceStateView_DeviceStateimgView" value="设备状态查看"/>  
+  <add key="DeviceStateView_NoRemotediagnosisDeviceTypeMinValue" value="100"/>  
+  <add key="DeviceStateView_NoRemotediagnosisDeviceTypeText" value="所选设备暂不支持远程诊断"/>  
+  <add key="DeviceStateView_NoComputerResetDeviceTypeText" value="该类型设备暂不支持计算机重启"/>  
+  <add key="DeviceStateView_NoSoftResetDeviceTypeText" value="该类型设备暂不支持软复位"/>  
+  <!-- DeviceDetailView-->  
+  <add key="DeviceDetailView_Title" value="设备监控详情"/>  
+  <add key="DeviceDetailView_DeviceModeType" value="设备模式"/>  
+  <add key="DeviceDetailView_BeltModeType" value="皮带模式"/>  
+  <add key="DeviceDetailView_RunModeType" value="工作模式"/>  
+  <add key="DeviceDetailView_PowerState" value="供电状态"/>  
+  <add key="DeviceDetailView_UpsEectricity" value="UPS电量"/>  
+  <add key="DeviceDetailView_SoftReset" value="软复位"/>  
+  <add key="DeviceDetailView_ComputeReset" value="计算机重启"/>
+  <add key="DeviceDetailView_SynchronousLog" value="正在同步设备日志数据"/>
+  <add key="DeviceDetailView_MaintainItemName" value="保养项名称"/>
+  <add key="DeviceDetailView_LastDate" value="上次维护日期"/>
+  <add key="DeviceDetailView_NextDate" value="下次维护日期"/>
+  <add key="DeviceDetailView_RemainTime" value="剩余"/>
+  <add key="DeviceDetailView_MaintainUser" value="上次保养人"/>
+  <add key="DeviceDetailView_IsRemind" value="是否需要保养"/>
+  <add key="DeviceDetailView_MainTainType" value="类型"/>
+  <!-- StateController-->  
+  <add key="StateController_DiagnosisPleaseWait" value="正在执行诊断，请稍候..."/>  
+  <add key="StateController_SystemHints" value="系统提示"/>  
+  <add key="StateController_Exception" value="异常,请稍后再试！"/>  
+  <add key="StateController_DiagnosisExecuted" value="诊断已执行，请查看设备诊断报告！"/>  
+  <add key="StateController_SendTip" value="正在发送TIP考核任务，请稍候..."/>  
+  <add key="StateController_SendOver" value="考核任务发送成功！"/>  
+  <add key="StateController_TipStateCloseingMsg" value="正在关闭设备TIP状态！"/>  
+  <add key="StateController_TipStateCloseError" value="关闭设备tip状态失败！"/>  
+  <add key="StateController_TipStateCloseSuccess" value="关闭设备tip状态成功！"/>  
+  <add key="StateController_TipStateOpeningMsg" value="正在开启设备TIP状态！"/>  
+  <add key="StateController_TipStateOpenError" value="开启设备tip状态失败！"/>  
+  <add key="StateController_TipStateOpenSuccess" value="开启设备tip状态成功！"/>  
+  <add key="StateController_SoftReset" value="确定将设备软复位？"/>  
+  <add key="StateController_ComputeReset" value="确定将设备计算机重启？"/>  
+  <!-- StationStateView-->  
+  <add key="StationStateView_StationMonitor" value="站点监控"/>  
+  <add key="StationStateView_TipAssessment" value="TIP考核"/>  
+  <add key="StationStateView_Busy" value="繁忙"/>  
+  <add key="StationStateView_Pause" value="暂停"/>  
+  <add key="StationStateView_OffLine" value="离线"/>  
+  <add key="StationStateView_Invalidation" value="无效"/>  
+  <add key="StationStateView_OnLine" value="在线/闲置"/>  
+  <!--设备图像监控-->  
+  <add key="DevicePackageReview_Title" value="设备详情"/>  
+  <add key="DevicePackageReview_LoadBagsImage" value="正在加载包裹....."/>  
+  <!-- TunnelStatistics-->  
+  <!-- TunnelStatisticsView-->  
+  <add key="TunnelStatisticsView_TunnelPerformanceStatistics" value="业务群工作统计"/>  
+  <add key="TunnelStatisticsView_StartTime" value="开始时间"/>  
+  <add key="TunnelStatisticsView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="TunnelStatisticsView_EndTime" value="结束时间"/>  
+  <add key="TunnelStatisticsView_TunnelInfo" value="业务群信息"/>  
+  <add key="TunnelStatisticsView_SelectTunnel" value="请选择业务群"/>  
+  <add key="TunnelStatisticsView_SystemHints" value="系统提示"/>  
+  <add key="TunnelStatisticsView_FiveTunnelQuery" value="最多支持五个业务群同时查询"/>  
+  <add key="TunnelStatisticsView_Hours" value="按时"/>  
+  <add key="TunnelStatisticsView_Days" value="按天"/>  
+  <add key="TunnelStatisticsView_Months" value="按月"/>  
+  <!-- DynamicCountView-->  
+  <add key="DynamicCountView_TunnelPassRate" value="业务群通过率（件行李/小时）"/>  
+  <add key="DynamicCountView_Null" value="无"/>  
+  <add key="DynamicCountView_Num" value=" "/>  
+  <!-- DynamicOpenCountView-->  
+  <add key="DynamicOpenCountView_TunnelRealTimeMonitor" value="业务群开包实时监测（件行李）"/>  
+  <add key="DynamicOpenCountView_Null" value="无"/>  
+  <add key="DynamicOpenCountView_Num" value=" "/>  
+  <!-- DynamicStatisticsView-->  
+  <add key="DynamicStatisticsView_TunnelMonitor" value="业务群监控"/>  
+  <add key="DynamicStatisticsView_Inster" value="加入"/>  
+  <!-- TunnelStatisticsPieView-->  
+  <add key="TunnelStatisticsPieView_ProportionMsg" value="{0}:{1}，所占比例：{2}"/>  
+  <!-- TunnelStatisticsBarView-->  
+  <add key="TunnelStatisticsBarView_TunnelLuggageCountPic" value="业务群分类行李计数图"/>  
+  <add key="TunnelStatisticsBarView_ClassificationLuggageStatistics" value="分类行李统计"/>  
+  <add key="TunnelStatisticsBarView_LuggageAllNum" value="行李总数："/>  
+  <add key="TunnelStatisticsBarView_AutoAlarmNums" value="自动报警行李数："/>  
+  <add key="TunnelStatisticsBarView_OpenBoxNums" value="开包行李数："/>  
+  <!-- TunnelStatisticsController-->  
+  <add key="TunnelStatisticsController_TunnelName" value="业务群名称"/>  
+  <add key="TunnelStatisticsController_TunnelPosition" value="业务群位置"/>  
+  <add key="TunnelStatisticsController_LuggageAllNum" value="行李总数"/>  
+  <add key="TunnelStatisticsController_BeingQueried" value="正在查询，请稍候"/>  
+  <add key="TunnelStatisticsController_LuggageCount" value="行李计数"/>  
+  <add key="TunnelStatisticsController_OpenBoxNums" value="开包行李计数"/>  
+  <add key="TunnelStatisticsController_Num" value="件行李"/>  
+  <add key="TunnelStatisticsController_SystemHints" value="系统提示"/>  
+  <add key="TunnelStatisticsController_FiveTunnelQuery" value="最多支持五个业务群同时查看"/>  
+  <add key="TunnelStatisticsController_Null" value="无"/>  
+  <!-- DeviceEventLog-->  
+  <!-- DeviceEventLogDetail-->  
+  <add key="DeviceEventLogDetail_LogDetails" value="日志详情"/>  
+  <add key="DeviceEventLogDetail_Level" value="级别"/>  
+  <add key="DeviceEventLogDetail_DeviceCustomerId" value="设备标识"/>  
+  <add key="DeviceEventLogDetail_Device" value="设备唯一码"/>  
+  <add key="DeviceEventLogDetail_Event" value="事件ID"/>  
+  <add key="DeviceEventLogDetail_Description" value="事件"/>  
+  <add key="DeviceEventLogDetail_StartTime" value="开始时间"/>  
+  <add key="DeviceEventLogDetail_EndTime" value="结束时间"/>  
+  <add key="DeviceEventLogDetail_Content" value="描述"/>  
+  <!-- DeviceEventLogGridView-->  
+  <add key="DeviceEventLogGridView_Export" value="导出"/>
+  <add key="DeviceEventLogGridView_QueryInformation" value="查询信息"/>  
+  <add key="DeviceEventLogGridView_rownumberer" value="序号"/>  
+  <add key="DeviceEventLogGridView_Level" value="级别"/>  
+  <add key="DeviceEventLogGridView_Information" value="信息"/>  
+  <add key="DeviceEventLogGridView_NoData" value="没有数据"/>  
+  <add key="DeviceEventLogGridView_Minute" value="详细"/>  
+  <add key="DeviceEventLogGridView_Key" value="关键"/>  
+  <add key="DeviceEventLogGridView_Error" value="错误"/>  
+  <add key="DeviceEventLogGridView_Warning" value="警告"/>  
+  <add key="DeviceEventLogGridView_Device" value="设备标识"/>  
+  <add key="DeviceEventLogGridView_Event" value="事件"/>  
+  <add key="DeviceEventLogGridView_StartTime" value="起始时间"/>  
+  <add key="DeviceEventLogGridView_EndTime" value="结束时间"/>  
+  <add key="DeviceEventLogGridView_Description" value="描述"/>  
+  
+  <add key="DeviceEventLogGridView_OpenCloseComputer" value="开关机"/>
+  <add key="DeviceEventLogGridView_UserLogin" value="用户登录"/>
+  <add key="DeviceEventLogGridView_DeviceMaintain" value="设备维护"/>
+  <add key="DeviceEventLogGridView_UserOperation" value="用户操作"/>
+  <add key="DeviceEventLogGridView_DeviceRun" value="设备运行"/>
+  <add key="DeviceEventLogGridView_DeviceOpen" value="设备开机"/>
+  <add key="DeviceEventLogGridView_DeviceClose" value="设备关机"/>
+  <add key="DeviceEventLogGridView_UserCancel" value="用户注销"/>
+  <add key="DeviceEventLogGridView_MaterialCalibration" value="材料标定"/>
+  <add key="DeviceEventLogGridView_OfflineMaterialCalibration" value="离线材料标定"/>
+  <add key="DeviceEventLogGridView_PerformanceTest" value="性能检验"/>
+  <add key="DeviceEventLogGridView_EometricCalibration" value="几何标定"/>
+  <add key="DeviceEventLogGridView_OfflineEometricCalibration" value="离线几何标定"/>
+  <add key="DeviceEventLogGridView_DataAccess" value="数据访问"/>
+  <add key="DeviceEventLogGridView_UserManage" value="用户管理"/>
+  <add key="DeviceEventLogGridView_OtherOperation" value="其他操作"/>
+  <add key="DeviceEventLogGridView_DeviceTrouble" value="设备故障"/>
+  <add key="DeviceEventLogGridView_TroubleRecovery" value="故障恢复"/>
+  <add key="DeviceEventLogGridView_UPSPowerSupply" value="UPS供电"/>
+  <add key="DeviceEventLogGridView_RestoreNormalPowerSupply " value="恢复正常供电"/>
+
+  <!-- DeviceEventLogView-->  
+  <add key="DeviceEventLogView_EquipmentLog" value="设备日志"/>  
+  <add key="DeviceEventLogView_Level" value="级别"/>  
+  <add key="DeviceEventLogView_All" value="全部"/>  
+  <add key="DeviceEventLogView_Keyword" value="关键字"/>  
+  <add key="DeviceEventLogView_InputKeyword" value="请输入关键字"/>  
+  <add key="DeviceEventLogView_Device" value="设备标识"/>  
+  <add key="DeviceEventLogView_Event" value="事件"/>  
+  <add key="DeviceEventLogView_EventType" value="事件类型"/>  
+  <add key="DeviceEventLogView_StartTime" value="起始时间"/>  
+  <add key="DeviceEventLogView_EndTime" value="结束时间"/>  
+  <add key="DeviceEventLogView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="DeviceEventLogView_QueryCondition" value="查询条件"/>  
+  <!-- SystemEventLog-->  
+  <!-- SystemEventLogController-->  
+  <add key="SystemEventLogController_GetDataFail" value="获取数据失败"/>  
+  <!-- SystemEventLogDetail-->  
+  <add key="SystemEventLogDetail_LogDetails" value="日志详情"/>  
+  <add key="SystemEventLogDetail_Level" value="级别"/>  
+  <add key="SystemEventLogDetail_Source" value="来源"/>  
+  <add key="SystemEventLogDetail_Event" value="事件"/>  
+  <add key="SystemEventLogDetail_Time" value="时间"/>  
+  <add key="SystemEventLogDetail_Description" value="描述"/>  
+  <add key="SystemEventLogDetail_Content" value="内容"/>  
+  <!-- SystemEventLogGridView-->  
+  <add key="SystemEventLogGridView_QueryInformation" value="查询信息"/>  
+  <add key="SystemEventLogGridView_rownumberer" value="序号"/>  
+  <add key="SystemEventLogGridView_Level" value="级别"/>  
+  <add key="SystemEventLogGridView_Information" value="信息"/>  
+  <add key="SystemEventLogGridView_Key" value="关键"/>  
+  <add key="SystemEventLogGridView_Error" value="错误"/>  
+  <add key="SystemEventLogGridView_Warning" value="警告"/>  
+  <add key="SystemEventLogGridView_Event" value="事件"/>  
+  <add key="SystemEventLogGridView_Source" value="来源"/>  
+  <add key="SystemEventLogGridView_Time" value="时间"/>  
+  <add key="SystemEventLogGridView_Description" value="描述"/>  
+  <!-- SystemEventLogView-->  
+  <add key="SystemEventLogView_SystemLog" value="系统日志"/>  
+  <add key="SystemEventLogView_QueryCondition" value="查询条件"/>  
+  <add key="SystemEventLogView_Level" value="级别"/>  
+  <add key="SystemEventLogView_All" value="全部"/>  
+  <add key="SystemEventLogView_Keyword" value="关键字"/>  
+  <add key="SystemEventLogView_InPutKeyword" value="请输入关键字"/>  
+  <add key="SystemEventLogView_Source" value="来源"/>  
+  <add key="SystemEventLogView_Event" value="事件"/>  
+  <add key="SystemEventLogView_StartTime" value="起始时间"/>  
+  <add key="SystemEventLogView_EndTime" value="结束时间"/>  
+  <add key="SystemEventLogView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <!-- UserOperationLog-->  
+  <!-- UserOperationLogDetail-->  
+  <add key="UserOperationLogDetail_LogDetails" value="日志详情"/>  
+  <add key="UserOperationLogDetail_User" value="用户"/>  
+  <add key="UserOperationLogDetail_Source" value="来源"/>  
+  <add key="UserOperationLogDetail_Operationmodule" value="操作模块"/>  
+  <add key="UserOperationLogDetail_Operation" value="操作"/>  
+  <add key="UserOperationLogDetail_OperationTime" value="操作时间"/>  
+  <add key="UserOperationLogDetail_IsSucceed" value="是否成功"/>  
+  <add key="UserOperationLogDetail_Description" value="描述"/>  
+  <add key="UserOperationLogDetail_Content" value="内容"/>  
+  <!-- UserOperationLogGridView-->  
+  <add key="UserOperationLogGridView_QueryInformation" value="查询信息"/>  
+  <add key="UserOperationLogGridView_rownumberer" value="序号"/>  
+  <add key="UserOperationLogGridView_User" value="用户"/>  
+  <add key="UserOperationLogGridView_Source" value="来源"/>  
+  <add key="UserOperationLogGridView_Operation" value="操作"/>  
+  <add key="UserOperationLogGridView_OperationTime" value="操作时间"/>  
+  <add key="UserOperationLogGridView_Description" value="描述"/>  
+  <add key="UserOperationLogGridView_IsSucceed" value="是否成功"/>  
+  <!-- UserOperationLogView-->  
+  <add key="UserOperationLogView_UserAtionLog" value="用户操作日志"/>  
+  <add key="UserOperationLogView_QueryCondition" value="查询条件"/>  
+  <add key="UserOperationLogView_User" value="用户"/>  
+  <add key="UserOperationLogView_All" value="全部"/>  
+  <add key="UserOperationLogView_UserList" value="用户列表"/>  
+  <add key="UserOperationLogView_Keyword" value="关键字"/>  
+  <add key="UserOperationLogView_INputKeyword" value="请输入关键字"/>  
+  <add key="UserOperationLogView_Source" value="来源"/>  
+  <add key="UserOperationLogView_Result" value="操作结果"/>  
+  <add key="UserOperationLogView_OperationType" value="操作类型"/>  
+  <add key="UserOperationLogView_StartTime" value="起始时间"/>  
+  <add key="UserOperationLogView_EndTime" value="结束时间"/>  
+  <add key="UserOperationLogView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <!-- MultiLanguageConfig-->  
+  <add key="MultiLanguageConfig_Load" value="加载中"/>  
+  <add key="MultiLanguageConfig_ChooseRow" value="选择了{0}行"/>  
+  <add key="MultiLanguageConfig_CloseLabel" value="关闭此标签"/>  
+  <add key="MultiLanguageConfig_InputValuec" value="输入值非法"/>  
+  <add key="MultiLanguageConfig_Reading" value="读取中"/>  
+  <add key="MultiLanguageConfig_January" value="一月"/>  
+  <add key="MultiLanguageConfig_February" value="二月"/>  
+  <add key="MultiLanguageConfig_March" value="三月"/>  
+  <add key="MultiLanguageConfig_April" value="四月"/>  
+  <add key="MultiLanguageConfig_May" value="五月"/>  
+  <add key="MultiLanguageConfig_June" value="六月"/>  
+  <add key="MultiLanguageConfig_July" value="七月"/>  
+  <add key="MultiLanguageConfig_August" value="八月"/>  
+  <add key="MultiLanguageConfig_September" value="九月"/>  
+  <add key="MultiLanguageConfig_October" value="十月"/>  
+  <add key="MultiLanguageConfig_November" value="十一月"/>  
+  <add key="MultiLanguageConfig_December" value="十二月"/>  
+  <add key="MultiLanguageConfig_Sunday" value="日"/>  
+  <add key="MultiLanguageConfig_Monday" value="一"/>  
+  <add key="MultiLanguageConfig_Tuesday" value="二"/>  
+  <add key="MultiLanguageConfig_Wednesday" value="三"/>  
+  <add key="MultiLanguageConfig_Thursday" value="四"/>  
+  <add key="MultiLanguageConfig_Friday" value="五"/>  
+  <add key="MultiLanguageConfig_Saturday" value="六"/>  
+  <add key="MultiLanguageConfig_Am" value="上午"/>  
+  <add key="MultiLanguageConfig_Pm" value="下午"/>  
+  <add key="MultiLanguageConfig_Ok" value="确定"/>  
+  <add key="MultiLanguageConfig_Cancel" value="取消"/>  
+  <add key="MultiLanguageConfig_Yes" value="是"/>  
+  <add key="MultiLanguageConfig_No" value="否"/>  
+  <add key="MultiLanguageConfig_YearMonthDay" value="y年m月d日"/>  
+  <add key="MultiLanguageConfig_ToDay" value="今天"/>  
+  <add key="MultiLanguageConfig_DateRange" value="日期必须大于最小允许日期"/>  
+  <add key="MultiLanguageConfig_NextMonth" value="下个月"/>  
+  <add key="MultiLanguageConfig_LastMonth" value="上个月"/>  
+  <add key="MultiLanguageConfig_ChooseMonthChangeYear" value="选择一个月(Control+Up/Down 来改变年份)"/>  
+  <add key="MultiLanguageConfig_SpaceChoose" value="空格键选择"/>  
+  <add key="MultiLanguageConfig_ThePage" value="当前页"/>  
+  <add key="MultiLanguageConfig_TotalPage" value="共{0}页"/>  
+  <add key="MultiLanguageConfig_FirstPage" value="第一页"/>  
+  <add key="MultiLanguageConfig_PreviousPage" value="上一页"/>  
+  <add key="MultiLanguageConfig_NextPage" value="下一页"/>  
+  <add key="MultiLanguageConfig_LastPage" value="最后页"/>  
+  <add key="MultiLanguageConfig_Refresh" value="刷新"/>  
+  <add key="MultiLanguageConfig_DisplayPage" value="显示 {0} - {1}条，共 {2} 条"/>  
+  <add key="MultiLanguageConfig_PageNoData" value="没有数据"/>  
+  <add key="MultiLanguageConfig_InputMinimumLength" value="该输入项的最小长度是{0}个字符"/>  
+  <add key="MultiLanguageConfig_InputMaximumLength" value="该输入项的最大长度是{0}个字符"/>  
+  <add key="MultiLanguageConfig_MustInput" value="该输入项为必输项"/>  
+  <add key="MultiLanguageConfig_InputMinimumValue" value="该输入项的最小值是"/>  
+  <add key="MultiLanguageConfig_InputMaximumValue" value="该输入项的最大值是"/>  
+  <add key="MultiLanguageConfig_NotValidValue" value="不是有效数值"/>  
+  <add key="MultiLanguageConfig_Disable" value="禁用"/>  
+  <add key="MultiLanguageConfig_InputDateAfter" value="该输入项的日期必须在{0}之后"/>  
+  <add key="MultiLanguageConfig_InputDateBefore" value="该输入项的日期必须在{0}之前"/>  
+  <add key="MultiLanguageConfig_NotValidDateMustConformFormat" value="是无效的日期 - 必须符合格式"/>  
+  <add key="MultiLanguageConfig_InputItemMustE-Mail" value="该输入项必须是电子邮件地址，格式如："/>  
+  <add key="MultiLanguageConfig_InputItemMustURL" value="该输入项必须是URL地址，格式如："/>  
+  <add key="MultiLanguageConfig_InputItemContainLetter" value="该输入项只能包含半角字母和下划线"/>  
+  <add key="MultiLanguageConfig_InputItemContainLetterNum" value="该输入项只能包含半角字母,数字和下划线"/>  
+  <add key="MultiLanguageConfig_AddHyperlink" value="添加超级链接"/>  
+  <add key="MultiLanguageConfig_Bold" value="粗体"/>  
+  <add key="MultiLanguageConfig_SetSelectedTextBold" value="将选中的文字设置为粗体"/>  
+  <add key="MultiLanguageConfig_Italic" value="斜体"/>  
+  <add key="MultiLanguageConfig_SetSelectedTextItalic" value="将选中的文字设置为斜体"/>  
+  <add key="MultiLanguageConfig_Underline" value="下划线"/>  
+  <add key="MultiLanguageConfig_SetSelectedTextUnderline" value="给所选文字加下划线"/>  
+  <add key="MultiLanguageConfig_IncreaseFont" value="增大字体"/>  
+  <add key="MultiLanguageConfig_IncreaseFontSize" value="增大字号"/>  
+  <add key="MultiLanguageConfig_ReduceFont" value="缩小字体"/>  
+  <add key="MultiLanguageConfig_ReduceFontSize" value="减小字号"/>  
+  <add key="MultiLanguageConfig_HighlightShowText" value="以不同颜色突出显示文本"/>  
+  <add key="MultiLanguageConfig_TextMarking" value="使文字看上去像是用荧光笔做了标记一样"/>  
+  <add key="MultiLanguageConfig_FontColor" value="字体颜色"/>  
+  <add key="MultiLanguageConfig_ChangeFontColor" value="更改字体颜色"/>  
+  <add key="MultiLanguageConfig_Left" value="左对齐"/>  
+  <add key="MultiLanguageConfig_TextLeft" value="将文字左对齐"/>  
+  <add key="MultiLanguageConfig_Center" value="居中"/>  
+  <add key="MultiLanguageConfig_TextCenter" value="将文字居中对齐"/>  
+  <add key="MultiLanguageConfig_Right" value="右对齐"/>  
+  <add key="MultiLanguageConfig_TextRight" value="将文字右对齐"/>  
+  <add key="MultiLanguageConfig_Bulleted" value="项目符号"/>  
+  <add key="MultiLanguageConfig_StartCreateBulletedList" value="开始创建项目符号列表"/>  
+  <add key="MultiLanguageConfig_Number" value="编号"/>  
+  <add key="MultiLanguageConfig_StartCreateNumberList" value="开始创建编号列表"/>  
+  <add key="MultiLanguageConfig_IntoHyperlink" value="转成超级链接"/>  
+  <add key="MultiLanguageConfig_SelectTextIntoHyperlink" value="将所选文本转换成超级链接"/>  
+  <add key="MultiLanguageConfig_CodeView" value="代码视图"/>  
+  <add key="MultiLanguageConfig_CodeDisplayText" value="以代码的形式展现文本"/>  
+  <add key="MultiLanguageConfig_PositiveSequence" value="正序"/>  
+  <add key="MultiLanguageConfig_Reverse" value="倒序"/>  
+  <add key="MultiLanguageConfig_LockColumn" value="锁定列"/>  
+  <add key="MultiLanguageConfig_UnLock" value="解除锁定"/>  
+  <add key="MultiLanguageConfig_Colnumn" value="列"/>  
+  <add key="MultiLanguageConfig_Name" value="名称"/>  
+  <add key="MultiLanguageConfig_Value" value="值"/>  
+  <add key="MultiLanguageConfig_Changesize" value="拖动来改变尺寸"/>  
+  <add key="MultiLanguageConfig_DoubleClickHidden" value="双击隐藏"/>  
+  <!-- image-->  
+  <!-- ImageShowBigView-->  
+  <add key="ImageShowBigView_AdjustImage" value="自适应大小"/>
+  <add key="ImageShowBigView_OriginalImage" value="原始大小"/>
+  <add key="ImageShowBigView_Previou" value="上一张"/>  
+  <add key="ImageShowBigView_Next" value="下一张"/>  
+  <!-- ImageView-->  
+  <add key="ImageView_PicManage" value="违禁品图库管理"/>  
+  <add key="ImageView_ModifyImageClassification" value="修改图像分类"/>  
+  <add key="ImageView_DeleteImageClassification" value="删除图像分类"/>  
+  <add key="ImageView_Import" value="导入"/>  
+  <add key="ImageView_Export" value="导出"/>  
+  <add key="ImageView_DelPic" value="删除图片"/>  
+  <add key="ImageView_SelectAll" value="全选"/>
+  <add key="ImageView_ReselectAll" value="反选"/>
+  <add key="ImageView_Reset" value="重置"/>
+  <!-- UpLoadFile-->  
+  <add key="UpLoadFile_UploadGallery" value="上传图库"/>  
+  <add key="UpLoadFile_SelectGallery" value="选择图库"/>  
+  <add key="UpLoadFile_PleaseSelectGallery" value="请选择图库"/>  
+  <add key="UpLoadFile_upLoadzipFile" value="请上传zip类型的文件"/>  
+  <add key="UpLoadFile_UpLoad" value="上传"/>  
+  <add key="UpLoadFile_Cancel" value="取消"/>  
+  <!-- UpLoadFileController-->  
+  <add key="UpLoadFileController_SystemHints" value="系统提示"/>  
+  <add key="UpLoadFileController_CheckTipState" value="请先关闭TIP总开关后，再执行导入操作！"/>
+  <add key="UpLoadFileController_ImportNewGallery" value="确定要导入新图库（原图库将被覆盖，同时考核计划中图库设置也会发生变化）？"/>  
+  <add key="UpLoadFileController_BeingParsed" value="正在导入的图库文件,请稍等...."/>
+  <add key="UpLoadFileController_UpLoadSucceed" value="上传图库成功"/>  
+  <add key="UpLoadFileController_UnknownError" value="未知错误"/>  
+  <add key="UpLoadFileController_UpLoadSomeFileFailed" value="部分文件导入失败"/>  
+  <add key="UpLoadFileController_ConfigurationSize" value="web.config中文件大小与时间配置有误，上传文件最大2G"/>  
+  <add key="UpLoadFileController_UpLoadError" value="图库文件上传时出现异常，请检查存储服务器中TIP文件夹的拷贝权限"/>  
+  <!-- ImageController-->  
+  <add key="ImageController_Timeout" value="导入超时，请稍候再试"/>  
+  <add key="ImageController_ImportFileError" value="文件非法，请检查导入文件"/>  
+  <add key="ImageController_SystemHints" value="系统提示"/>  
+  <add key="ImageController_DelImageSucc" value="删除图像成功"/>  
+  <add key="ImageController_ConfirmDel" value="确认删除{0}张图片吗？"/>  
+  <add key="ImageController_Delete" value="删除"/>  
+  <add key="ImageController_ImportGallery" value="导入图库"/>  
+  <add key="ImageController_ExportGallery" value="导出图库"/>  
+  <add key="ImageController_ModifyImageClassification" value="修改图像分类"/>  
+  <add key="ImageController_GalleryType" value="图库类型: "/>  
+  <add key="ImageController_Galleryversion" value="图库版本："/>  
+  <add key="ImageController_GalleryClassificationNumber" value="图像数目："/>  
+  <add key="ImageController_ImageClassification" value="图像类别："/>  
+  <add key="ImageController_ImageNum" value="图像数目："/>  
+  <add key="ImageController_Description" value="图像描述："/>  
+  <add key="ImageController_FTPloginFailed" value="ftp登录失败"/>  
+  <add key="ImageController_ExportGalleryPleaseWait" value="正在导出图库，请稍后"/>  
+  <add key="ImageController_ExportSucc" value="导出成功"/>  
+  <add key="ImageController_ExportFail" value="导出失败"/>  
+  <add key="ImageController_ImportGalleryPleaseWait" value="正在导入图库，请稍后"/>  
+  <add key="ImageController_UploadGalleryFail" value="上传图库失败，请重试！"/>  
+  <add key="ImageController_NeedImportGallery" value="请先选择需要导入的图库！"/>  
+  <add key="ImageController_UpLoadsucc" value="上传图库成功"/>  
+  <add key="ImageController_ConfirmExportGallery" value="确定导出图库？"/>  
+  <add key="ImageController_ReadyExportFile" value="正在准备导出文件，请稍后"/>  
+  <add key="ImageController_GalleryDownLoadFail" value="图库下载失败！"/>  
+  <add key="ImageController_odifyImageClassificationSucc" value="修改图像分类成功"/>  
+  <add key="ImageController_ExistSameClass" value="存在同名class"/>  
+  <add key="ImageController_ImageClassificationName" value="图像分类名"/>  
+  <add key="ImageController_SelectImageClassification" value="请先选择图像分类！"/>  
+  <add key="ImageController_delImageClassification" value="删除图像分类成功"/>  
+  <add key="ImageController_SelDelImageClassification" value="请先选择要删除的图像分类"/>  
+  <add key="ImageController_ConfirmDelSub" value="若类别下所有图像被删除则该类别将会被删除，是否确定删除？"/>
+  <add key="ImageController_AlreadyFirst" value="已经是第一张图片了"/>  
+  <add key="ImageController_AlreadyLast" value="已经是最后一张图片了"/>  
+  <add key="ImageController_ImageName" value="图像名称："/>  
+  <add key="ImageController_name" value="实物名称："/>  
+  <add key="ImageController_ViewAngle" value="视角类型："/>  
+  <add key="ImageController_DifficultDegree" value="困难程度："/>  
+  <add key="ImageController_Imagelose" value="图片丢失"/>  
+  <add key="ImageController_BrowseMode" value="浏览模式"/>  
+  <add key="ImageController_EditMode" value="编辑模式"/>  
+  <add key="ImageController_PleaseSelectDeleteImage" value="请选择删除图像"/>
+  <!-- plan-->  
+  <!-- PlanController-->  
+  <add key="PlanController_GalleryProportion" value="图库占用权重调整"/>  
+  <add key="PlanController_GalleryType" value="图库类型："/>  
+  <add key="PlanController_GalleryVersion" value="图库版本："/>  
+  <add key="PlanController_ClassificationProportion" value="分类占用权重调整"/>  
+  <add key="PlanController_ImageClassification" value="图像分类："/>  
+  <add key="PlanController_ImageNum" value="图像数目："/>  
+  <add key="PlanController_SystemHints" value="系统提示"/>  
+  <add key="PlanController_AddUserRepeat" value="添加用户重复"/>    
+  <add key="PlanController_ConfirmProgramName" value="确认删除计划名称为{0}的考核计划？"/>  
+  <add key="PlanController_DelPerformanceplanning" value="删除考核计划成功"/>  
+  <add key="PlanController_SelDelPerformanceplanning" value="请先选择要删除的考核计划"/>  
+  <add key="PlanController_SavePerformanceplanning" value="保存考核计划成功"/>  
+  <add key="PlanController_PerformanceplanningState" value="考核计划状态修改成功"/>  
+  <add key="PlanController_SaveTipPlanTempSuccess" value="保存图库模板成功"/>  
+  <add key="PlanController_SaveTipPlanTempFailed" value="保存图库模板失败"/>  
+  <add key="PlanController_DeleteImageLibTempSuccess" value="删除图库模板成功"/>  
+  <add key="PlanController_DeleteImageLibTempFailed" value="删除图库模板失败"/>  
+  <add key="PlanController_SaveTipPlanTempTitle" value="保存模板图库"/>  
+  <add key="PlanController_TipPlanTempName" value="模板名称"/>  
+  <add key="PlanController_TipPlanDefaultValue" value="-请输入图库名称-"/>  
+  <add key="PlanController_ImageLibTemplate_LibTitle" value="模板设置"/>  
+  <add key="PlanController_ImageLibTemplate_LibLabel" value="模板状态"/>  
+  <add key="ImageLibTemplateView_SaveButton" value="确认"/>  
+  <add key="ImageLibTemplateView_CancelButton" value="取消"/>  
+  <add key="ImageLibTemplateView_SelectLibTpl" value="-请选择图库模板-"/>  
+  <add key="PlanController_UseTipPlanTempSuccess" value="转换图库模板"/>  
+  <add key="PlanController_SelectImageLibTemplate" value="模板名称"/>  
+  <!-- ImageLibTplView-->  
+  <add key="ImageLibTplView_TempIsExist" value="（模板已存在，保存后同名模板将被覆盖）"/>  
+  <add key="ImageLibTplView_TempIsNotExist" value="（模板可新建）"/>  
+  <add key="ImageLibTplView_UseBtn" value="使用"/>  
+  <!-- PlanDetailView-->  
+  <add key="PlanDetailView_Save" value="保存"/>  
+  <!-- PlanEditWeight-->  
+  <add key="PlanEditWeight_PowerValueAchieved100" value="当前权值已经到达100！"/>  
+  <add key="PlanEditWeight_PowerValueAchieved" value="当前权值已经到达"/>  
+  <add key="PlanEditWeight_PowerImageValueAchieved1000" value="当前手动选择图像权值总和已经到达1000！"/>
+  <add key="PlanEditWeight_PowerImageValueAchieved" value="当前手动选择图像权值总和已经到达"/>
+  <!-- PlanExamInfoView-->  
+  <add key="PlanExamInfoView_Planname" value="计划名称"/>  
+  <add key="PlanExamInfoView_NotAllowNull" value="不允许为空"/>  
+  <add key="PlanExamInfoView_Input" value="请输入"/>  
+  <add key="PlanExamInfoView_NameRepeat" value="名字重复，请更换"/>  
+  <add key="PlanExamInfoView_MaxLengthUserId" value="计划名称最大输入32个字符"/>
+  <add key="PlanExamInfoView_NameNotNull" value="名字不能为空"/>  
+  <add key="PlanExamInfoView_PriorityLevel" value="优先级别"/>  
+  <add key="PlanExamInfoView_PriorityLevel1" value="1-最低"/>  
+  <add key="PlanExamInfoView_PriorityLevel2" value="2-中级"/>  
+  <add key="PlanExamInfoView_PriorityLevel3" value="1-高级"/>  
+  <add key="PlanExamInfoView_PriorityLevel4" value="1-超级"/>  
+  <add key="PlanExamInfoView_EndTimeRange" value="结束时间不得小于起始时间"/>  
+  <add key="PlanExamInfoView_EndTime" value="结束时间"/>  
+  <add key="PlanExamInfoView_StartTime" value="开始时间"/>  
+  <add key="PlanExamInfoView_BaseInfoValid" value="基本信息输入有误"/>  
+  <!-- PlanExtendTextInfoView-->  
+  <add key="PlanExtendTextInfoView_Extendtextinfo" value="扩展信息"/>  
+  <add key="PlanExtendTextInfoView_InsertInterval" value="插入间隔"/>  
+  <add key="PlanExtendTextInfoView_InsertFloatingRange" value="插入浮动范围(%)"/>  
+  <add key="PlanExtendTextInfoView_InsertingRandomProportion" value="插入随机比率(%)"/>  
+  <add key="PlanExtendTextInfoView_InitialFigureTime" value="初始判图时间(s)"/>  
+  <add key="PlanExtendTextInfoView_DangerousFigureTime" value="危险品判图时间(s)"/>  
+  <add key="PlanExtendTextInfoView_ScreenTime" value="屏幕停留时间(s)"/>  
+  <add key="PlanExtendTextInfoView_Description" value="描述"/>  
+  <add key="PlanExtendTextInfoView_MaxLength" value="设置描述的最大长度为200个字符"/>
+  <!-- PlanImageLibView-->  
+  <add key="PlanImageLibView_TipGallery" value="TIP考核图库设置"/>  
+  <add key="PlanImageLibView_SelectImageLibTpl" value="选择图库模板"/>  
+  <add key="PlanImageLibView_ImageLibTplManage" value="图库模板管理"/>  
+  <add key="PlanImageLibView_RestoreDefaultValue" value="恢复图库默认值"/>  
+  <!-- PlanListView-->  
+  <add key="PlanListView_AddInspectionPlan" value="添加考核计划"/>  
+  <add key="PlanListView_DelInspectionPlan" value="删除考核计划"/>  
+  <add key="PlanListView_Disable" value="禁用"/>  
+  <add key="PlanListView_Enable" value="启用"/>  
+  <add key="PlanListView_Name" value="名称"/>  
+  <add key="PlanListView_State" value="状态"/>  
+  <add key="PlanListView_Start" value="开启"/>  
+  <add key="PlanListView_PlanStart" value="计划开启"/>  
+  <add key="PlanListView_PlanClose" value="计划关闭"/>  
+  <add key="PlanListView_IsExpires" value="是否过期"/>  
+  <add key="PlanListView_PlanExpires" value="计划过期"/>  
+  <!-- PlanUserEditWindow-->  
+  <add key="PlanUserEditWindow_UserDepartment" value="用户部门"/>  
+  <add key="PlanUserEditWindow_SelectDepartment" value="请选择部门"/>  
+  <add key="PlanUserEditWindow_DepartmentNotNull" value="选择部门筛选用户"/>
+  <add key="PlanUserEditWindow_Choose" value="选择"/>  
+  <add key="PlanUserEditWindow_Delete" value="删除"/>  
+  <add key="PlanUserEditWindow_WaitingChoose" value="待选择"/>  
+  <add key="PlanUserEditWindow_AlreadyChoose" value="已选择"/>  
+  <add key="PlanUserEditWindow_Ok" value="确定"/>  
+  <add key="PlanUserEditWindow_Cancel" value="取消"/>  
+  <add key="PlanUserEditWindow_GroupblankText" value="部门不能为空,请选择部门"/>
+  <!-- PlanUserPanelView-->  
+  <add key="PlanUserPanelView_AddUser" value="添加用户"/>  
+  <add key="PlanUserPanelView_UserList" value="用户列表"/>  
+  <!-- PlanUserView-->  
+  <add key="PlanUserView_InspectionObject" value="考核对象"/>  
+  <!-- ExamPlanView-->  
+  <add key="ExamPlanView_TipInspectionPlanManage" value="违禁品考核计划管理"/>  
+  <!-- result-->  
+  <!-- TipGraphResultView-->  
+  <add key="TipGraphResultView_GetDataFile" value="获取数据失败"/>  
+  <add key="TipGraphResultView_StartTime" value="开始时间"/>  
+  <add key="TipGraphResultView_EndTime" value="结束时间"/>  
+  <add key="TipGraphResultView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="TipGraphResultView_OverallAbilityRecognize" value="整体识别能力"/>  
+  <add key="TipGraphResultView_AbilityRecognizeTrend" value="识别能力的趋势"/>  
+  <add key="TipGraphResultView_Years" value="按年"/>  
+  <add key="TipGraphResultView_Quarters" value="按季度"/>  
+  <add key="TipGraphResultView_Mouths" value="按月"/>  
+  <add key="TipGraphResultView_Days" value="按天"/>  
+  <add key="TipGraphResultView_TipClassificationDetectionAbility" value="TIP分类检测能力"/>  
+  <add key="TipGraphResultView_PersonalAbilityRank" value="个人能力排名"/>  
+  <!-- TipGridResultView-->  
+  <add key="TipGridResultView_QueryCondition" value="查询条件"/>  
+  <add key="TipGridResultView_SelectUser" value="选择用户"/>  
+  <add key="TipGridResultView_AllUser" value="所有用户"/>  
+  <add key="TipGridResultView_StartTime" value="开始时间"/>  
+  <add key="TipGridResultView_QueryType" value="查询类型"/>  
+  <add key="TipGridResultView_TipInspectionResultsQuery" value="Tip考核结果查询"/>  
+  <add key="TipGridResultView_EndTime" value="结束时间"/>  
+  <add key="TipGridResultView_QueryTime" value="查询时段"/>  
+  <add key="TipGridResultView_Today" value="本日"/>  
+  <add key="TipGridResultView_Export" value="导出"/>  
+  <add key="TipGridResultView_StatisticalMethods" value="Statistical Mode"/>  
+  <add key="TipGridResultView_Query" value="查询"/>  
+  <add key="TipGridResultView_StatisticChart" value="图表切换"/>
+  <add key="TipGridResultView_SeqNum" value="No."/>  
+  <add key="TipGridResultView_User" value="User"/>  
+  <add key="TipGridResultView_TipDataShow" value="TIP Data Display"/>  
+  <add key="TipGridResultView_Reset" value="重置"/>  
+  <add key="TipGridResultView_StatisticalMethods" value="统计方式"/>  
+  <add key="TipGridResultView_SeqNum" value="序号"/>  
+  <add key="TipGridResultView_User" value="用户"/>  
+  <add key="TipGridResultView_TipDataShow" value="TIP数据展示"/>  
+  <add key="TipGridResultView_LuggageAllNum" value="行包总数"/>  
+  <add key="TipGridResultView_FTiAllNumber" value="FTI总数"/>  
+  <add key="TipGridResultView_FTIIdentifyNumber" value="FTI识别总数"/>  
+  <add key="TipGridResultView_FTIFailureNumber" value="FTI漏报总数"/>  
+  <add key="TipGridResultView_LuggageImage" value="包裹图像"/>  
+  <add key="TipGridResultView_Time" value="时间"/>  
+  <add key="TipGridResultView_TipName" value="FTI名称"/>  
+  <add key="TipGridResultView_TipClassName" value="类别名称"/>  
+  <add key="TipGridResultView_FTIUseSecond" value="识别时间"/>  
+  <add key="TipGridResultView_FTITipResult" value="考核结果"/>  
+  <!-- TipResultController-->  
+  <add key="TipResultController_SystemHints" value="系统提示"/>  
+  <add key="TipResultController_NOFindImage" value="未找到图片"/>  
+  <add key="TipResultController_User" value="用户"/>
+  <add key="TipResultController_Year" value="年"/>  
+  <add key="TipResultController_Month" value="月"/>  
+  <add key="TipResultController_Quarter" value="季度"/>  
+  <add key="TipResultController_Week" value="周"/>  
+  <add key="TipResultController_Days" value="按日"/>  
+  <add key="TipResultController_Weeks" value="按周"/>  
+  <add key="TipResultController_Months" value="按月"/>  
+  <add key="TipResultController_Quarters" value="按季度"/>  
+  <add key="TipResultController_Years" value="按年"/>  
+  <add key="TipResultController_Hours" value="按时"/>  
+  <add key="TipResultController_GetDataFail" value="获取数据失败"/>  
+  <add key="TipResultController_AbilityValue" value="能力值"/>  
+  <add key="TipResultController_HitTime" value="识别时间"/>  
+  <add key="TipResultController_FalseAlarmTime" value="误报时间"/>  
+  <add key="TipResultController_AbilityValueCompareChart" value="能力值对比柱状图"/> 
+  <add key="TipResultController_HitTimeCompareChart" value="平均识别时间对比柱状图"/>
+  <add key="TipResultController_FTICTINUM" value="FTI/CTI总数"/>  
+  <add key="TipResultController_HitRate" value="识别率"/>   
+  <add key="TipResultController_MissRate" value="漏报率"/>   
+  <add key="TipResultController_FalseAlarmRate" value="误报率"/>   
+  <add key="TipResultController_CTINumCompareChart" value="CTI/FTI总数对比柱状图"/> 
+  <add key="TipResultController_MissRateCompareChart" value="漏报率对比柱状图"/> 
+  <add key="TipResultController_CTINumLineChart" value="CTI/FTI总数对比折线图"/> 
+  <add key="TipResultController_MissRateLineChart" value="漏报率对比折线图"/> 
+  <!-- TipStaAllByClassColumn-->  
+  <add key="TipStaAllByClassColumn_Recognition" value="识别"/>  
+  <add key="TipStaAllByClassColumn_Failure" value="漏报"/>  
+  <add key="TipStaAllByClassColumn_Misinformation" value="误报"/>  
+  <add key="TipStaAllByClassColumn_Other" value="其他"/>  
+  <!-- TipStaAllByDateColumn-->  
+  <add key="TipStaAllByDateColumn_AbilityRecognizeTrend" value="识别能力的趋势"/>  
+  <!-- TipStaAllByDateLine-->  
+  <add key="TipStaAllByDateLine_Recognition" value="识别"/>  
+  <add key="TipStaAllByDateLine_Failure" value="漏报"/>  
+  <add key="TipStaAllByDateLine_Misinformation" value="误报"/>  
+  <add key="TipStaAllByDateLine_Other" value="其他"/>  
+  <!-- TipStaAllPie-->  
+  <add key="TipStaAllPie_Proportion" value="，比例(%):"/>  
+  <!-- TipStaCampaign-->  
+  <add key="TipStaCampaign_UserName" value="用户名"/>  
+  <add key="TipStaCampaign_GetDataFail" value="获取数据失败"/>  
+  <!-- TipExamResultView-->  
+  <add key="TipExamResultView_TipInspectionResultsStatistics" value="TIP考核结果统计"/>  
+  <add key="TipExamResultView_ZhengTiYiLan" value="整体一览"/>  
+  <add key="TipExamResultView_XiangXiChaXun" value="详细查询"/>  
+  <!-- SoftwareUpgradeController-->  
+  <add key="SoftwareUpgradeController_waitMsg" value="更新包正在上传，请稍候..."/>  
+  <add key="SoftwareUpgradeController_IsDisableSoftware" value="确定禁用此更新包吗？"/>  
+  <!-- SoftwareUpgradeDetailGridView-->  
+  <add key="SoftwareUpgradeDetailGridView_Title" value="更新包详情"/>  
+  <add key="SoftwareUpgradeDetailGridView_DisableSoftware" value="禁用更新包"/>  
+  <add key="SoftwareUpgradeDetailGridView_GridTitle" value="更新包详细列表"/>  
+  <add key="SoftwareUpgradeDetailGridView_ClientTypeName" value="站点类型"/>  
+  <add key="SoftwareUpgradeDetailGridView_SubClientTypeName" value="部门类型"/>  
+  <add key="SoftwareUpgradeDetailGridView_Version" value="版本号"/>  
+  <add key="SoftwareUpgradeDetailGridView_UpLoadDate" value="上传日期"/>  
+  <add key="SoftwareUpgradeDetailGridView_Path" value="上传路径"/>  
+  <add key="SoftwareUpgradeDetailGridView_IsDisable" value="是否禁用"/>  
+  <!-- SoftwareUpgradeGridView-->  
+  <add key="SoftwareUpgradeGridView_ClientTypeName" value="站点类型"/>  
+  <add key="SoftwareUpgradeGridView_SubClientTypeName" value="部门类型"/>  
+  <add key="SoftwareUpgradeGridView_MaxVersion" value="最新版本"/>  
+  <add key="SoftwareUpgradeGridView_VersionCount" value="更新包个数"/>  
+  <add key="SoftwareUpgradeGridView_DetailInfo" value="查看更新包详情"/>  
+  <add key="SoftwareUpgradeGridView_Look" value="查看"/>  
+  <!-- SoftwareUpgradeView-->  
+  <add key="SoftwareUpgradeView_Title" value="软件升级"/>  
+  <add key="SoftwareUpgradeView_FormTitle" value="更新包上传"/>  
+  <add key="SoftwareUpgradeView_UpLoadbuttonText" value="浏览"/>  
+  <add key="SoftwareUpgradeView_UpLoadblankText" value="上传文件不能为空"/>  
+  <add key="SoftwareUpgradeView_UpLoademptyText" value="请上传zip格式的压缩包"/>  
+  <add key="SoftwareUpgradeView_UpLoadBtn" value="上传"/>  
+  <add key="SoftwareUpgradeView_Empty" value="清空"/>  
+  <add key="SoftwareUpgradeView_GridTitle" value="更新包信息"/>  
+  <!-- UpgradeSetUpController-->  
+  <add key="UpgradeSetUpController_UpgradeStationSuccess" value="升级站点保存成功"/>  
+  <add key="UpgradeSetUpController_UpgradeStationFailure" value="升级站点保存失败"/>  
+  <add key="UpgradeSetUpController_UpgradeTimeSuccess" value="升级时间保存成功"/>  
+  <add key="UpgradeSetUpController_UpgradeTimeFailure" value="升级时间保存失败"/>  
+  <!-- UpgradeSetUpView-->  
+  <add key="UpgradeSetUpView_Title" value="升级设置"/>  
+  <add key="UpgradeSetUpView_UpgradeTimeControl" value="升级时间控制"/>  
+  <add key="UpgradeSetUpView_Save" value="保存"/>  
+  <add key="UpgradeSetUpView_UpgradeTypeControl" value="升级类别控制"/>  
+  <add key="UpgradeSetUpView_ClientTypeID" value="站点类型"/>  
+  <add key="UpgradeSetUpView_EmptyText" value="全部"/>  
+  <add key="UpgradeSetUpView_SubClientTypeID" value="部门类型"/>  
+  <add key="UpgradeSetUpView_StationClientID" value="站点编号"/>  
+  <add key="UpgradeSetUpView_Position" value="所处位置"/>  
+  <add key="UpgradeSetUpView_StationVersion" value="站点版本"/>  
+  <add key="UpgradeSetUpView_UpgradeDateTime" value="升级时间"/>  
+  <!-- DeviceJudgeMapView-->  
+  <add key="DeviceJudgeMapView_Title" value="设备判图设置"/>  
+  <add key="DeviceJudgeMapView_SaveButton" value="保存"/>  
+  <!-- PracticeJudgementController-->  
+  <add key="PracticeJudgementController_ConfirmDel" value="确认删除{0}条数据吗？"/>  
+  <add key="PracticeJudgementController_ExportDataMsg" value="正在导出数据，请稍候..."/> 
+  <add key="PracticeJudgementController_PrintDataMsg" value="打印中，请稍后..."/> 
+  <add key="PracticeJudgementController_DeviationLineTitle" value="偏差数统计图"/>  
+  <!-- PracticeJudgementDetaileView-->  
+  <add key="PracticeJudgementDetaileView_SelectTitle" value="查询条件"/>  
+  <add key="PracticeJudgementDetaileView_GridTitle" value="查询结果"/>  
+  <add key="PracticeJudgementDetaileView_All" value="全部"/>  
+  <add key="PracticeJudgementDetaileView_StartMemberEmpty" value="请选择判图员"/>  
+  <add key="PracticeJudgementDetaileView_AllClear" value="放行"/>  
+  <add key="PracticeJudgementDetaileView_Check" value="开检"/>  
+  <add key="PracticeJudgementDetaileView_TimeOut" value="超时"/>  
+  <add key="PracticeJudgementDetaileView_StartTime" value="开始时间"/>  
+  <add key="PracticeJudgementDetaileView_EndTime" value="结束时间"/>  
+  <add key="PracticeJudgementDetaileView_TimeError" value="开始时间必须小于结束时间"/>  
+  <add key="PracticeJudgementDetaileView_StartMember" value="判图员"/>  
+  <add key="PracticeJudgementDetaileView_Conclusion" value="判图结论"/>  
+  <add key="PracticeJudgementDetaileView_CruxWord" value="查询关键字"/>  
+  <add key="PracticeJudgementDetaileView_CruxWordEmpty" value="请输入关键字"/>  
+  <!-- PracticeJudgementGridView-->  
+  <add key="PracticeJudgementGridView_Delete" value="删除"/>  
+  <add key="PracticeJudgementGridView_Export" value="导出"/>  
+  <add key="PracticeJudgementGridView_PRN" value="包裹号"/>  
+  <add key="PracticeJudgementGridView_CreateTime" value="判图时间"/>  
+  <add key="PracticeJudgementGridView_UserId" value="判图员"/>  
+  <add key="PracticeJudgementGridView_StationClientID" value="站点"/>  
+  <add key="PracticeJudgementGridView_TeamName" value="部门"/>  
+  <add key="PracticeJudgementGridView_PracticeConclusion" value="实习判图结论"/>  
+  <add key="PracticeJudgementGridView_Conclusion" value="真实判图结论"/>  
+  <add key="PracticeJudgementGridView_StampPreview" value="打印预览"/>  
+  <!--PracticeJudgementView-->  
+  <add key="PracticeJudgementView_Selectitle" value="详细查询"/>  
+  <add key="PracticeJudgementView_StatisticsTitle" value="统计绩效"/>  
+  <!--PraJudgeStaBarView-->  
+  <add key="PraJudgeStaBarView_PrersonPressSta" value="人员偏差率统计图"/>  
+  <add key="PraJudgeStaBarView_DeviationRate" value="偏差率"/>  
+  <add key="PraJudgeStaBarView_DeviationNum" value="偏差数"/>  
+  <add key="PraJudgeStaBarView_TotalSentenceNumber" value="总判图数"/>  
+  <!--PraJudgeStaView-->  
+  <add key="PraJudgeStaView_QueryType" value="查询类型"/>  
+  <add key="PraJudgeStaView_QueryTypeEmpty" value="请选择类型"/>  
+  <add key="PraJudgeStaView_MaxUserError" value="最多支持5个判图员同时查看"/>  
+  <add key="PraJudgeStaView_PressTimeText" value="按时间统计"/>  
+  <add key="PraJudgeStaView_PressUserText" value="按人员统计"/>  
+  <add key="PraJudgeStaView_Time" value="时间"/>  
+  <add key="PraJudgeStaView_UserName" value="用户名"/>  
+  <add key="PraJudgeStaView_TeamName" value="部门名称"/>  
+  <add key="PraJudgeStaView_SunNums" value="判图总数"/>  
+  <add key="PraJudgeStaView_WeekButton" value="按周"/>  
+  <!--SleTunnelGridView-->  
+  <add key="SleTunnelGridView_LineNum" value="通道唯一码"/>  
+  <add key="SleTunnelGridView_LineName" value="通道标识"/>  
+  <add key="SleTunnelGridView_LinePosition" value="通道位置"/>  
+  <add key="SleTunnelGridView_LineStoragePath" value="上传路径"/>  
+  <add key="SleTunnelGridView_LineDescription" value="描述信息"/>  
+  <add key="SleTunnelGridView_LineCreateTime" value="注册时间"/>  
+  <!--SleTunnelInfoModifyView-->  
+  <add key="SleTunnelInfoModifyView_LineName" value="通道标识"/>  
+  <add key="SleTunnelInfoModifyView_LineNameMinLengthText" value="通道标识太短，请重新输入"/>  
+  <add key="SleTunnelInfoModifyView_LineNameBlankText" value="通道标识不能为空"/>  
+  <add key="SleTunnelInfoModifyView_LineNameRepeat" value="通道标识不能重复"/>  
+  <add key="SleTunnelInfoModifyView_LineTeam" value="通道分组"/>  
+  <add key="SleTunnelInfoModifyView_LineTeamBlankText" value="请选择分组"/>  
+  <add key="SleTunnelInfoModifyView_LinePosition" value="所处位置"/>  
+  <add key="SleTunnelInfoModifyView_LinePositionMinLengthText" value="所处位置太短，请重新输入"/>  
+  <add key="SleTunnelInfoModifyView_LinePositionBlankText" value="请填写通道所处位置"/>  
+  <add key="SleTunnelInfoModifyView_LineStoragePath" value="上传路径"/>  
+  <add key="SleTunnelInfoModifyView_LineStoragePathBlankText" value="请选择上传路径"/>  
+  <add key="SleTunnelInfoModifyView_LineDescription" value="描　　述"/>  
+  <add key="SleTunnelInfoModifyView_LineDescriptionMaxLength" value="输入描述字数太多，最多输入60个字符，请重新输入"/>  
+  <!--SlsTunnelAddTeamView-->  
+  <add key="SlsTunnelAddTeamView_TeamNameBlankText" value="组名称不能为空"/>  
+  <add key="SlsTunnelAddTeamView_TeamNameRegexText" value="请不要输入特殊字符，字符最大长度60"/>  
+  <add key="SlsTunnelAddTeamView_TeamNameRepeat" value="组名称不能重复"/>  
+  <!--SlsTunnelManageController-->  
+  <add key="SlsTunnelManageController_AddTeamTitle" value="新增智能通道分组"/>  
+  <add key="SlsTunnelManageController_AddTeamFailMsg" value="通道分组添加失败，请稍后再试！"/>  
+  <add key="SlsTunnelManageController_ModifyTeamTitle" value="修改智能通道分组"/>  
+  <add key="SlsTunnelManageController_ModifyTeamFailMsg" value="通道分组修改失败，请稍后再试！"/>  
+  <add key="SlsTunnelManageController_LineInfoModifyTitle" value="通道信息修改"/>  
+  <add key="SlsTunnelManageController_LineInfoModifySuccess" value="通道信息修改成功"/>  
+  <add key="SlsTunnelManageController_LineInfoModifyFail" value="通道信息修改失败，请稍候再试！"/>  
+  <add key="SlsTunnelManageController_LineInfoTeamModifyTitle" value="通道分组修改"/>  
+  <add key="SlsTunnelManageController_LineDisable" value="确定禁用通道吗？"/>  
+  <add key="SlsTunnelManageController_LineDisableFail" value="禁用失败，请稍候再试"/>  
+  <add key="SlsTunnelManageController_LineEnable" value="确定启用通道吗？"/>  
+  <add key="SlsTunnelManageController_LineEnableFail" value="启用失败，请稍候再试"/>  
+  <add key="SlsTunnelManageController_LineDelete" value="确定删除{0}条通道吗？"/>  
+  <add key="SlsTunnelManageController_LineDeleteFail" value="删除失败，请稍候再试"/>  
+  <add key="SlsTunnelManageController_LineDeleteTeam" value="确定删除通道分组{0}吗？"/>  
+  <!--SlsTunnelManageView-->  
+  <add key="SlsTunnelManageView_Title" value="智能通道管理"/>  
+  <add key="SlsTunnelManageView_AddTeam" value="增加分组"/>  
+  <add key="SlsTunnelManageView_ResetTeam" value="重命名组"/>  
+  <add key="SlsTunnelManageView_DeleteTeam" value="删除组"/>  
+  <add key="SlsTunnelManageView_Authentication" value="进行认证"/>  
+  <add key="SlsTunnelManageView_ModifyLineInfo" value="修改通道信息"/>  
+  <add key="SlsTunnelManageView_ModifyLineTeam" value="修改通道分组"/>  
+  <add key="SlsTunnelManageView_LineDisable" value="禁用通道"/>  
+  <add key="SlsTunnelManageView_LineEnable" value="启用通道"/>  
+  <add key="SlsTunnelManageView_LineDelete" value="删除通道"/>  
+  <!--SlsMonitorController-->  
+  <add key="SlsMonitorController_PersonPassRate" value="人员通过率"/>  
+  <add key="SlsMonitorController_PackagePassRate" value="包裹通过率"/>  
+  <add key="SlsMonitorController_OpenPackageNum" value="开包数"/>  
+  <!--SlsMonitorView-->  
+  <add key="SlsMonitorController_StateTitle" value="状态监控"/>  
+  <add key="SlsMonitorController_StatisticTitle" value="实时监测"/>  
+  <!--SlsStateView-->  
+  <add key="SlsStateView_Remotediagnosis" value="远程诊断"/>  
+  <add key="SlsStateView_Viewreport" value="通道诊断报告查看"/>  
+  <add key="SlsStateView_Invalidation" value="无效"/>  
+  <add key="SlsStateView_OffLine" value="离线"/>  
+  <add key="SlsStateView_Diagnosis" value="诊断"/>  
+  <add key="SlsStateView_Exception" value="异常"/>  
+  <add key="SlsStateView_OnLine" value="初始化/正常工作"/>  
+  <!--SlsContrabandsView-->  
+  <add key="SlsContrabandsView_SlsLine" value="智能通道"/>  
+  <add key="SlsContrabandsView_Number" value="序号"/>  
+  <add key="SlsContrabandsView_ContrabandType" value="违禁品类别"/>  
+  <add key="SlsContrabandsView_ContrabandSubType" value="违禁品名称"/>  
+  <add key="SlsContrabandsView_ContrabandNum" value="违禁品数量"/>  
+  <!--SlsLineMonitorController-->  
+  <add key="SlsLineMonitorController_AvgJudegTime" value="平均判图时间"/>  
+  <add key="SlsLineMonitorController_AvgOpenBoxTime" value="平均开包时间"/>  
+  <add key="SlsLineMonitorController_Time" value="时间"/>  
+  <add key="SlsLineMonitorController_AvgTimeTitle" value="平均判图时间和平均开包时间(单位：s)"/>  
+  <add key="SlsLineMonitorController_JudegAccuracyRate" value="判图准确率"/>  
+  <add key="SlsLineMonitorController_CheckRate" value="开检率"/>  
+  <add key="SlsLineMonitorController_RateTitle" value="判图准确率和开检率"/>  
+  <add key="SlsLineMonitorController_ContrabandType" value="违禁品类别"/>  
+  <add key="SlsLineMonitorController_ContrabandName" value="违禁品名称"/>  
+  <add key="SlsLineMonitorController_ContrabandStaticsTitle" value="违禁品统计图"/>  
+  <!--SlsLineMonitorView-->  
+  <add key="SlsLineMonitorView_StaticTitle" value="工作统计"/>  
+  <add key="SlsLineMonitorView_ContrabandTitle" value="违禁品统计"/>  
+  <!--SlsLineStatView-->  
+  <add key="SlsLineStatView_AccordingChannelStatistics" value="按通道统计"/>  
+  <!--MaintainLogView-->  
+  <add key="MaintainLogView_Title" value="日志与缓存"/>  
+  <add key="MaintainLogView_LogTitle" value="手动清理"/>  
+  <add key="MaintainLogView_AutoClearTitle" value="自动清理"/>  
+  <add key="MaintainLogView_MaintainLogType" value="日志类型"/>  
+  <add key="MaintainLogView_NIS" value="公共模块"/>  
+  <add key="MaintainLogView_NISCore" value="核心服务"/>  
+  <add key="MaintainLogView_NISJudge" value="判图服务"/>  
+  <add key="MaintainLogView_NISMaintain" value="维护服务"/>  
+  <add key="MaintainLogView_NISStorage" value="存储服务"/>  
+  <add key="MaintainLogView_NISTip" value="TIP服务"/>  
+  <add key="MaintainLogView_NISWeb" value="管理服务"/>  
+  <add key="MaintainLogView_NISTrain" value="培训服务"/>  
+  <add key="MaintainLogView_Others" value="其他"/>
+  <add key="MaintainLogView_NISSLIS" value="旅检服务"/> 
+  <add key="MaintainLogView_NISFileHandle" value="文件服务"/>    
+  <!--MaintainLogController-->  
+  <add key="MaintainLogController_SystemHints" value="系统提示"/>  
+  <add key="MaintainLogController_DetermineDelete" value="请确认是否删除"/>  
+  <add key="MaintainLogController_ClearCache" value="请确认清除缓存"/>  
+  <add key="MaintainLogController_ExportLogSuccess" value="导出维护日志成功"/>  
+  <add key="MaintainLogController_ExportLogFailure" value="导出维护日志失败"/>  
+  <add key="MaintainLogController_NotExportLog" value="该时间段没有维护日志"/>  
+  <add key="MaintainLogController_ExportIngLog" value="正在导出维护日志，请稍候..."/>  
+  <add key="MaintainLogController_TheDayNoteDelete" value="不允许删除当天日志"/>  
+  <add key="MaintainLogController_ExportMaxDay" value="一次最多导出七天的维护日志"/>  
+  <add key="MaintainLogController_DeleteMaxDay" value="一次最多删除三十天的维护日志"/>  
+  <add key="MaintainLogController_MainTainBtn" value="维护日志删除"/>  
+  <add key="MaintainLogController_ClearCacheBtn" value="缓存清理"/>  
+  <add key="MaintainLogController_LogFileRetentionTime" value="日志保留期限(天)"/>  
+  <add key="MaintainLogController_DeleteMsg" value="系统正在清理，请稍等..."/>  
+  <add key="MaintainLogController_DeleteLogSuccess" value="维护日志清理成功"/>  
+  <add key="MaintainLogController_DeleteLogFailure" value="维护日志清理失败，请稍候再试"/>  
+  <add key="MaintainLogController_CacheClearSuccess" value="缓存信息清理成功"/>  
+  <add key="MaintainLogController_CacheClearFailure" value="缓存信息清理失败，请稍候再试"/>  
+  <add key="MaintainLogController_LogRetionTimeSuccess" value="日志保留时限保存成功"/>  
+  <add key="MaintainLogController_LogRetionTimeFailure" value="日志保留时限保存失败，请稍候再试"/>  
+  <!--StationStatisticsView-->  
+  <add key="StationStatisticsView_Title" value="站点工作统计"/>  
+  <add key="StationStatisticsView_ChooseStation" value="请选择站点"/>  
+  <add key="StationStatisticsView_StationName" value="站点名称"/>  
+  <add key="StationStatisticsView_SumNum" value="总行李数"/>  
+  <add key="StationStatisticsView_SecurityBagsSumNum" value="安全行李数"/>  
+  <add key="StationStatisticsView_SuspectedLuggageSumNum" value="嫌疑行李数"/>  
+  <add key="StationStatisticsView_TimeoutSumNum" value="超时行李数"/>  
+  <add key="StationStatisticsView_NormalDuration" value="正常运行时长"/>  
+  <add key="StationStatisticsView_AbnormalDuration" value="异常运行时长"/>  
+  <add key="StationStatisticsView_AvgJudgeTimeS" value="平均判图时间(秒)"/>  
+   <add key="StationStatisticsView_AvgOpenPackTimeS" value="平均开包时间(秒)"/>
+  <!--StationStatisticsController-->  
+  <add key="StationStatisticsController_ChartBagsTitle" value="站点行李数目图"/>  
+  <add key="StationStatisticsController_ChartDuartionTitle" value="站点运行时长图"/>  
+  <add key="StationStatisticsController_Sum" value="总数"/>  
+  <add key="StationStatisticsController_SumTime" value="总时长"/>  
+  <add key="StationStatisticsController_Time" value="时"/>  
+  <!--SystemStatisticsController-->  
+  <add key="SystemStatisticsController_SumNum" value="总行李数"/>  
+  <add key="SystemStatisticsController_SecurityBagsSumNum" value="总安全行李数"/>  
+  <add key="SystemStatisticsController_ArtificialDiagramNum" value="总人工检查行李数"/>  
+  <add key="SystemStatisticsController_RunNormalDuration" value="系统正常时长"/>  
+  <add key="SystemStatisticsController_RunAbNormalDuration" value="系统异常时长"/>  
+  <add key="SystemStatisticsController_PieBagsTitle" value="系统行李数目图"/>  
+  <add key="SystemStatisticsController_BagsType" value="行李类别"/>  
+  <!--SystemStatisticsView-->  
+  <add key="SystemStatisticsView_Title" value="系统工作统计"/>  
+  <add key="SystemStatisticsView_RunState" value="运行状态"/>  
+  <add key="SystemStatisticsView_RunStartTime" value="运行开始时间"/>  
+  <add key="SystemStatisticsView_RunEndTime" value="运行结束时间"/>  
+  <add key="SystemStatisticsView_RunDuration" value="运行时长"/>  
+  <!--InitSystemStatisticsView-->  
+  <add key="InitSystemStatisticsView_Personnum" value="客流总数"/>  
+  <add key="InitSystemStatisticsView_Backagenum" value="过机总数"/>  
+  <add key="InitSystemStatisticsView_Openbackagenum" value="开检数"/>   
+  <add key="InitSystemStatisticsView_Tipnum" value="TIP考核总数"/>  
+  <add key="InitSystemStatisticsView_AutoConclustion" value="自动报警数"/> 
+  <add key="InitSystemStatisticsView_Hours" value="按时"/>
+  <add key="InitSystemStatisticsView_Days" value="按天"/>
+  <add key="InitSystemStatisticsView_Months" value="按月"/>
+  <add key="InitSystemStatisticsView_SafePackage" value="安全行李/物品数"/>  
+  <add key="InitSystemStatisticsView_DangerPackage" value="嫌疑行李/物品数"/>  
+  <add key="InitSystemStatisticsView_InspectionNum" value="查验总数"/>  
+  <add key="InitSystemStatisticsView_SeizedNum" value="查获总数"/> 
+  <!--PassengerMonitorView-->  
+  <add key="PassengerMonitorView_PassengerInfoTitle" value="旅客信息查询"/>  
+  <add key="PassengerMonitorView_BagsInfoTitle" value="机检图像查询"/>  
+  <!--PassengerMonitorController-->  
+  <add key="PassengerMonitorController_Security" value="安全"/>  
+  <add key="PassengerMonitorController_Suspected" value="嫌疑"/>  
+  <add key="PassengerMonitorController_Level" value="级"/>  
+  <add key="PassengerMonitorController_ScreenStation" value="抓屏站点"/>  
+  <add key="PassengerMonitorController_ScreenTime" value="扫描时间"/>  
+    <add key="PassengerMonitorController_ImageSumCount" value="图像数目"/>  
+  <add key="PassengerMonitorController_ExportImageFormatTitle" value="分析导出图像"/>
+  <add key="PassengerMonitorController_ExportImageFormatFile" value="正在生成导出文件"/>
+  <add key="PassengerMonitorController_ExportImageFormatFileText" value="正在生成导出文件..."/>
+  <!--PassengersDetailView-->  
+  <add key="PassengersDetailView_Title" value="旅客行李详细信息"/>  
+  <add key="PassengersDetailView_BagsImage" value="行李图像"/>  
+  <add key="PassengersDetailView_BagsInfo" value="通关信息"/>  
+  <add key="PassengersDetailView_PassengerName" value="旅客姓名"/>  
+  <add key="PassengersDetailView_SecurityCheckProcess" value="通关流程"/>  
+  <add key="PassengersDetailView_JudgeTime" value="时间"/>  
+  <add key="PassengersDetailView_FinalConclusion" value="结论"/>  
+  <add key="PassengersDetailView_JudgeUser" value="人员"/>  
+  <add key="PassengersDetailView_DeviceName" value="设备"/>  
+  <add key="PassengersDetailView_Supervised" value="被监管者"/>  
+  <add key="PassengersDetailView_StationSubType" value="部门"/>  
+  <add key="PassengersDetailView_Contrabands" value="违禁品"/>  
+  <add key="PassengersDetailView_PreviousPassenger" value="上一旅客"/>  
+  <add key="PassengersDetailView_NextPassenger" value="下一旅客"/>  
+  <!--PassengersInfoView-->  
+  <add key="PassengersInfoView_SetOut" value="出发"/>  
+  <add key="PassengersInfoView_Transit" value="转机"/>  
+  <add key="PassengersInfoView_PassengerId" value="登机牌号码"/>  
+  <add key="PassengersInfoView_PassengerName" value="旅客姓名"/>  
+  <add key="PassengersInfoView_FlightNo" value="航班号"/>  
+  <add key="PassengersInfoView_IsTransfer" value="行李类型"/>  
+  <add key="PassengersInfoView_DepartPort" value="出发地"/>  
+  <add key="PassengersInfoView_Destination" value="目的地"/>  
+  <add key="PassengersInfoView_FlightDate" value="出发时间"/>  
+  <add key="PassengersInfoView_BoardingGate" value="登机口"/>  
+  <add key="PassengersInfoView_Conclusion" value="旅客检查结果"/>  
+  <add key="PassengersInfoView_Detail" value="详情"/>  
+  <!--BagsInfoGridView-->  
+  <add key="BagsInfoGridView_Screen" value="抓屏"/>  
+  <add key="BagsInfoGridView_Tag" value="标记"/>  
+  <add key="BagsInfoGridView_PassengerName" value="旅客信息"/> 
+  <add key="BagsInfoGridView_RequestImageStatus" value="调取图像状态"/> 
+  <add key="BagsInfoGridView_RequestImageStatus_NoRequest" value="未调取"/> 
+  <add key="BagsInfoGridView_RequestImageStatus_Requested" value="已调取"/> 
+  <add key="BagsInfoGridView_RequestImageStatus_FailDelete" value="调取失败（图像已删除）"/> 
+  <add key="BagsInfoGridView_RequestImageStatus_FailNO" value="调取失败（原因未知）"/> 
+  <add key="BagsInfoGridView_RequestImageStatus_OverTime" value="调取超时"/>
+  <add key="BagsInfoGridView_RequestImageStatus_DeviceImageDelete" value="图像已删除"/> 
+  <add key="BagsInfoGridView_OpenHistoryImage" value="打开历史图像"/>  
+  <add key="BagsInfoGridView_RequestDeviceImage" value="调取设备图像"/>  
+  <!--TagImageView-->  
+  <add key="TagImageView_Title" value="站点标记图像"/>  
+  <add key="TagImageView_TagStation" value="标记站点"/>  
+  <add key="TagImageView_TagTime" value="标记时间"/>
+  <add key="TagImageView_DeviceImageDescri" value="设备未生成JPG图像，请打开原始图像(点击左上角的按钮)。"/>
+  <!--SystemStatisticsView-->  
+  <add key="InitSystemSettingView_CreateCluster" value="创建业务群"/>  
+  <add key="InitSystemSettingView_AuthorEquipment" value="认证设备"/>  
+  <add key="InitSystemSettingView_AuthorTunel" value="认证通道"/>  
+  <add key="InitSystemSettingView_SetStation" value="设置站点"/>  
+  <add key="InitSystemSettingView_AllocationResource" value="资源分配"/>  
+  <add key="InitSystemSettingView_Setjudgeparam" value="设置判图参数"/>  
+  <add key="InitSystemSettingView_SetOpenpakege" value="设置开包参数"/>  
+  <add key="InitSystemSettingView_ManageTiplib" value="管理TIP图库"/>  
+  <add key="InitSystemSettingView_SetTipPlan" value="设置TIP考核计划"/>  
+  <add key="InitSystemSettingView_SetCTIparam" value="设置主动CTI判图参数"/>  
+  <add key="InitSystemSettingView_SetStorageparam" value="设置存储参数"/>  
+  <add key="InitSystemSettingView_ClustorManager" value="业务群管理"/>  
+  <add key="InitSystemSettingView_EquipmentManager" value="设备管理"/>  
+  <add key="InitSystemSettingView_StationManager" value="站点管理"/>  
+  <add key="InitSystemSettingView_TunelManager" value="智能通道管理"/>  
+  <add key="InitSystemSettingView_ClustorDesc" value="用于管理设备、站点绑定关系，不同设备与站点组合构成的业务群形成的一种集中判图流程"/>  
+  <add key="InitSystemSettingView_EquipmentDesc" value="管理设备信息，其中包括对于设备分组、位置以及图像上传位置等信息的修改"/>  
+  <add key="InitSystemSettingView_StationDesc" value="管理站点信息，其中包括对于站点标识、站点所处位置等信息的修改"/>  
+  <add key="InitSystemSettingView_TunelDesc" value="管理智能通道信息，其中包括通道标识、分组、所处位置、上传路径以及描述信息的修改"/>  
+  <!--SystemMonitoring-->  
+  <add key="SystemMonitoringView_Title" value="系统监控"/>  
+  <add key="SystemMonitoringStationInfoView_OnlineNum" value="在线站点"/>  
+  <add key="SystemMonitoringPersonInfoView_OnlineNum" value="在线角色"/>  
+  <add key="SystemMonitoringDeviceInfoView_OnlineNum" value="在线数量"/>  
+  <add key="SystemMonitoringDeviceInfoView_ErrorNum" value="异常数量"/>  
+  <add key="SystemMonitorinView_MonitoringTitle" value="监控区"/>  
+  <add key="SystemMonitorinView_MonitringClusterPassrateTitle" value="业务群通过率监控区"/>  
+  <add key="SystemMonitorinView_MonitringClusterOpenPackageTitle" value="业务群开包数监控区"/>  
+  <add key="SystemMonitorinView_CTDevice" value="CT设备"/>  
+  <add key="SystemMonitorinView_TunnelDevice" value="智能旅检通道"/>  
+  <add key="SystemMonitorinView_XDevice" value="X光机"/>
+  <add key="SystemMonitorinView_CurrentFlow" value="当前流量"/>  
+  <add key="SystemMonitorinView_SaturatedFlow" value="饱和流量"/>  
+  <add key="SystemMonitorinView_SystemBusyIndexTitle" value="通道判图繁忙指示图"/>   
+  <add key="SystemMonitorinView_TRSDevice" value="TRS设备"/> 
+  <add key="SystemMonitorinView_GatesDevice" value="安检闸机"/> 
+  <add key="SystemMonitorinView_BodyDevice" value="人体检查设备"/> 
+  <add key="SystemMonitorinView_RamanDevice" value="拉曼化学物质识别设备"/> 
+  <add key="SystemMonitorinView_TraceDevice" value="痕量爆炸物毒品检查设备"/> 
+  <add key="SystemMonitorinView_LiquidDevice" value="CT型液体检查设备"/> 
+  <add key="SystemMonitorinView_RadiationDevice" value="放射性物质检查设备"/>   
+  <!--SystemMonitoringPersonInfo-->  
+  <add key="SystemMonitoringStationInfoView_SuperManager" value="超级管理员"/>  
+  <add key="SystemMonitoringStationInfoView_SystemManager" value="系统管理员"/>  
+  <add key="SystemMonitoringStationInfoView_Manager" value="管理员"/>  
+  <add key="SystemMonitoringStationInfoView_TrainManager" value="培训管理员"/>>  
+  <add key="SystemMonitoringStationInfoView_PracticeOperationManager" value="实习操作员"/>  
+  <add key="SystemMonitoringStationInfoView_OneGradeManager" value="直属关区管理员"/>
+  <add key="SystemMonitoringStationInfoView_TwoGradeManager" value="隶属/现场关区管理员"/>
+  <add key="SystemMonitoringStationInfoView_OperationManager" value="现场关区执法关员"/>
+  <add key="SystemMonitoringStationInfoView_BCSManager" value="开包站"/>
+  <!--ReportGridPanel-->  
+  <add key="StatisticsReportGridPanel_SecurityStatistics" value="通关统计"/>  
+  <add key="StatisticsReportGridPanel_TotalOf" value="总计"/>  
+  <add key="StatisticsReportGridPanel_PassengersNum" value="旅客数"/>  
+  <!--StatisticsReportController-->  
+  <add key="StatisticsReportController_SecurityStatisticsImage" value="通关统计图"/>  
+  <!--StatisticsReportView-->  
+  <add key="StatisticsReportView_Title" value="统计报告生成"/>  
+  <add key="StatisticsReportView_ReportType" value="报告类型"/>  
+  <add key="StatisticsReportView_Daily" value="日报"/>  
+  <add key="StatisticsReportView_MonthlyReport" value="月报"/>  
+  <add key="StatisticsReportView_Date" value="日期"/>  
+  <!--ModeSettingView-->  
+  <add key="ModeSettingView_Title" value="模式设置"/>  
+  <add key="ModeSettingView_ConclusionMode" value="结论模式"/>  
+  <add key="ModeSettingView_ConclusionArtificial" value="人工结论"/>  
+  <add key="ModeSettingView_ShowImageType" value="判图站图像显示类型"/>  
+  <add key="ModeSettingView_AllImage" value="所有图像"/>  
+  <add key="ModeSettingView_SuspectedImage" value="嫌疑图像"/>  
+  <add key="ModeSettingView_SendConclusionType" value="与BHS通信的行李状态类型"/>  
+  <add key="ModeSettingView_UnknownOrTimeOut" value="未知或超时"/>  
+  <add key="ModeSettingView_ImageError" value="图像错误"/>  
+  <add key="ModeSettingView_IsShowTipMarkInfo" value="是否显示TIP标记"/>
+  <add key="ModeSettingView_ShowTipMarkInfo_YES" value="是"/>
+  <add key="ModeSettingView_ShowTipMarkInfo_NO" value="否"/>
+  <!--InitAssetManagementView-->  
+  <add key="InitAssetManagementView_Title" value="系统资产配置向导"/>  
+  <add key="InitSystemSettingView_Title" value="系统参数配置向导"/> 
+  <add key="InitSystemSettingView_AssetsManage" value="资产管理"/>  
+  <!-- TrainImageHomeView-->  
+  <add key="TrainImageHomeView_LibManage" value="培训图库管理"/>  
+  <add key="TrainImageHomeView_ModifyImageType" value="修改图像分类"/>  
+  <add key="TrainImageHomeView_DeleteImageType" value="删除图像分类"/>  
+  <add key="TrainImageHomeView_Import" value="导入"/>  
+  <add key="TrainImageHomeView_Export" value="导出"/>  
+  <add key="TrainImageHomeView_DeleteTrainType" value="删除图像类别"/>  
+  <add key="TrainImageHomeView_ModifyBrowseMode" value="切换浏览模式"/>  
+  <add key="TrainImageHomeView_SelectAll" value="全选"/>  
+  <add key="TrainImageHomeView_SelectInvert" value="反选"/>  
+  <add key="TrainImageHomeView_Reverse" value="重置"/>  
+  <add key="TrainImageHomeView_AddTrainImage" value="添加图像"/>  
+  <add key="TrainImageHomeView_EditTrainImage" value="编辑图像"/>  
+  <add key="TrainImageHomeView_DeleteTrainImage" value="删除图像"/>  
+  <add key="TrainImageHomeView_LibType" value="图库类别"/>  
+  <add key="TrainImageHomeView_LibTypeDefault" value="标准图库"/>  
+  <add key="TrainImageHomeView_CatType" value="图像类别"/>  
+  <add key="TrainImageHomeView_CatTypeDefault" value="全部"/>  
+  <add key="TrainImageHomeView_SubCatType" value="图像子类别"/>  
+  <add key="TrainImageHomeView_SubCatTypeDefault" value="全部"/>  
+  <add key="TrainImageHomeView_DifficultyLevel" value="难易程度"/>  
+  <add key="TrainImageHomeView_DifficultyLevelDefault" value="全部"/>  
+  <add key="TrainImageHomeView_FITOrCTI" value="FTI或CTI"/>  
+  <add key="TrainImageHomeView_FITOrCTIDefault" value="全部"/>  
+  <add key="TrainImageHomeView_ImageName" value="图像名称"/>  
+  <add key="TrainImageHomeView_ImageNameDefault" value="请输入图像名称"/>  
+  <add key="TrainImageHomeView_QueryImage" value="查询图像"/>  
+  <add key="TrainImageHomeView_RestQueryCondition" value="查询图像"/>  
+  <add key="TrainImageHomeView_USBAddImageSingle" value="U盘添加图像（单幅）"/>  
+  <add key="TrainImageHomeView_USBAddImageBatch" value="U盘添加图像（批量）"/>  
+  <!-- TrainImageController-->  
+  <add key="TrainImageController_ModifyImageInfoSuccess" value="修改图像信息成功"/>  
+  <add key="TrainImageController_ModifyImageInfoFailure" value="修改图像信息失败"/>  
+  <add key="TrainImageController_CustomLib" value="用户图库"/>  
+  <add key="TrainImageController_StandardLib" value="标准图库"/>  
+  <add key="TrainImageController_ModifyImageTypeName" value="修改分类名称"/>  
+  <add key="TrainImageController_TypeName" value="分类名称"/>  
+  <add key="TrainImageController_DeleteTypeMsg" value="确认删除图像分类{0}？"/>  
+  <add key="TrainImageController_DeleteTypePrompt" value="分类下有图像，请删除图像，再删除分类"/>  
+  <add key="TrainImageController_DeleteTypeError" value="删除出现异常，请稍候再试"/>  
+  <add key="TrainImageController_ImageDetail" value="图像详情"/>  
+  <add key="TrainImageController_DeleteImageMsg" value="确认删除{0}幅图像？"/>  
+  <add key="TrainImageController_DeleteImageTypeNo" value="选择类别下没有图像"/>  
+  <add key="TrainImageController_SystemHints" value="选择类别下没有图像"/>  
+  <add key="TrainImageController_ImportStardandGallery" value="确定要导入标准图库（原图库将被覆盖，同时考核计划中图库设置将会受到影响）？"/>  
+  <add key="TrainImageController_ImportCustomGallery" value="确定要导入用户图库（用户图库导入后，考核计划中图库设置将会受到影响）？"/>  
+  <add key="TrainImageController_BatchAddImageMsg" value="U盘添加图像，成功{0}幅,失败{1}幅"/>  
+  <add key="TrainImageController_USBOpenFailure" value="U盘打开失败"/>  
+  <add key="TrainImageController_PlanNameInvalid" value="考核计划名称不能为空"/>  
+  <add key="TrainImageController_PlanNameRepeat" value="考核计划名称重复"/>
+  <add key="TrainImageController_NoChoosePlanImage" value="未选择考核图像"/>  
+  <add key="TrainImageController_NoChoosePlanUser" value="未选择考核用户"/>  
+  <add key="TrainImageController_BatchAddTrainImage" value="批量添加培训图像"/>  
+  <add key="TrainImageController_ConfirmImageType" value="*请确保图像类型准确性（CTI/FTI）"/>  
+  <add key="TrainImageController_Exist" value="存在"/>  
+  <add key="TrainImageController_SameTypeNameConfirmEdit" value="个相同的类别名称，是否全部修改"/>  
+  <add key="TrainImageController_SameImageConfirmCover" value="相同标识的图片，是否全部覆盖"/> 
+  <add key="TrainImageController_JudgeTimeNotNull" value="判图时间不能为空"/>
+  <add key="TrainImageController_JudgeTimeMaxValue" value="判图时间不能超过300秒"/>   
+ <!--TrainPlanBasseInfoView-->   
+  <add key="TrainPlanBaseInfoView_ErrorInfoTip" value="错误信息提示"/>  
+  <add key="TrainImageController_PlanNameNotRepeat" value="计划名称不能重复"/>  
+  <!--TrainImageShowBigView-->  
+  <add key="TrainImageShowBigView_AdjustBtnTitle" value="自适应大小"/>  
+  <!--ModifyTrainImgInfoView-->  
+  <add key="ModifyTrainImgInfoView_Title" value="修改培训图像"/>  
+  <add key="ModifyTrainImgInfoView_LibName" value="图库名称"/>  
+  <add key="ModifyTrainImgInfoView_ImageId" value="图像名称"/>  
+  <!--TrainImageTypeOperateView-->  
+  <add key="TrainImageTypeOperateView_BlankText" value="图像分类不能为空"/>  
+  <add key="TrainImageTypeOperateView_RegexText" value="分类名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="TrainImageTypeOperateView_TypeNameRepeat" value="分类名称不能重复，请重新输入"/>  
+  <add key="TrainImageTypeOperateView_ModifyFailure" value="修改图像分类名称失败"/>  
+  <!--AddImgToTrainLibView-->  
+  <add key="AddImgToTrainLibView_Easy" value="容易"/>  
+  <add key="AddImgToTrainLibView_General" value="一般"/>  
+  <add key="AddImgToTrainLibView_Difficult" value="困难"/>  
+  <add key="AddImgToTrainLibView_SinglePerspective" value="单视角"/>  
+  <add key="AddImgToTrainLibView_DoublePerspective" value="双视角"/>  
+  <add key="AddImgToTrainLibView_Title" value="添加培训图像"/>  
+  <add key="AddImgToTrainLibView_ImageName" value="图像名称"/>  
+  <add key="AddImgToTrainLibView_ImageNameBlank" value="图像名称不能为空"/>  
+  <add key="AddImgToTrainLibView_ImageNameRegex" value="图像名称不能超过32个字符区分大小写，不能为空，只能包含汉字、英文、数字和下划线"/>  
+  <add key="AddImgToTrainLibView_ImageSourceName" value="实物名称"/>  
+  <add key="AddImgToTrainLibView_ImageSourceNameBlank" value="实物名称不能为空"/>  
+  <add key="AddImgToTrainLibView_ImageSourceNameRegex" value="实物名称不能超过32个字符区分大小写，不能为空，只能包含汉字、英文、数字和下划线"/>  
+  <add key="AddImgToTrainLibView_ImageCat" value="图像分类"/>  
+  <add key="AddImgToTrainLibView_ImageCatBlank" value="请选择图像分类"/>  
+  <add key="AddImgToTrainLibView_ImageCatValidator" value="分类名称输入重复，请重新输入"/>  
+  <add key="AddImgToTrainLibView_ImageNameValidator" value="图像名称输入重复，请重新输入"/>  
+  <add key="AddImgToTrainLibView_ImageSubCat" value="图像子分类"/>  
+  <add key="AddImgToTrainLibView_ImageSubCatBlank" value="请选择图像子分类"/>  
+  <add key="AddImgToTrainLibView_ImageSubCatValidator" value="子分类名称输入重复，请重新输入"/>  
+  <add key="AddImgToTrainLibView_FTIorCTIBlank" value="请选择FTI/CTI"/>  
+  <add key="AddImgToTrainLibView_Difficulty" value="困难程度"/>  
+  <add key="AddImgToTrainLibView_DifficultyBlank" value="请选择难度"/>  
+  <add key="AddImgToTrainLibView_DRType" value="视角类型"/>  
+  <add key="AddImgToTrainLibView_DRTypeBlank" value="请选择视角"/>  
+  <add key="AddImgToTrainLibView_Description" value="图像描述"/>  
+  <add key="AddImgToTrainLibView_TypeLogo" value="分类标识"/>  
+  <add key="AddImgToTrainLibView_TypeLogoBlank" value="请选择分类标识"/>  
+  <!--TrainPlanController-->  
+  <add key="TrainPlanController_AddPlanLibTitle" value="新增培训计划库"/>  
+  <add key="TrainPlanController_AddPlanLibLabel" value="培训计划库名称"/>  
+  <add key="TrainPlanController_AddPlanLibFailure" value="增加培训计划库失败"/>  
+  <add key="TrainPlanController_ModifyPlanLibTitle" value="修改培训计划库"/>  
+  <add key="TrainPlanController_ModifyPlanLibLabel" value="培训计划库名称"/>  
+  <add key="TrainPlanController_ModifyPlanLibFailure" value="修改培训计划库失败"/>  
+  <add key="TrainPlanController_DeletePlanLib" value="确认删除培训计划库{0}？"/>  
+  <add key="TrainPlanController_PlanStateFailure" value="失败,请稍候再试"/>  
+  <add key="TrainPlanController_DeletePlan" value="确认删除{0}个培训计划？"/>  
+  <add key="TrainPlanController_SavePerformanceplanningSuccess" value="保存成功"/>  
+  <add key="TrainPlanController_LibType" value="图库"/>  
+  <add key="TrainPlanController_LibTypeName" value="图像类别"/>  
+  <add key="TrainPlanController_LibDescribe" value="图像描述"/>  
+  <add key="TrainPlanController_ImageID" value="图像ID"/>  
+  <add key="TrainPlanController_ImageName" value="图像名称"/>
+  <add key="TrainPlanController_ImageSourceName" value="实物名称"/>   
+  <add key="TrainPlanController_ImageAngel" value="视角类型"/>  
+  <add key="TrainPlanController_ImageDifficulty" value="困难程度"/>  
+  <add key="TrainPlanController_BigImageType" value="大分类"/>  
+  <add key="TrainPlanController_SubImageType" value="子分类"/>  
+  <add key="TrainPlanController_Standard" value="标准"/>  
+  <add key="TrainPlanController_Cumstor" value="用户"/>  
+  <add key="TrainPlanController_BigTypeImageNumGraph" value="大分类图像数量对比图"/>  
+  <add key="TrainPlanController_SmallTypeImageNumGraph" value="大分类图像数量对比图"/>  
+  <add key="TrainPlanController_GroupUserPersonCompare" value="部门考核人员对比"/>  
+  <add key="TrainPlanController_GroupPersonNum" value="部门人数"/>  
+  <add key="TrainPlanController_OnlyShowSelectUser" value="仅显示选中用户"/>  
+  <add key="TrainPlanController_ShowAllUser" value="显示所有用户"/>  
+  <add key="TrainPlanController_AutoSelectImage" value="自动选图数量"/>  
+  <!--TrainPlanGridView-->  
+  <add key="TrainPlanGridView_Mode" value="测试模式"/>  
+  <add key="TrainPlanGridView_PlanName" value="计划名称"/>  
+  <add key="TrainPlanGridView_PlanType" value="计划类型"/>  
+  <add key="TrainPlanGridView_AddPlan" value="增加培训计划"/>  
+  <add key="TrainPlanGridView_DeletePlan" value="删除培训计划"/>  
+  <add key="TrainPlanGridView_ModifyPlan" value="修改培训计划"/>  
+  <add key="TrainPlanGridView_ImageCount" value="测试图像数目"/>  
+  <add key="TrainPlanGridView_PlanLib" value="计划库"/>  
+  <add key="TrainPlanGridView_JudgeTime" value="设置判图时间"/>  
+  <add key="TrainPlanGridView_State" value="状态"/>  
+  <add key="TrainPlanGridView_IsValid" value="永久有效"/>  
+  <add key="TrainPlanGridView_LookDetail" value="查看详情"/>  
+  <!--TrainPlanLibOperateView-->  
+  <add key="TrainPlanLibOperateView_PlanLibNotnull" value="培训计划库不能为空"/>  
+  <add key="TrainPlanLibOperateView_PlanLibName" value="计划库名称"/>  
+  <add key="TrainPlanLibOperateView_PlanLibregexText" value="计划库名称只能输入汉字，数字，字母和下划线；长度不能超过32位"/>  
+  <add key="TrainPlanLibOperateView_PlanLibNotRepeat" value="计划库名称不能重复，请重新输入"/>  
+  <!--TrainPlanView-->  
+  <add key="TrainPlanView_Title" value="培训计划管理"/>  
+  <add key="TrainPlanView_AddPlanLib" value="增加培训计划库"/>  
+  <add key="TrainPlanView_MofifyPlanLib" value="修改培训计划库名称"/>  
+  <add key="TrainPlanView_DeletePlanLib" value="删除培训计划库"/>  
+  <!--TrainResultHomeView-->  
+  <add key="TrainResultHomeView_DetailTitle" value="详情查询"/>  
+  <add key="TrainResultHomeView_StudentStatTitle" value="学员统计"/>  
+  <add key="TrainResultHomeView_OverallStatTitle" value="整体统计"/>  
+  <!--TrainOverallStat-->  
+  <add key="TrainOverallStat_StatisticalType" value="统计方式"/>  
+  <add key="TrainOverallStat_StatisticalTypeblankText" value="请选择统计方式"/>  
+  <!--TrainDetailView-->  
+  <add key="TrainDetailView_ImageGuid" value="图像编号"/>  
+  <add key="TrainDetailView_TestResult" value="测试结果"/>  
+  <add key="TrainDetailView_JudgeResult" value="判图结果"/>  
+  <add key="TrainDetailView_TestTime" value="测试时间"/>  
+  <add key="TrainDetailView_IdentifyImageTime" value="识图时长"/>  
+  <add key="TrainDetailView_Correct" value="正确"/>  
+  <add key="TrainDetailView_ImageError" value="图像错误"/>  
+  <!--TrainResultController-->  
+  <add key="TrainResultController_OverAllCharTitle" value="整体统计图"/>  
+  <add key="TrainResultController_DiscernSum" value="识图总数"/>  
+  <add key="TrainResultController_DiscernSucceedNum" value="识图正确数"/>  
+  <add key="TrainResultController_DiscernFailureNum" value="识图错误数"/>  
+  <add key="TrainResultController_DiscernSucceedRate" value="识图正确率"/>  
+  <add key="TrainResultController_DiscernFailureRate" value="识图错误率"/>  
+  <add key="TrainResultController_PrintDataMsg" value="正在准备打印数据，请稍等....."/>  
+  <add key="TrainResultController_ExportDataMsg" value="正在准备导出数据,请稍等...."/>  
+  <add key="TrainResultController_ImportDataMsg" value="正在分析导入数据,请稍等...."/>  
+  <add key="TrainResultController_PersonnelStatisticsGraph" value="学员记录统计图"/>  
+  <add key="TrainResultController_User" value="用户"/>  
+  <!--GetUserTrainingList.html-->  
+  <add key="GetUserTrainingList_PlanImageCount" value="计划图像数量"/>  
+  <add key="GetUserTrainingList_CompleteNum" value="完成次数"/>  
+  <add key="GetUserTrainingList_TrainStatus" value="当前培训状态"/>  
+  <add key="GetUserTrainingList_TrainProgress" value="本轮培训进度"/>  
+  <add key="GetUserTrainingList_Correct" value="正确率"/>  
+  <add key="GetUserTrainingList_TestRecords" value="测试记录"/>  
+  <add key="GetUserTrainingList_TrainTest" value="培训测试"/>  
+  <add key="GetUserTrainingList_AvgIdentifyImageTime" value="平均识图时长"/>  
+  <!--TrainImageShowListSelectViewWindow.html-->  
+  <add key="TrainImageShowListSelectViewWindow_SelectImageTitle" value="培训计划图像选择"/>  
+  <add key="TrainImageShowListSelectViewWindow_OK" value="确定"/>  
+  <add key="TrainImageShowListSelectViewWindow_Cancel" value="取消"/>  
+  <!--TrainPlanBaseInfoView.html-->  
+  <add key="TrainPlanBaseInfoView_PlanName" value="计划名称"/>  
+  <add key="TrainPlanBaseInfoView_StartTime" value="开始时间"/>  
+  <add key="TrainPlanBaseInfoView_StartTimeRange" value="开始时间必须小于结束时间"/>  
+  <add key="TrainPlanBaseInfoView_PlanType" value="计划类型"/>  
+  <add key="TrainPlanBaseInfoView_EndTime" value="结束时间"/>  
+  <add key="TrainPlanBaseInfoView_PlanMode" value="测试模式"/>  
+  <add key="TrainPlanBaseInfoView_JudgeTime" value="判图时间(S)"/>  
+  <add key="TrainPlanBaseInfoView_JudgeTimeNoBlank" value="判图时间不能为空"/>  
+  <add key="TrainPlanBaseInfoView_JudgeTimeBlankRegex" value="判图时间不合法"/>  
+  <add key="TrainPlanBaseInfoView_PlanLib" value="计划库"/>  
+  <add key="TrainPlanBaseInfoView_PlanState" value="状态"/>  
+  <add key="TrainPlanBaseInfoView_OpenState" value="启用"/>  
+  <add key="TrainPlanBaseInfoView_isAlwayValid" value="是否永久有效"/>  
+  <add key="TrainPlanBaseInfoView_Yes" value="是"/>  
+  <add key="TrainPlanBaseInfoView_PlanNameRegexText" value="计划名称不能超过32个字符区分大小写，不能为空，只能包含汉字、英文、数字和下划线"/> 
+  <!--TrainPlanExtendInfoView.html-->  
+  <add key="TrainPlanExtendInfoView_InsertInterval" value="设置考核图像数目"/>  
+  <add key="TrainPlanExtendInfoView_LoadingWait" value="正在加载中，请稍等。。。。。"/>  
+  <!--TrainPlanInfoView-->  
+  <add key="TrainPlanInfoView_Title" value="培训计划详情"/>  
+  <!--TrainPlanUserSelectView-->  
+  <add key="TrainPlanUserSelectView_SelectGroup" value="请选择部门"/>  
+  <add key="TrainPlanUserSelectView_NoSelectGroup" value="部门不能为空,请选择部门"/>  
+  <add key="TrainPlanUserSelectView_OnShowSelectUser" value="仅显示选中用户"/>  
+  <!-- StationSuspiciousSetting-->  
+  <add key="StationSuspiciousSetting_Title" value="站点违禁品包围框颜色设置"/>  
+  <add key="StationSuspiciousSetting_MainClass" value="违禁品类别"/>  
+  <add key="StationSuspiciousSetting_ClassID" value="ID"/>  
+  <add key="StationSuspiciousSetting_ClassName" value="违禁品类别"/>  
+  <add key="StationSuspiciousSetting_Red" value="红"/>  
+  <add key="StationSuspiciousSetting_Green" value="绿"/>  
+  <add key="StationSuspiciousSetting_Blue" value="蓝"/>  
+  <add key="StationSuspiciousSetting_Alpha" value="透明度"/>  
+  <add key="StationSuspiciousSetting_Lineweight" value="线条宽度"/>  
+  <add key="StationSuspiciousSetting_Desc" value="描述"/>  
+  <add key="StationSuspiciousSetting_Operation" value="操作"/>  
+  <add key="StationSuspiciousSetting_ModifyBtn" value="修改站点颜色"/>  
+  <add key="StationSuspiciousSetting_SetSuspicious" value="设置站点颜色"/> 
+  <add key="StationSuspiciousSetting_ImportBtn" value="修改站点颜色"/>  
+  <add key="StationSuspiciousSetting_ImportMsg" value="正在导入，请稍候..."/>  
+  
+  <!--LargerImageShowView-->  
+  <add key="LargerImageShowView_Dr1" value="视角1"/>  
+  <add key="LargerImageShowView_Dr2" value="视角2"/> 
+    <!--InitLanguageConfig-->
+   <add key="InitLanguageConfig_LoadXmlError" value="加载XML 文件出错"/>
+    <!--MQSocketConnectUtil-->
+	<add key="MQSocketConnectUtil_Exist" value="存在"/>
+	<add key="MQSocketConnectUtil_ExistSameClass" value="个相同的类别名称，是否全部修改"/>
+	<add key="MQSocketConnectUtil_ExistSamePic" value="幅相同标识的图片，是否全部覆盖"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImageSuccess" value="调取图像成功"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImagePRN" value="图像流水号"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImageDevice" value="设备标识"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImageUserID" value="调取人"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImageCreateTime" value="请求时间"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImageUserTime" value="请求耗时"/>
+	<add key="MQSocketConnectUtil_RequestDeviceImageUserID" value="调取人"/>
+	<add key="MQSocketConnectUtil_RequestDeviceReuqestSuccess" value="图像调取成功"/>
+	<!--BaggageAffiliatedInfoView-->
+	<add key="BaggageAffiliatedInfoView_Title" value="行李附属信息"/>
+	<add key="BaggageAffiliatedInfoView_NodeName" value="节点名称"/>
+	<add key="BaggageAffiliatedInfoView_ImportTemplete" value="导入模板"/>
+	<add key="BaggageAffiliatedInfoView_Hidden" value="隐藏"/>
+	<add key="BaggageAffiliatedInfoView_Display" value="显示"/>
+	<add key="BaggageAffiliatedInfoView_NodeValue" value="节点类型"/>
+	<add key="BaggageAffiliatedInfoView_IsDisplay" value="是否显示"/>
+	<add key="BaggageAffiliatedInfoView_NotFunction" value="不支持此功能"/>
+  <!--BaggageAffiliatedInfoHomeView-->
+  <add key="BaggageAffiliatedInfoHomeView_Customs" value="海关行李附属信息"/>
+  <add key="BaggageAffiliatedInfoHomeView_Dimission" value="离港通关行李附属信息"/>
+  <add key="BaggageAffiliatedInfoHomeView_InspectionAndQuarantine" value="检验检疫行李附属信息"/>
+  <add key="BaggageAffiliatedInfoView_Hidden" value="隐藏"/>
+  <add key="BaggageAffiliatedInfoView_Display" value="显示"/>
+
+  <!-- 查验结果管理-->  
+  <add key="InspectionListView_PrintPreview" value="打印预览"/> 
+  <add key="InspectionListView_SomeOneNoAllow" value="当前用户不允许添加查获情况！"/> 
+  <add key="InspectionListView_Loading" value="读取中"/> 
+  <add key="InspectionListView_SystemHints" value="系统提示"/>   
+  <add key="InspectionListView_Saving" value="正在保存，请稍后"/>  
+  <add key="InspectionListView_Deling" value="正在删除，请稍后"/>  
+  <add key="InspectionListView_ConfirmDel" value="确认删除{0}项查验记录？"/>  
+  <add key="InspectionListView_SavingOK" value="查获情况保存成功"/>  
+  <add key="InspectionListView_SavingFail" value="查获情况保存失败，请稍后重试"/>  
+  <add key="InspectionListView_Title" value="查获情况列表"/>  
+  <add key="InspectionListView_QueryTitle" value="查询条件"/>  
+  <add key="InspectionListView_BusinessSite" value="业务现场"/> 
+  <add key="InspectionListView_StartTime" value="起始时间"/>   
+  <add key="InspectionListView_EndTime" value="结束时间"/>  
+  <add key="InspectionListView_InspectionTime" value="查获日期"/>   
+  <add key="InspectionListView_InspectionPeople" value="查获人"/>  
+  <add key="InspectionListView_Department" value="查获部门"/>    
+  <add key="InspectionListView_Result" value="处置结果"/>   
+  <add key="InspectionListView_Result_EmptyText" value="请输入关键字"/>  
+  <add key="InspectionListView_ExitEntryType" value="进/出口（境）"/>  
+  <add key="InspectionListView_ProblemType" value="问题类型"/>  
+  <add key="InspectionListView_NumTitle" value="序号"/>  
+  <add key="InspectionListView_ID" value="ID"/>
+  <add key="InspectionListView_NoAllowExtNameTitle" value="文件类型错误提示"/>
+  <add key="InspectionListView_NoAllowExtNameValue" value="选择的文件必须是以下扩展名：'jpg'|'gif'|'bmp'|'png'|'jpeg'"/>
+  
+  <add key="InspectionListView_Edit" value="编辑查获情况"/>  
+  <add key="InspectionListView_Detail" value="查获情况详情"/>  
+  <add key="InspectionListView_Delete" value="删除查获情况"/>  
+  <add key="InspectionListView_Add" value="查获情况录入"/>  
+  
+  <add key="InspectionListView_PrintPreview" value="查获情况打印预览"/>  
+  <add key="InspectionListView_Export" value="导出查获情况"/>
+
+  <add key="InspectionListView_SaveBtn_Text" value="保存"/>
+  <add key="InspectionListView_CancelBtn_Text" value="取消"/>
+  <add key="InspectionListView_ReturnBtn_Text" value="返回"/>
+  
+  <add key="InspectionListView_SelectimgBtn1_Text" value="请选择图片1"/>
+  <add key="InspectionListView_SelectimgBtn2_Text" value="请选择图片2"/>
+  <add key="InspectionListView_SelectimgBtn3_Text" value="请选择图片3"/>
+
+  <!--fieldText-->
+  <add key="InspectionListView_filedtext_DistrictName" value="业务现场"/>  
+  <add key="InspectionListView_filedtext_InspectionTime" value="查获日期"/>  
+  <add key="InspectionListView_filedtext_InspectionDepartment" value="查获部门"/>  
+  <add key="InspectionListView_filedtext_InspectionPeople" value="查获人"/>  
+  <add key="InspectionListView_filedtext_ExitEntryType" value="进/出口（境）"/>  
+  <add key="InspectionListView_filedtext_Method" value="查获手段"/>  
+  <add key="InspectionListView_filedtext_ProblemType" value="问题类型"/>    
+  <add key="InspectionListView_filedtext_EstimatedValue" value="预估案值（万）"/>
+  <add key="InspectionListView_filedtext_EstimatedTextRelated" value="预估涉税（万）"/>
+  <add key="InspectionListView_filedtext_Images1" value="查获过程图像录入"/>
+  <add key="InspectionListView_filedtext_Detail" value="查获过程描述"/>
+  <add key="InspectionListView_filedtext_Result" value="处置结果"/>
+  <add key="InspectionListView_filedtext_SeizedNum" value="查获数量"/>
+  <add key="InspectionListView_filedtext_InspectionNum" value="查验数量"/>
+  <add key="InspectionListView_filedtext_InspectionInputPeople" value="录入人员"/>
+  <add key="InspectionListView_filedtext_InspectionInputTime" value="录入时间"/>
+
+  <!--emptyText-->
+  <add key="InspectionListView_emptytext_ExitEntryType" value="请输入进/出口（境）"/>  
+  <add key="InspectionListView_emptytext_Method" value="请输入查获手段"/>  
+  <add key="InspectionListView_emptytext_ProblemType" value="请输入问题类型"/>    
+  <add key="InspectionListView_emptytext_EstimatedValue" value="请输入预估案值"/>
+  <add key="InspectionListView_emptytext_EstimatedTextRelated" value="请输入预估涉税"/>
+  <add key="InspectionListView_emptytext_Detail" value="请输入查获过程描述"/>
+  <add key="InspectionListView_emptytext_Result" value="请输入处置结果"/>
+  <add key="InspectionListView_emptytext_DistrictName" value="请输入业务现场"/>
+  <add key="InspectionListView_emptytext_SeizedNum" value="请输入查获数量"/>
+  <add key="InspectionListView_emptytext_InspectionNum" value="请输入查验数量"/>
+  <add key="InspectionListView_emptytext_InspectionInputPeople" value="请输入录入人员"/>
+
+  <!--blankText-->
+  <add key="InspectionListView_blanktext_ExitEntryType" value="进/出口（境）不能为空"/>  
+  <add key="InspectionListView_blanktext_ProblemType" value="问题类型不能为空"/>    
+  <add key="InspectionListView_blanktext_EstimatedValue" value="预估案值"/>
+  <add key="InspectionListView_blanktext_EstimatedTextRelated" value="预估涉税"/>
+
+  <add key="InspectionListView_NoImages" value="无查获情况图"/>
+
+  <add key="InspectionListView_NumRegex" value="输入的值必须是数字"/>
+  <add key="InspectionListView_EstimatedValueRegex" value="输入的值必须是数字并且只能输入4位小数，范围是0-99999999.9999"/>
+  <add key="InspectionListView_ResultMaxLengthText" value="输入的长度限制在512"/>
+  <add key="InspectionListView_MethodMaxLengthText" value="输入的长度限制在128"/>
+  
+
+  <!--查验结果查询条件   start-->
+  <add key="Query_All" value="全部"/>
+  <!--查验结果进出口境类型-->
+  <add key="ExitEntryType_Entry" value="进境"/>  
+  <add key="ExitEntryType_Exit" value="出境"/>  
+  <!--查验结果问题类型  -->
+  <add key="ProblemType_Drugs" value="毒品"/>
+  <add key="ProblemType_Gun" value="枪支"/>
+  <add key="ProblemType_Printed" value="印音制品"/>
+  <add key="ProblemType_TaxIssue" value="涉税"/>
+  <add key="ProblemType_Certificates" value="涉证"/>
+  <add key="ProblemType_Other" value="其他"/>
+  <!--查验结果查询条件   end-->
+  <add key="InspectionResult_OKMessage" value="保存成功,请确认是否继续录入还是转到记录详情界面？"/>
+  <add key="InspectionResult_OKText" value="继续录入"/>
+  <add key="InspectionResult_NOText" value="转到详情"/>
+  <add key="InspectionResult_CancelText" value="取消"/>
+  <add key="InspectionResult_StationNoAuth" value="请在授权的站点进行导出！"/>
+
+  <!-- 开包站调取管理站界面 -->
+  <add key="PersonInspection_WebSocket_Except" value="WebSocket异常"/>
+  <add key="PersonInspection_WebSocket_Connected" value="WebSocket连接成功"/>
+  <add key="PersonInspection_WebSocket_Closed" value="WebSocket连接关闭"/>
+
+  <add key="PersonInspection_WebSocket_StatuText" value="与证件扫描仪连接状态:"/>
+  <add key="PersonInspection_WebSocket_StatuOpening" value="正在连接"/>
+  <add key="PersonInspection_WebSocket_StatuOpened" value="成功"/>
+  <add key="PersonInspection_WebSocket_StatuClosing" value="正在关闭"/>
+  <add key="PersonInspection_WebSocket_StatuClosed" value="已关闭"/>
+
+  <add key="PersonInspection_TitleStep1" value="证件信息显示"/>
+  <add key="PersonInspection_TitleStep2" value="查验结果显示"/>
+  <add key="PersonInspection_BtnReset" value="重置"/>
+  <add key="PersonInspection_BtnPrev" value="上一步"/>
+  <add key="PersonInspection_BtnNext" value="下一步"/>
+  <add key="PersonInspection_BtnSave" value="完成"/>
+  <add key="PersonInspection_AllSaveOK" value="旅客信息、查验结果录入完成！"/>  
+  <add key="PersonInspection_Person_ChineseName" value="*姓名"/>
+  <add key="PersonInspection_Person_Gender" value="性别"/>
+  <add key="PersonInspection_Person_BirthDate" value="出生日期"/>
+  <add key="PersonInspection_Person_CredentialsType" value="*证件类型"/>
+  <add key="PersonInspection_Person_IssuedDate" value="签发日期"/>
+  <add key="PersonInspection_Person_Issuer" value="发证机关"/>
+  <add key="PersonInspection_Person_EnglishName" value="姓名英文"/>
+  <add key="PersonInspection_Person_Nationality" value="国籍"/>
+  <add key="PersonInspection_Person_Nation" value="民族"/>
+  <add key="PersonInspection_Person_Profession" value="职业"/>
+  <add key="PersonInspection_Person_Expiry" value="有效日期"/>
+  <add key="PersonInspection_Person_CredentialsNumber" value="*证件号码"/>
+  <add key="PersonInspection_Person_Address" value="住址"/>
+  <add key="PersonInspection_Person_Remark" value="备注"/>
+  <add key="PersonInspection_Person_CredentialsTypeOption0" value="未知"/>
+  <add key="PersonInspection_Person_CredentialsTypeOption1" value="身份证"/>
+  <add key="PersonInspection_Person_CredentialsTypeOption2" value="护照"/>
+  <add key="PersonInspection_Person_CredentialsTypeOption3" value="回乡证"/>
+  <add key="PersonInspection_Person_CredentialsTypeOption4" value="港澳通行证"/>
+  <add key="PersonInspection_Inspection_DistrictName" value="业务现场"/>
+  <add key="PersonInspection_Inspection_InspectionTime" value="查获日期"/>
+  <add key="PersonInspection_Inspection_DepartmentName" value="查获部门"/>
+  <add key="PersonInspection_Inspection_UserId" value="查获人"/>
+  <add key="PersonInspection_Inspection_ExitEntryType" value="*进/出口（境）"/>
+  <add key="PersonInspection_Inspection_InspectionMethod" value="查获手段"/>
+  <add key="PersonInspection_Inspection_ProblemType" value="*问题类型"/>
+  <add key="PersonInspection_Inspection_EstimatedValue" value="预估案值（万）"/>  
+  <add key="PersonInspection_Inspection_EstimatedTextRelated" value="预估涉税（万）"/>
+  <add key="PersonInspection_Inspection_InspectionImages" value="查获过程图像录入"/>  
+  <add key="PersonInspection_Inspection_InspectionDetail" value="查获过程描述"/>
+  <add key="PersonInspection_Inspection_Result" value="处置结果"/>
+  <add key="PersonInspection_Inspection_ExitEntryTypeOption0" value="进境"/>  
+  <add key="PersonInspection_Inspection_ExitEntryTypeOption1" value="出境"/>  
+  <add key="PersonInspection_Inspection_ProblemTypeOption0" value="毒品"/>  
+  <add key="PersonInspection_Inspection_ProblemTypeOption1" value="枪支"/>  
+  <add key="PersonInspection_Inspection_ProblemTypeOption2" value="印音制品"/>  
+  <add key="PersonInspection_Inspection_ProblemTypeOption3" value="涉税"/>  
+  <add key="PersonInspection_Inspection_ProblemTypeOption4" value="涉证"/>  
+  <add key="PersonInspection_Inspection_ProblemTypeOption5" value="其他"/>  
+</configuration>

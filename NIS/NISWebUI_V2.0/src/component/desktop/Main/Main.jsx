@@ -39,14 +39,14 @@ export default class Main extends React.Component {
     }
 
     componentWillUnmount() {
-        console.log('home destroy!');
+        console.log('main destroy!');
     }
 
     render() {
         let {match, location, history, ...rest} = this.props;
     
         return (
-          <Layout>
+          <Layout {...rest}>
             <Switch>
                 <WrapperRoute path={URL_HOME} component={Home} {...rest}/>
                 <WrapperRoute path={URL_MONITOR} component={SysMonitor} {...rest} />
@@ -64,47 +64,5 @@ export default class Main extends React.Component {
         );
     }
 }
-
-
-
-
-
-
-
-
-const page1 = () => {
-    return (
-        <div> page1 </div>
-    );
-}
-
-
-
-
-
-const page2 = () => {
-    return (
-        <div> page2 </div>
-    );
-}
-
-
-
-const page3 = () => {
-    return (
-        <div> page3 </div>
-    );
-}
-
-
-const page4 = (props) => {
-    debugger;
-    return (
-        <div> page4 </div>
-    );
-}
-
-
-
 
 

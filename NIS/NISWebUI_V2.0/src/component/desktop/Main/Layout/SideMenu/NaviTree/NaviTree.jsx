@@ -19,13 +19,21 @@ export default class NaviTree extends React.Component {
         }
     }
 
-    toggleItem(navi) {
+    toggleItem(navi, e) {
+        e.stopPropagation();
+        e.preventDefault();
         let {tree} = this.state;
         let clone = JSON.parse(JSON.stringify(tree));
         clone.filter((item) => item.url === navi.url).forEach((item) => item.__collapsed = !item.__collapsed);
         this.setState({
             tree: clone
         });
+        // let {router} = this.context;
+        // if (router.route.location.pathname === navi.url) {
+        //     router.history.replace(navi.url);
+        // } else {
+        //     router.history.push(navi.url);
+        // }
     }
 
 
@@ -78,3 +86,11 @@ export default class NaviTree extends React.Component {
     }
 
 }
+
+NaviTree.contextTypes = {
+    router: PropTypes.object.isRequired
+};
+
+NaviTree.propTypes = {
+
+};

@@ -1,0 +1,24 @@
+.nis {
+    .busy {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(200,200,200,0.5);
+
+        .icon {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aliceblue;
+            font-size: 30px;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+    }
+}
