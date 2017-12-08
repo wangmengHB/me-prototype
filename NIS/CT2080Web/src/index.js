@@ -5,6 +5,7 @@ import store from './store/index.js';
 import config from './config/index.js';
 import i18n from './i18n/index.js';
 import notifier from './notifier/index.js';
+import App from './component/app.jsx';
 
 
 config.init().then(() => {
@@ -13,12 +14,12 @@ config.init().then(() => {
 
         ReactDOM.render(
             <Provider store={store}>
-                <Root />
+                <App />
             </Provider>,
             document.getElementById('app-container')
         );
 
-        notifier.register(store.dispatch);
+        notifier.register(store.dispatch, store.getState);
         notifier.init();
 
 
@@ -31,20 +32,3 @@ config.init().then(() => {
     console.error('init application failed');
     throw new Error(err);
 });
-
-
-
-const Root = () => {
-    return (
-        <div>
-            Hello
-        </div>
-    );
-}
-
-
-
-
-
-
-

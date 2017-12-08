@@ -28,8 +28,15 @@ export default class Layout extends React.Component {
             <div className="layout">
                 <Header {...this.props}/>
                 <div className="body">
-                    <SideMenu {...this.props} collapse={collapse} onCollapse={this.handleCollapse}/>
-                    <PageContainer {...this.props} collapse={collapse}>
+                    <SideMenu 
+                      {...this.props} 
+                      collapse={collapse} 
+                      onCollapse={this.handleCollapse}
+                    />
+                    <PageContainer 
+                      {...this.props} 
+                      collapse={collapse}
+                    >
                         {this.props.children}
                     </PageContainer>
                 </div>

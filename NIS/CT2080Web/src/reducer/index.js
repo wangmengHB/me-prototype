@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux';
 import * as ActionTypes from '../constant/ActionTypes.js';
+import MQDeviceMonitor from './MQDeviceMonitor.js';
+
 
 
 
@@ -18,5 +20,6 @@ const reducer1 = (state = initialState, action) => {
 
 
 export default combineReducers({
-    reducer1
+    reducer1,
+    MQDeviceMonitor
 })
