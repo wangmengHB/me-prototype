@@ -1,4 +1,5 @@
 import * as ActionTypes from '../constant/ActionTypes.js';
+import {fromJS} from 'immutable';
 
 
 let getInitialDevice = (id) => ({
@@ -14,7 +15,7 @@ let getInitialDevice = (id) => ({
 }) 
 
 
-const intialState = [
+const intialState = fromJS([
     getInitialDevice(1),
     getInitialDevice(2),
     getInitialDevice(3),
@@ -22,65 +23,58 @@ const intialState = [
     getInitialDevice(5),
     getInitialDevice(6),
     getInitialDevice(7)
-];
+]);
 
 
 const updateLogin = (state, devices = []) => {
-    if (devices.length == 0) {
-        return state;
-    }
-    let nextState = [...state];
+
+    let nextState = state;
     devices.forEach((device) => {
-        nextState.filter(item => item.device_type === device.device_type).forEach((item) => {
-            item.device_user = device.device_user;
-            item.device_id = device.device_id;
-        })
+        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        if (index > -1) {
+            nextState = nextState.setIn([index, 'device_user'], device.device_user);
+            nextState = nextState.setIn([index, 'device_id'], device.device_id);
+        }
     });
     return nextState;
 }
 
 
 const updateStatus = (state, devices = []) => {
-    if (devices.length == 0) {
-        return state;
-    }
-    let nextState = [...state];
+
+    let nextState = state;
     devices.forEach((device) => {
-        nextState.filter(item => item.device_type === device.device_type).forEach((item) => {
-            item.device_state = device.device_state;
-            // item.device_id = device.device_id;
-        })
+        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        if (index > -1) {
+            nextState = nextState.setIn([index, 'device_state'], device.device_state);
+        }
     });
     return nextState;
 }
 
 
 const updateJudge = (state, devices = []) => {
-    if (devices.length == 0) {
-        return state;
-    }
-    let nextState = [...state];
+    let nextState = state;
     devices.forEach((device) => {
-        nextState.filter(item => item.device_type === device.device_type).forEach((item) => {
-            item.judge_type = device.judge_type;
-        })
+        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        if (index > -1) {
+            nextState = nextState.setIn([index, 'judge_type'], device.judge_type);
+        }
     });
     return nextState;
 }
 
 
 const updateStatistics = (state, devices = []) => {
-    if (devices.length == 0) {
-        return state;
-    }
-    let nextState = [...state];
+    let nextState = state;
     devices.forEach((device) => {
-        nextState.filter(item => item.device_type === device.device_type).forEach((item) => {
-            item.history_total = device.history_total;
-            item.history_alarm = device.history_alarm;
-            item.realtime_total = device.realtime_total;
-            item.realtime_alarm = device.realtime_alarm;
-        })
+        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        if (index > -1) {
+            nextState = nextState.setIn([index, 'history_total'], device.history_total);
+            nextState = nextState.setIn([index, 'history_alarm'], device.history_alarm);
+            nextState = nextState.setIn([index, 'realtime_total'], device.realtime_total);
+            nextState = nextState.setIn([index, 'realtime_alarm'], device.realtime_alarm);
+        }
     });
     return nextState;
 }
@@ -102,12 +96,8 @@ const MQDeviceMonitor = (state = intialState, action) => {
 
         case ActionTypes.MQ_DEVICE_MONITOR_INFO_JUDGE:
             return updateJudge(state, devices);
-
-    
-        default:
-            return state;
-            break;
     }
+    return state;
 }
 
 export default MQDeviceMonitor;

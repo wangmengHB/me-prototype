@@ -53,17 +53,17 @@ const mapStateToProps = (state, ownProps) => {
     const { MQDeviceMonitor} = state;
     const {deviceType} = ownProps;
 
-    let obj = MQDeviceMonitor.find(item => item.device_type === deviceType);
+    let $$device = MQDeviceMonitor.find(val => val.get('device_type') === deviceType);
 
     return {
-        deviceId: obj.device_id, 
-        deviceUser: obj.device_user, 
-        deviceState: obj.device_state,
-        judgeType: obj.judge_type, 
-        historyTotal: obj.history_total, 
-        historyAlarm: obj.history_alarm,
-        realtimeTotal: obj.realtime_total, 
-        realtimeAlarm: obj.realtime_alarm
+        deviceId: $$device.get('device_id'), 
+        deviceUser: $$device.get('device_user'), 
+        deviceState: $$device.get('device_state'),
+        judgeType: $$device.get('judge_type'), 
+        historyTotal: $$device.get('history_total'), 
+        historyAlarm: $$device.get('history_alarm'),
+        realtimeTotal: $$device.get('realtime_total'), 
+        realtimeAlarm: $$device.get('realtime_alarm')
     }
 }
 

@@ -6,29 +6,41 @@ import config from './config/index.js';
 import i18n from './i18n/index.js';
 import notifier from './notifier/index.js';
 import App from './component/app.jsx';
+import Immutable,{fromJS, is} from 'immutable';
+
 
 
 config.init().then(() => {
+
     let languageId = config.get("NIS_Language");
-    i18n.init(languageId).then(() => {
+    return i18n.init(languageId);
 
-        ReactDOM.render(
-            <Provider store={store}>
-                <App />
-            </Provider>,
-            document.getElementById('app-container')
-        );
+}).then(() => {
 
-        notifier.register(store.dispatch, store.getState);
-        notifier.init();
+    ReactDOM.render(
+        <Provider store={store}>
+            <App />
+        </Provider>,
+        document.getElementById('app-container')
+    );
 
+    notifier.register(store.dispatch, store.getState);
+    notifier.init();
 
-
-    }).catch((err) => {
-        console.error('init i18n failed!');
-        throw new Error(err);
-    });
 }).catch((err) => {
     console.error('init application failed');
     throw new Error(err);
 });
+
+
+let $$data1 = fromJS({a:{x:1,y:1}});
+let $$data2 = fromJS({a:{x:1, y:1}});
+let $$data3 = fromJS([1,3,4, {a:{b:{c:5}}}]);
+Immutable.Map.isMap($$data1);
+window.Immutable = Immutable;
+window.data3 = $$data3;
+
+debugger;
+
+// console.log('data.is' + $$data1.is($$data2));
+console.log('Immutable.is ' + is($$data1, $$data2));
