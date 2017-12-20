@@ -1,8 +1,28 @@
 .ct2080 {
     .header {
-        height: 50px;
+        min-height: 50px;
+        height: 6%;
         width: 100%;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #1b7d8f;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+
+
+        .logo {
+            position: absolute;
+            left: 1%;
+            top: 5px;
+            height: calc(100% - 10px);
+            // margin: 10px;
+        }
+
+        .title {
+            line-height: 100%;
+            font-size: 100%;
+        }
+
+
     }
     
 }

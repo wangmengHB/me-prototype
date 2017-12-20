@@ -3,6 +3,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
+import IMG_CT from './assets/device/type_1_CT.png';
+import IMG_MW from './assets/device/type_2_MW.png';
+import IMG_HT from './assets/device/type_3_HT.png';
+import IMG_RT from './assets/device/type_4_RT.png';
+import IMG_RM from './assets/device/type_5_RM.png';
+import IMG_TR from './assets/device/type_6_TR.png';
+import IMG_BXM from './assets/device/type_7_BXM_Fake.png';
+
+import SVG_ID from './assets/ID.svg';
+import SVG_USER from './assets/User.svg';
+
+
+const IMG_MAP = {
+    '1': IMG_CT,
+    '2': IMG_MW,
+    '3': IMG_HT,
+    '4': IMG_RT,
+    '5': IMG_RM,
+    '6': IMG_TR,
+    '7': IMG_BXM
+};
+
+const STATE_MAP = {
+    '-1': '',
+    '0': 'Initializing ...',
+    '1': 'normal',
+    '2': 'error',
+    '3': 'diagnosing',
+    '4': 'shut down',
+    '5': 'offline',
+    '6': 'error'
+};
+
+
 
 class Device extends React.PureComponent {
     static propTypes = {
@@ -32,18 +66,36 @@ class Device extends React.PureComponent {
             realtimeTotal, realtimeAlarm, isCTDevice
         } = this.props;
         return (
-            <div className={isCTDevice?'ct-device':'device'}>
-                {/* <div className="test"> */}
-                <div>Device ID: {deviceId}</div>
-                <div>Device Type: {deviceType}</div>
-                <div>Device User: {deviceUser}</div>
-                <div>Device State: {deviceState}</div>
+            <div className='device'>
+                <div className="state">
+                    {STATE_MAP[deviceState]}
+                </div>
+                <div className="info">
+                    <div className="device-id">
+                        <img src={SVG_ID}/>
+                        <span>
+                            {deviceId}
+                        </span>
+                    </div>
+                    <div className="user">
+                        <img src={SVG_USER}/>
+                        <span>
+                            {deviceUser}
+                        </span>
+                    </div>
+
+                </div>
+                <div className="statistic">
+                    <div className='device-image'>
+                        <img src={IMG_MAP[deviceType]}/>
+                    </div>
+                </div>
+
                 <div>Judget Type: {judgeType}</div>
                 <div>History Count: {historyTotal}</div>
                 <div>History Alarm: {historyAlarm}</div>
                 <div>realtime count: {realtimeTotal}</div>
                 <div>realtime alarm: {realtimeAlarm}</div>
-                {/* </div> */}
             </div>
         )
     }

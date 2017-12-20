@@ -14,19 +14,19 @@ export default class App extends React.Component {
         return (
             <div className="ct2080">
                 <Header/>
-                <div className="first-row">
-                    <Device deviceType={2}/>
-                    <Device deviceType={3} />
-                    <Device deviceType={4} />
-                    <Device deviceType={5} />
-                </div>
-                <div className="second-row">
+                <div className="content">
                     <div className="first-col">
-                        <Device deviceType={6} />
-                        <Device deviceType={7} />
-                        <Device deviceType={1} isCTDevice={true}/>
+                        <Device deviceType={2}/>
+                        <Device deviceType={3} />
+                        <Device deviceType={4} />                
                     </div>
                     <div className="second-col">
+                        <Device deviceType={5} />
+                        <Device deviceType={6} />
+                        <Device deviceType={7} />
+                    </div>
+                    <div className="third-col">
+                        <Device deviceType={1} isCTDevice={true} />
                     </div>
                 </div>
             </div>

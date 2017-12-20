@@ -1,16 +1,44 @@
 .ct2080 {
     .device {
-        width: 400px;
-        height: 280px;
-        background-color: white;
-        margin: 10px;
-    }
+        width: 100%;
+        // background-color: white;
+        height: calc(33% - 35px);
+        margin: 30px;
+        border: 1px solid #1b7d8f;
+        overflow: hidden;
+        position: relative;
+        .state {
+            height: 10%;
+            // line-height: 20px;
+            width: 100%;
+            background-color: green;
+            text-align: center;
+        }
 
-    .ct-device {
-        width: 820px;
-        height: 280px;
-        background-color: white;
-        margin: 10px;
+        .info {
+            height: 10%;
+            border-bottom: solid 1px #1b7d8f;
+
+            .device-id, 
+            .user {
+                display: inline-block;
+                height: 100%;
+                width: 50%;
+                overflow: hidden;
+                word-wrap: none;
+                img {
+                    height: 90%;
+                    margin-left: 10px;
+                }
+
+                span {
+                    line-height: 100%;
+                    margin-left: 30px;
+                }
+            }
+
+        }
+
     }
 
     .test {
