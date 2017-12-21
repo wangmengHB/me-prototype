@@ -39,6 +39,33 @@
 
         }
 
+        .statistic {
+            height: 80%;
+            position: relative;
+
+            .device-image {
+                position: absolute;
+                left: 0;
+                right: 40%;
+                width: 40%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+
+            .chart {
+                position: absolute;
+                left: 40%;
+                right: 0;
+                width: 60%;
+                height: 100%;
+            }
+
+        }
+
     }
 
     .test {

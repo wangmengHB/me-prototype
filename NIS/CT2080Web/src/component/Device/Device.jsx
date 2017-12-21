@@ -89,13 +89,16 @@ class Device extends React.PureComponent {
                     <div className='device-image'>
                         <img src={IMG_MAP[deviceType]}/>
                     </div>
+                    <div className="chart">
+                        <div>Judget Type: {judgeType}</div>
+                        <div>History Count: {historyTotal}</div>
+                        <div>History Alarm: {historyAlarm}</div>
+                        <div>realtime count: {realtimeTotal}</div>
+                        <div>realtime alarm: {realtimeAlarm}</div>
+                    </div>
                 </div>
 
-                <div>Judget Type: {judgeType}</div>
-                <div>History Count: {historyTotal}</div>
-                <div>History Alarm: {historyAlarm}</div>
-                <div>realtime count: {realtimeTotal}</div>
-                <div>realtime alarm: {realtimeAlarm}</div>
+                
             </div>
         )
     }
