@@ -36,6 +36,24 @@ const STATE_MAP = {
     '6': 'error'
 };
 
+const STATE_CLASS_MAP = {
+    '-1': 'off-line',
+    '0': 'work',
+    '1': 'work',
+    '2': 'error',
+    '3': 'error',
+    '4': 'off-line',
+    '5': 'off-line',
+    '6': 'requesting'
+};
+
+const JUDGE_CLASS_MAP= {
+    '1': 'suspect',
+    '2': 'suspect',
+    '3': 'suspect',
+    '4': 'dangerous'
+}
+
 
 
 class Device extends React.PureComponent {
@@ -67,34 +85,59 @@ class Device extends React.PureComponent {
         } = this.props;
         return (
             <div className='device'>
-                <div className="state">
+                <div className={`state ${STATE_CLASS_MAP[deviceState]}`}>
                     {STATE_MAP[deviceState]}
                 </div>
-                <div className="info">
-                    <div className="device-id">
-                        <img src={SVG_ID}/>
-                        <span>
-                            {deviceId}
-                        </span>
-                    </div>
-                    <div className="user">
-                        <img src={SVG_USER}/>
-                        <span>
-                            {deviceUser}
-                        </span>
-                    </div>
+                <div className={`device-content ${JUDGE_CLASS_MAP[judgeType]}`}>
+                    <div className="info">
+                        <div className="device-id">
+                            <div className="key">
+                                <img src={SVG_ID} />
+                            </div>
 
-                </div>
-                <div className="statistic">
-                    <div className='device-image'>
-                        <img src={IMG_MAP[deviceType]}/>
+                            <div className="value">
+                                {deviceId}
+                            </div>
+                            
+                            
+                        </div>
+                        <div className="user">
+                            <div className="key">
+                                <img src={SVG_USER}/>
+                            </div>
+                            <div className="value">
+                                {deviceUser}
+                            </div>
+                            
+                        </div>
+
                     </div>
-                    <div className="chart">
-                        <div>Judget Type: {judgeType}</div>
-                        <div>History Count: {historyTotal}</div>
-                        <div>History Alarm: {historyAlarm}</div>
-                        <div>realtime count: {realtimeTotal}</div>
-                        <div>realtime alarm: {realtimeAlarm}</div>
+                    <div className={`statistic`}>
+                        <div className='device-image'>
+                            <img src={IMG_MAP[deviceType]}/>
+                        </div>
+                        <div className="result">
+                            <div className="history">
+                                <div className="title">TOTAL</div>
+                                <div className="total-count">
+                                    {historyTotal > -1 ? historyTotal:''}
+                                </div>
+                                <div className="suspect-count">
+                                    {historyAlarm > -1? historyAlarm: ''}
+                                </div>
+                            </div>
+                            <div className="current">
+                                <div className="title">SINCE BOOT</div>
+                                <div className="total-count">
+                                    {realtimeTotal > -1? realtimeTotal: ''}
+                                </div>
+                                <div className="suspect-count">
+                                    {realtimeAlarm > -1? realtimeAlarm: ''}
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
                     </div>
                 </div>
 

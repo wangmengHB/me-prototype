@@ -9,68 +9,180 @@
         position: relative;
         .state {
             height: 10%;
-            // line-height: 20px;
             width: 100%;
-            background-color: green;
-            text-align: center;
+            border-bottom: 1px solid #1b7d8f;
+            line-height: 3vh;
+            font-size: 2vh;
+            text-align: center;           
         }
 
-        .info {
-            height: 10%;
-            border-bottom: solid 1px #1b7d8f;
-
-            .device-id, 
-            .user {
-                display: inline-block;
-                height: 100%;
-                width: 50%;
-                overflow: hidden;
-                word-wrap: none;
-                img {
-                    height: 90%;
-                    margin-left: 10px;
-                }
-
-                span {
-                    line-height: 100%;
-                    margin-left: 30px;
-                }
-            }
-
+        .work {
+            background-color: #1ba510;
         }
 
-        .statistic {
-            height: 80%;
-            position: relative;
+        .error {
+            background-color: #be303a;
+        }
 
-            .device-image {
-                position: absolute;
-                left: 0;
-                right: 40%;
-                width: 40%;
-                height: 100%;
-                img {
+        .off-line {
+            background-color: #a9a9a9;
+        }
+
+        .requesting {
+            background-color: #d07d39;
+        }
+
+
+        .device-content {
+            height: 90%;
+            width: 100%;
+
+
+            .info {
+                height: 15%;
+                width: 100%;
+
+                .device-id, 
+                .user {
+                    display: inline-block;
                     height: 100%;
-                    width: 100%;
+                    width: 50%;
+                    overflow: hidden;
+                    position: relative;
+
+                    .key {
+                        position: absolute;
+                        left: 0;
+                        right: 20%;
+                        height: 100%;
+                        width: 20%;
+
+                        img {
+                            height: 90%;
+                            margin-left: 10px;
+                        }
+                    }
                     
+                    .value {
+                        position: absolute;
+                        left: 20%;
+                        right: 0;
+                        height: 100%;
+                        width: 80%;
+  
+                        line-height: 4vh;
+                        text-align: center;
+                    }
                 }
+
             }
 
-            .chart {
-                position: absolute;
-                left: 40%;
-                right: 0;
-                width: 60%;
-                height: 100%;
+
+            .statistic {
+                height: 85%;
+                position: relative;
+
+                .device-image {
+                    position: absolute;
+                    left: 0;
+                    right: 40%;
+                    width: 40%;
+                    height: 100%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        
+                    }
+                }
+
+                .result {
+                    position: absolute;
+                    left: 40%;
+                    right: 0;
+                    width: 60%;
+                    height: 100%;
+                    text-align: center;
+                    
+
+                    .history {
+                        display: inline-block;
+                        width: 50%;
+                        height: 100%;
+                        
+                    }
+
+                    .current {
+                        display: inline-block;
+                        width: 50%;
+                        height: 100%;                       
+                    }
+
+
+                    .title {
+                        height: 20%;
+                        line-height: 5vh;
+                    }
+
+                    .total-count {
+                        height: 40%;
+                        font-size: 5vh;
+                        line-height: 10vh;
+                    }
+
+                    .suspect-count {
+                        height: 40%;
+                        color: red;
+                        font-size: 5vh;
+                        line-height: 5vh;
+                    }
+
+
+                }
+
             }
+
+
 
         }
 
-    }
 
-    .test {
-        height: 100px;
-        overflow-y: scroll;
-    }
+        
 
+        
+
+
+        .suspect {
+            animation-name: warning;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .dangerous {
+            animation-name: alarm;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes warning {
+            from { 
+                background-color: #12535f;
+            }
+            to { 
+                background-color: #d07d39; 
+            }
+        }
+
+        @keyframes alarm {
+            from { 
+                background-color: #12535f;
+            }
+            to { 
+                background-color: #be303a; 
+            }
+        }
+
+
+    }
 }
