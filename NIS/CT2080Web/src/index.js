@@ -23,8 +23,7 @@ config.init().then(() => {
         document.getElementById('app-container')
     );
 
-    notifier.register(store.dispatch, store.getState);
-    notifier.init();
+    notifier.init(store.dispatch, store.getState);
 
 }).catch((err) => {
     console.error('init application failed');

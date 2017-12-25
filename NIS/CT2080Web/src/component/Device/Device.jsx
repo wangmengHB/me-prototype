@@ -33,7 +33,8 @@ const STATE_MAP = {
     '3': 'diagnosing',
     '4': 'shut down',
     '5': 'offline',
-    '6': 'error'
+    '6': 'error',
+    '7': '',
 };
 
 const STATE_CLASS_MAP = {
@@ -44,7 +45,8 @@ const STATE_CLASS_MAP = {
     '3': 'error',
     '4': 'off-line',
     '5': 'off-line',
-    '6': 'requesting'
+    '6': 'requesting',
+    '7': 'off-line'
 };
 
 const JUDGE_CLASS_MAP= {

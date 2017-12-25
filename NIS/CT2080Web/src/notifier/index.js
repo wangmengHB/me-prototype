@@ -1,4 +1,9 @@
 import handleMQMessage from './handleMQMessage.js';
+import config from '../config';
+// import Stomp from 'stompjs';
+// import SockJS from 'sockjs-client';
+let Stomp = window.Stomp;
+let SockJS = window.SockJS;
 
 
 
@@ -10,41 +15,45 @@ const getQueryString = (name) => {
     return null;
 };
 
+let isConnected = false;
+
 // stomp init
-let previous = () => {
+let stompInit = (dispatch, getState) => {
+    debugger;
     let clientID = getQueryString("clientId_inner");
     if (clientID == void (0) || clientID == "")
         return;
-    // var sendConnettion = "/exchange/amq.topic/" + "Browse_MNS3D_5065F32F0A6E" + ".local.in";
-    var sendConnettion = "/exchange/amq.topic/" + "Browse_" + clientID + ".local.in";
+    let sendConnettion = "/exchange/amq.topic/" + "Browse_" + clientID + ".local.in";
+    let ws = null;
     // Stomp.js boilerplate
     if (location.search == '?ws') {
-        var ws = new WebSocket('ws://' + config.get("WebSocketIp") + ':15674/ws');
+        ws = new WebSocket('ws://' + config.get("WebSocketIp") + ':15674/ws');
     } else {
-        var ws = new SockJS('http://' + config.get("WebSocketIp") + ':15674/stomp');
+        ws = new SockJS('http://' + config.get("WebSocketIp") + ':15674/stomp');
     }
 
     // Init Client
-    var client = Stomp.over(ws);
+    let client = Stomp.over(ws);
 
     client.heartbeat.outgoing = 0;
     client.heartbeat.incoming = 0;
 
     var on_connect = function (x) {
         client.subscribe(sendConnettion, function (message) {
-            handleMQMessage(message);
+            handleMQMessage(message, dispatch, getState);
         });
-        NISWebUI.util.CookieUtil.setCookie("socketConnet", "true");
+        isConnected = true;
     };
     var on_error = function () {
-        NISWebUI.util.CookieUtil.setCookie("socketConnet", "false")
+        isConnected = false;
+        stompInit(dispatch, getState);
     };
 
     client.connect('guest', 'guest', on_connect, on_error, '/');
 }
 
 
-let mock_init = () => {
+let mock_init = (dispatch, getState) => {
     let ws = new WebSocket('ws://localhost:3006');
     ws.onopen = (e) => {
         ws.send('client connected!');
@@ -72,17 +81,13 @@ let mock_init = () => {
 
 
 
-let dispatch = null;
-let getState = null
+
 let sessionId = '';
 
 const notifier = {
-    register: (fn1, fn2) => { 
-        dispatch = fn1;
-        getState = fn2;
-    },
-    init: () => {
-        mock_init();
+    init: (dispatch, getState) => {
+        // mock_init(dispatch, getState);
+        stompInit(dispatch, getState);
     },
     sendMessage: (msg) => {
 
