@@ -17,13 +17,15 @@ const getQueryString = (name) => {
 
 let isConnected = false;
 
+const CLIENT_ID = 'ct2080mobile001';
+
 // stomp init
 let stompInit = (dispatch, getState) => {
-    debugger;
-    let clientID = getQueryString("clientId_inner");
-    if (clientID == void (0) || clientID == "")
-        return;
-    let sendConnettion = "/exchange/amq.topic/" + "Browse_" + clientID + ".local.in";
+    // let clientID = getQueryString("clientId_inner");
+    // if (clientID == void (0) || clientID == "")
+    //     return;
+    let clientID = CLIENT_ID;
+    let sendConnettion = `/exchange/amq.topic/Browse_${clientID}.local.in`;
     let ws = null;
     // Stomp.js boilerplate
     if (location.search == '?ws') {

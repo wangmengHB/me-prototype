@@ -2,6 +2,8 @@ import './_Device.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import * as DeviceTypes from '../../constant/DeviceTypes.js';
+import * as DeviceStates from '../../constant/DeviceStates.js';
 
 import IMG_CT from './assets/device/type_1_CT.png';
 import IMG_MW from './assets/device/type_2_MW.png';
@@ -16,37 +18,34 @@ import SVG_USER from './assets/User.svg';
 
 
 const IMG_MAP = {
-    '1': IMG_CT,
-    '2': IMG_MW,
-    '3': IMG_HT,
-    '4': IMG_RT,
-    '5': IMG_RM,
-    '6': IMG_TR,
-    '7': IMG_BXM
+    [DeviceTypes.CT]: IMG_CT,
+    [DeviceTypes.MW]: IMG_MW,
+    [DeviceTypes.HT]: IMG_HT,
+    [DeviceTypes.RT]: IMG_RT,
+    [DeviceTypes.RM]: IMG_RM,
+    [DeviceTypes.TR]: IMG_TR,
+    [DeviceTypes.BXM]: IMG_BXM
 };
 
 const STATE_MAP = {
     '-1': '',
-    '0': 'Initializing ...',
-    '1': 'normal',
-    '2': 'error',
-    '3': 'diagnosing',
-    '4': 'shut down',
-    '5': 'offline',
-    '6': 'error',
-    '7': '',
+    [DeviceStates.INIT]: 'Initializing ...',
+    [DeviceStates.WAITING]: 'Waiting',
+    [DeviceStates.SCANNING]: 'Scanning ...',
+    [DeviceStates.ERROR]: 'Error',
+    [DeviceStates.DIAGNOSING]: 'Diagnosing ...',
+    [DeviceStates.OFFLINE]: 'offline',
 };
 
 const STATE_CLASS_MAP = {
     '-1': 'off-line',
-    '0': 'work',
-    '1': 'work',
-    '2': 'error',
-    '3': 'error',
-    '4': 'off-line',
-    '5': 'off-line',
-    '6': 'requesting',
-    '7': 'off-line'
+    [DeviceStates.INIT]: 'work',
+    [DeviceStates.WAITING]: 'work',
+    [DeviceStates.SCANNING]: 'work',
+    [DeviceStates.ERROR]: 'error',
+    [DeviceStates.DIAGNOSING]: 'error',
+    [DeviceStates.OFFLINE]: 'off-line',
+    '60': 'requesting'
 };
 
 const JUDGE_CLASS_MAP= {
@@ -62,13 +61,13 @@ class Device extends React.PureComponent {
     static propTypes = {
         deviceId: PropTypes.string,
         deviceUser: PropTypes.string,
-        deviceType: PropTypes.number,
-        deviceState: PropTypes.number,
-        judgeType: PropTypes.number,
-        historyTotal: PropTypes.number,
-        historyAlarm: PropTypes.number,
-        realtimeTotal: PropTypes.number,
-        realtimeAlarm: PropTypes.number,
+        deviceType: PropTypes.string,
+        deviceState: PropTypes.string,
+        judgeType: PropTypes.string,
+        historyTotal: PropTypes.string,
+        historyAlarm: PropTypes.string,
+        realtimeTotal: PropTypes.string,
+        realtimeAlarm: PropTypes.string,
         isCTDevice: PropTypes.bool,
     }
 
@@ -153,7 +152,7 @@ const mapStateToProps = (state, ownProps) => {
     const { MQDeviceMonitor} = state;
     const {deviceType} = ownProps;
 
-    let $$device = MQDeviceMonitor.find(val => val.get('device_type') === deviceType);
+    let $$device = MQDeviceMonitor.find(val => val.get('device_type') == deviceType);
 
     return {
         deviceId: $$device.get('device_id'), 

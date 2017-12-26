@@ -2,9 +2,9 @@ import * as ActionTypes from '../constant/ActionTypes.js';
 import * as MQAction from '../action/MQAction.js';
 import handleDeviceMonitorInfo from './handleDeviceMonitorInfo.js';
 
-let handleMQMessage = (data = '', dispatch, getState) => {
-    // data = JSON.parse(data.body);
-    // console.log("GetMsg-operation:" + data.operation)
+let handleMQMessage = (msg = {body:{operation:''}}, dispatch, getState) => {
+    let data = JSON.parse(msg.body);
+    console.log("GetMsg-operation:" + data.operation);
     switch (data.operation) {
         case ActionTypes.MQ_CLIENT_HEART:
             dispatch(MQAction.clientHeart(data));

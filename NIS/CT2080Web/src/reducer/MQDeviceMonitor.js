@@ -1,11 +1,12 @@
 import * as ActionTypes from '../constant/ActionTypes.js';
+import * as DeviceTypes from '../constant/DeviceTypes.js';
 import {fromJS} from 'immutable';
 
 
 let getInitialDevice = (id) => ({
     device_id: "",
     device_user: '',
-    device_type: id,
+    device_type: String(id),
     device_state: -1,
     judge_type: -1,
     history_total: -1,
@@ -16,13 +17,13 @@ let getInitialDevice = (id) => ({
 
 
 const intialState = fromJS([
-    getInitialDevice(1),
-    getInitialDevice(2),
-    getInitialDevice(3),
-    getInitialDevice(4),
-    getInitialDevice(5),
-    getInitialDevice(6),
-    getInitialDevice(7)
+    getInitialDevice(DeviceTypes.CT),
+    getInitialDevice(DeviceTypes.MW),
+    getInitialDevice(DeviceTypes.HT),
+    getInitialDevice(DeviceTypes.RT),
+    getInitialDevice(DeviceTypes.RM),
+    getInitialDevice(DeviceTypes.TR),
+    getInitialDevice(DeviceTypes.BXM)
 ]);
 
 
@@ -30,7 +31,7 @@ const updateLogin = (state, devices = []) => {
 
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
             nextState = nextState.setIn([index, 'device_user'], device.device_user);
             nextState = nextState.setIn([index, 'device_id'], device.device_id);
@@ -44,7 +45,7 @@ const updateStatus = (state, devices = []) => {
 
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
             nextState = nextState.setIn([index, 'device_state'], device.device_state);
         }
@@ -56,7 +57,7 @@ const updateStatus = (state, devices = []) => {
 const updateJudge = (state, devices = []) => {
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
             nextState = nextState.setIn([index, 'judge_type'], device.judge_type);
         }
@@ -68,7 +69,7 @@ const updateJudge = (state, devices = []) => {
 const updateStatistics = (state, devices = []) => {
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') === device.device_type);
+        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
             nextState = nextState.setIn([index, 'history_total'], device.history_total);
             nextState = nextState.setIn([index, 'history_alarm'], device.history_alarm);
