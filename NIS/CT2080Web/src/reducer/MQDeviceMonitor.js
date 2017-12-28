@@ -86,7 +86,8 @@ const updateWorkLog = (state, devices = []) => {
     devices.forEach((device) => {
         let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
-            nextState = nextState.update([index, 'logs'], list => list.push({
+            debugger;
+            nextState = nextState.updateIn([index, 'logs'], list => list.push({
                 log_time: device.log_time,
                 device_log: device.device_log
             }));
