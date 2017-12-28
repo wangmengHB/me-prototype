@@ -58,7 +58,7 @@ const getDevice = type => {
 
 const ramdomMessage = () => {
 
-    let msgType = getRamdomNumber(4) + 1;
+    let msgType = getRamdomNumber(6) + 1;
     let type = getRamdomNumber(7) + 1;
     let device = getDevice(type);
     let body = {};
@@ -91,6 +91,14 @@ const ramdomMessage = () => {
                 history_alarm: getRamdomNumber(10000),
                 realtime_total: getRamdomNumber(10000),
                 realtime_alarm: getRamdomNumber(10000),
+                ...device
+            }
+            break;
+
+        case 5:
+            body = {
+                log_time: new Date().toDateString(),
+                device_log: 'working...'.repeat(1 + Math.floor(Math.random * 10)),
                 ...device
             }
             break;

@@ -12,7 +12,8 @@ let getInitialDevice = (id) => ({
     history_total: -1,
     history_alarm: -1,
     realtime_total: -1,
-    realtime_alarm: -1
+    realtime_alarm: -1,
+    logs: [],
 }) 
 
 
@@ -80,6 +81,20 @@ const updateStatistics = (state, devices = []) => {
     return nextState;
 }
 
+const updateWorkLog = (state, devices = []) => {
+    let nextState = state;
+    devices.forEach((device) => {
+        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
+        if (index > -1) {
+            nextState = nextState.update([index, 'logs'], list => list.push({
+                log_time: device.log_time,
+                device_log: device.device_log
+            }));
+        }
+    });
+    return nextState;
+}
+
 
 
 
@@ -97,6 +112,9 @@ const MQDeviceMonitor = (state = intialState, action) => {
 
         case ActionTypes.MQ_DEVICE_MONITOR_INFO_JUDGE:
             return updateJudge(state, devices);
+
+        case ActionTypes.MQ_DEVICE_MONITOR_INFO_WORK_LOG:
+            return updateWorkLog(state, devices);
     }
     return state;
 }

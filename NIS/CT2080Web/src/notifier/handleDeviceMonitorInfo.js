@@ -23,7 +23,12 @@ const handleDeviceMonitorInfo = (info, dispatch, getState) => {
         case 4:
             dispatch(MQAction.deviceStatistics(info.info_content));
             break;
-    
+ 
+        // device logs
+        case 5:
+            dispatch(MQAction.deviceLogs(info.info_content));
+            break;
+
         default:
             break;
     }

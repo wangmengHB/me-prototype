@@ -6,8 +6,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, '../public/dev'),
         filename: 'js/[name].js',
-        // publicPath: '/',
-        publicPath: '/home/resources/ct2080/'
+        publicPath: '/',
+        // publicPath: '/home/resources/ct2080/'
     },
     module: {
         rules: [{

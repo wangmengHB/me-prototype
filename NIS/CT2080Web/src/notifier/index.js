@@ -64,8 +64,12 @@ let mock_init = (dispatch, getState) => {
     ws.onmessage = (e) => {
 
         let data = JSON.parse(e.data);
+  
+        let msg = {
+            body: JSON.stringify(data)
+        }
 
-        handleMQMessage(data, dispatch, getState);
+        handleMQMessage(msg, dispatch, getState);
 
 
         // ws.send(msg);
@@ -88,8 +92,8 @@ let sessionId = '';
 
 const notifier = {
     init: (dispatch, getState) => {
-        // mock_init(dispatch, getState);
-        stompInit(dispatch, getState);
+        mock_init(dispatch, getState);
+        // stompInit(dispatch, getState);
     },
     sendMessage: (msg) => {
 

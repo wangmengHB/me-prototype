@@ -30,4 +30,5 @@ export const MQ_DEVICE_MONITOR_INFO_LOGIN = "DeviceMonitorInfo_1";
 export const MQ_DEVICE_MONITOR_INFO_STATUS = "DeviceMonitorInfo_2";
 export const MQ_DEVICE_MONITOR_INFO_JUDGE = "DeviceMonitorInfo_3";
 export const MQ_DEVICE_MONITOR_INFO_STATISTICS = "DeviceMonitorInfo_4";
+export const MQ_DEVICE_MONITOR_INFO_WORK_LOG = "DeviceMonitorInfo_5";
 

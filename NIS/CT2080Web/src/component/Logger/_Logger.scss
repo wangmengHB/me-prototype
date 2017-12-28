@@ -1,0 +1,42 @@
+.ct2080 {
+    .content {
+        .third-col {
+
+            .system-logger {
+                width: 100%;
+                height: calc(33% - 35px);
+                margin: 30px;
+                border: 1px solid #1b7d8f;
+
+
+                .log-header {
+                    height: 10%;
+                    width: 100%;
+                    border-bottom: 1px solid #1b7d8f;
+                    line-height: 3vh;
+                    font-size: 2vh;
+                    text-align: center;
+                    background-color: #29646e;    
+                }
+
+                .log-content {
+                    height: 90%;
+                    width: 100%;
+                    border-bottom: 1px solid #1b7d8f;
+                    line-height: 3vh;
+                    font-size: 2vh;
+                    text-align: left;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                }
+
+
+
+
+
+
+
+            }
+        }
+    }
+}
