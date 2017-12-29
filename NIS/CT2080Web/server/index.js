@@ -122,6 +122,16 @@ const ramdomMessage = () => {
                 ...device
             }
             break;
+        
+        case 6:
+            body = {
+                // 1. 请求开机 2. 开机请求处理中 3. 允许开机
+                // 1 请求工作；2，工作请求处理中；3，工作中，4，工作结束
+                Request_state:  Math.floor(Math.random()*3 + 1), 
+                ...device
+            }
+            break;
+        
     
         default:
             break;

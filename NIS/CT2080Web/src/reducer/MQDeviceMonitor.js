@@ -13,8 +13,7 @@ let getInitialDevice = (id) => ({
     history_alarm: -1,
     realtime_total: -1,
     realtime_alarm: -1,
-    log_time: '',
-    device_log: ''
+    Request_state: -1,  
 }) 
 
 const MAX_LOG_COUNT = 100;
@@ -104,11 +103,22 @@ const updateWorkLog = (state, devices = []) => {
     return nextState;
 }
 
+const requestingWork = (state, devices = []) => {
+    let nextState = state;
+    devices.forEach((device) => {
+        let index = nextState.get('devices').findIndex(val => val.get('device_type') == device.device_type);
+        if (index > -1) {
+            nextState = nextState.setIn(['devices', index, 'Request_state'], device.Request_state);
+        }
+    });
+    return nextState;
+};
+
 
 
 
 const MQDeviceMonitor = (state = intialState, action) => {
-    debugger;
+
     let devices = action.devices || [];
     switch (action.type) {
         case ActionTypes.MQ_DEVICE_MONITOR_INFO_LOGIN:
@@ -125,6 +135,9 @@ const MQDeviceMonitor = (state = intialState, action) => {
 
         case ActionTypes.MQ_DEVICE_MONITOR_INFO_WORK_LOG:
             return updateWorkLog(state, devices);
+        
+        case ActionTypes.MQ_DEVICE_MONITOR_INFO_REQUESTING_WORK:
+            return requestingWork(state, devices);
     }
     return state;
 }
