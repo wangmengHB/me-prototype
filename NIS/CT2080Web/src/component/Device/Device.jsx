@@ -152,7 +152,7 @@ const mapStateToProps = (state, ownProps) => {
     const { MQDeviceMonitor} = state;
     const {deviceType} = ownProps;
 
-    let $$device = MQDeviceMonitor.find(val => val.get('device_type') == deviceType);
+    let $$device = MQDeviceMonitor.get('devices').find(val => val.get('device_type') == deviceType);
 
     return {
         deviceId: $$device.get('device_id'), 

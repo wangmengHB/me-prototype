@@ -1,6 +1,6 @@
 import * as ActionTypes from '../constant/ActionTypes.js';
 import * as DeviceTypes from '../constant/DeviceTypes.js';
-import {fromJS} from 'immutable';
+import {fromJS, List} from 'immutable';
 
 
 let getInitialDevice = (id) => ({
@@ -13,29 +13,35 @@ let getInitialDevice = (id) => ({
     history_alarm: -1,
     realtime_total: -1,
     realtime_alarm: -1,
-    logs: [],
+    log_time: '',
+    device_log: ''
 }) 
 
+const MAX_LOG_COUNT = 100;
 
-const intialState = fromJS([
-    getInitialDevice(DeviceTypes.CT),
-    getInitialDevice(DeviceTypes.MW),
-    getInitialDevice(DeviceTypes.HT),
-    getInitialDevice(DeviceTypes.RT),
-    getInitialDevice(DeviceTypes.RM),
-    getInitialDevice(DeviceTypes.TR),
-    getInitialDevice(DeviceTypes.BXM)
-]);
+
+const intialState = fromJS({
+    logs: List(),
+    devices:[
+        getInitialDevice(DeviceTypes.CT),
+        getInitialDevice(DeviceTypes.MW),
+        getInitialDevice(DeviceTypes.HT),
+        getInitialDevice(DeviceTypes.RT),
+        getInitialDevice(DeviceTypes.RM),
+        getInitialDevice(DeviceTypes.TR),
+        getInitialDevice(DeviceTypes.BXM)
+    ]
+});
 
 
 const updateLogin = (state, devices = []) => {
 
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
+        let index = nextState.get('devices').findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
-            nextState = nextState.setIn([index, 'device_user'], device.device_user);
-            nextState = nextState.setIn([index, 'device_id'], device.device_id);
+            nextState = nextState.setIn(['devices', index, 'device_user'], device.device_user);
+            nextState = nextState.setIn(['devices', index, 'device_id'], device.device_id);
         }
     });
     return nextState;
@@ -46,9 +52,9 @@ const updateStatus = (state, devices = []) => {
 
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
+        let index = nextState.get('devices').findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
-            nextState = nextState.setIn([index, 'device_state'], device.device_state);
+            nextState = nextState.setIn(['devices', index, 'device_state'], device.device_state);
         }
     });
     return nextState;
@@ -58,9 +64,9 @@ const updateStatus = (state, devices = []) => {
 const updateJudge = (state, devices = []) => {
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
+        let index = nextState.get('devices').findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
-            nextState = nextState.setIn([index, 'judge_type'], device.judge_type);
+            nextState = nextState.setIn(['devices', index, 'judge_type'], device.judge_type);
         }
     });
     return nextState;
@@ -70,12 +76,12 @@ const updateJudge = (state, devices = []) => {
 const updateStatistics = (state, devices = []) => {
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
+        let index = nextState.get('devices').findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
-            nextState = nextState.setIn([index, 'history_total'], device.history_total);
-            nextState = nextState.setIn([index, 'history_alarm'], device.history_alarm);
-            nextState = nextState.setIn([index, 'realtime_total'], device.realtime_total);
-            nextState = nextState.setIn([index, 'realtime_alarm'], device.realtime_alarm);
+            nextState = nextState.setIn(['devices', index, 'history_total'], device.history_total);
+            nextState = nextState.setIn(['devices', index, 'history_alarm'], device.history_alarm);
+            nextState = nextState.setIn(['devices', index, 'realtime_total'], device.realtime_total);
+            nextState = nextState.setIn(['devices', index, 'realtime_alarm'], device.realtime_alarm);
         }
     });
     return nextState;
@@ -84,14 +90,16 @@ const updateStatistics = (state, devices = []) => {
 const updateWorkLog = (state, devices = []) => {
     let nextState = state;
     devices.forEach((device) => {
-        let index = nextState.findIndex(val => val.get('device_type') == device.device_type);
-        if (index > -1) {
-            debugger;
-            nextState = nextState.updateIn([index, 'logs'], list => list.push({
+        nextState = nextState.updateIn(['logs'], list => {
+            if (list.size >= MAX_LOG_COUNT) {
+                list = list.shift();
+            }
+            return list.push({
+                device_type: device.device_type,
                 log_time: device.log_time,
                 device_log: device.device_log
-            }));
-        }
+            });
+        })
     });
     return nextState;
 }
@@ -100,6 +108,7 @@ const updateWorkLog = (state, devices = []) => {
 
 
 const MQDeviceMonitor = (state = intialState, action) => {
+    debugger;
     let devices = action.devices || [];
     switch (action.type) {
         case ActionTypes.MQ_DEVICE_MONITOR_INFO_LOGIN:

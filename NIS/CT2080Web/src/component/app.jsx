@@ -6,8 +6,10 @@ import Header from './Header/index.jsx';
 import Device from './Device/Device.jsx';
 import Logger from './Logger/Logger.jsx';
 import * as DeviceTypes from '../constant/DeviceTypes.js';
+import {List} from 'immutable';
 
 import IMG_LOGO from './ct-mic2080-logo.jpg';
+
 
 
 export default class App extends React.Component {

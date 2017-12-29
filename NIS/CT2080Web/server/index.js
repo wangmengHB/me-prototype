@@ -27,7 +27,7 @@ let ws_server = ws.createServer(function (conn) {
                 let msg = ramdomMessage();
 
                 conn.sendText(JSON.stringify(msg));
-            }, 5000);
+            }, 1000 * 5);
         }
     });
     conn.on("close", function (code, reason) {
@@ -39,7 +39,26 @@ let ws_server = ws.createServer(function (conn) {
 
 
 const info_types = [1,2,3,4];
-const device_types = [1,2,3,4,5,6,7];
+
+const CT = 1;
+const MW = 1087; //1200;
+const HT = 1300;
+const RT = 1400;
+const RM = 1600;
+const TR = 1599; // 1700;
+const BXM = 1800;
+
+
+const device_types = [
+    CT,
+    MW,
+    HT,
+    RT,
+    RM,
+    TR,
+    BXM
+];
+
 const device_ids = [
     'CT Device',
     'Micro Wave',
@@ -53,12 +72,13 @@ const device_ids = [
 const getRamdomNumber = (base) => Math.floor(Math.random() * base);
 
 const getDevice = type => {
-   return {device_id: device_ids[type-1], device_type: type}
+    return { device_id: device_ids[type - 1], device_type: device_types[type-1]}
 };
 
 const ramdomMessage = () => {
 
     let msgType = getRamdomNumber(6) + 1;
+    // msgType = 5;
     let type = getRamdomNumber(7) + 1;
     let device = getDevice(type);
     let body = {};
@@ -97,8 +117,8 @@ const ramdomMessage = () => {
 
         case 5:
             body = {
-                log_time: new Date().toDateString(),
-                device_log: 'working...'.repeat(1 + Math.floor(Math.random * 10)),
+                log_time: new Date().toJSON(),
+                device_log: 'working... '.repeat(1 + Math.floor(Math.random() * 10)),
                 ...device
             }
             break;
