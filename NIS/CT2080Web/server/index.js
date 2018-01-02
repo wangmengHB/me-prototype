@@ -77,8 +77,8 @@ const getDevice = type => {
 
 const ramdomMessage = () => {
 
-    let msgType = getRamdomNumber(6) + 1;
-    // msgType = 5;
+    let msgType = getRamdomNumber(7) + 1;
+    // msgType = 6;
     let type = getRamdomNumber(7) + 1;
     let device = getDevice(type);
     let body = {};

@@ -30,7 +30,7 @@ const IMG_MAP = {
 const STATE_MAP = {
     '-1': '',
     [DeviceStates.INIT]: 'Initializing ...',
-    [DeviceStates.WAITING]: 'Waiting',
+    [DeviceStates.WAITING]: 'Standby ...',
     [DeviceStates.SCANNING]: 'Scanning ...',
     [DeviceStates.ERROR]: 'Error',
     [DeviceStates.DIAGNOSING]: 'Diagnosing ...',
@@ -44,9 +44,23 @@ const STATE_CLASS_MAP = {
     [DeviceStates.SCANNING]: 'work',
     [DeviceStates.ERROR]: 'error',
     [DeviceStates.DIAGNOSING]: 'error',
-    [DeviceStates.OFFLINE]: 'off-line',
-    '60': 'requesting'
+    [DeviceStates.OFFLINE]: 'off-line'
 };
+
+
+const getStateClass = (deviceState, requestState) => {
+    if (requestState == 1 || requestState == 2) {
+        return 'requesting';
+    }
+    return STATE_CLASS_MAP[deviceState] || '';
+}
+
+const getStateText = (deviceState, requestState) => {
+    if (requestState == 1 || requestState == 2) {
+        return 'Device is requesting for work.';
+    }
+    return STATE_MAP[deviceState] || '';
+}
 
 const JUDGE_CLASS_MAP= {
     '1': 'suspect',
@@ -68,6 +82,7 @@ class Device extends React.PureComponent {
         historyAlarm: PropTypes.string,
         realtimeTotal: PropTypes.string,
         realtimeAlarm: PropTypes.string,
+        requestState: PropTypes.string,  // 1 请求工作；2，工作请求处理中；3，工作中，4，工作结束
         isCTDevice: PropTypes.bool,
     }
 
@@ -81,13 +96,13 @@ class Device extends React.PureComponent {
 
     render() {
         let { deviceId, deviceUser, deviceType, deviceState,
-            judgeType, historyTotal, historyAlarm,
+            judgeType, historyTotal, historyAlarm, requestState,
             realtimeTotal, realtimeAlarm, isCTDevice
         } = this.props;
         return (
             <div className='device'>
-                <div className={`state ${STATE_CLASS_MAP[deviceState]}`}>
-                    {STATE_MAP[deviceState]}
+                <div className={`state ${getStateClass(deviceState, requestState)}`}>
+                    {getStateText(deviceState, requestState)}
                 </div>
                 <div className={`device-content ${JUDGE_CLASS_MAP[judgeType]}`}>
                     <div className="info">
@@ -98,9 +113,7 @@ class Device extends React.PureComponent {
 
                             <div className="value">
                                 {deviceId}
-                            </div>
-                            
-                            
+                            </div>                           
                         </div>
                         <div className="user">
                             <div className="key">
@@ -162,7 +175,8 @@ const mapStateToProps = (state, ownProps) => {
         historyTotal: $$device.get('history_total'), 
         historyAlarm: $$device.get('history_alarm'),
         realtimeTotal: $$device.get('realtime_total'), 
-        realtimeAlarm: $$device.get('realtime_alarm')
+        realtimeAlarm: $$device.get('realtime_alarm'),
+        requestState: $$device.get('Request_state')
     }
 }
 
