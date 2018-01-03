@@ -73,16 +73,16 @@ const JUDGE_CLASS_MAP= {
 
 class Device extends React.PureComponent {
     static propTypes = {
-        deviceId: PropTypes.string,
-        deviceUser: PropTypes.string,
-        deviceType: PropTypes.string,
-        deviceState: PropTypes.string,
-        judgeType: PropTypes.string,
-        historyTotal: PropTypes.string,
-        historyAlarm: PropTypes.string,
-        realtimeTotal: PropTypes.string,
-        realtimeAlarm: PropTypes.string,
-        requestState: PropTypes.string,  // 1 请求工作；2，工作请求处理中；3，工作中，4，工作结束
+        deviceId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        deviceUser: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        deviceType: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        deviceState: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        judgeType: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        historyTotal: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        historyAlarm: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        realtimeTotal: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        realtimeAlarm: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        requestState: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),  // 1 请求工作；2，工作请求处理中；3，工作中，4，工作结束
         isCTDevice: PropTypes.bool,
     }
 
