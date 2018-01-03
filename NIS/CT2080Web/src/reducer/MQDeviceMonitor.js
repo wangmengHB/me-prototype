@@ -13,7 +13,7 @@ let getInitialDevice = (id) => ({
     history_alarm: -1,
     realtime_total: -1,
     realtime_alarm: -1,
-    Request_state: -1,  
+    request_state: -1,  
 }) 
 
 const MAX_LOG_COUNT = 100;
@@ -108,7 +108,7 @@ const requestingWork = (state, devices = []) => {
     devices.forEach((device) => {
         let index = nextState.get('devices').findIndex(val => val.get('device_type') == device.device_type);
         if (index > -1) {
-            nextState = nextState.setIn(['devices', index, 'Request_state'], device.Request_state);
+            nextState = nextState.setIn(['devices', index, 'request_state'], device.request_state);
         }
     });
     return nextState;

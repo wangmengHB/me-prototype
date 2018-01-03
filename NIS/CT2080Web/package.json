@@ -7,6 +7,7 @@
     "dev": "node ./scripts/copy-index.js & concurrently --kill-others -c \"green.bold, yellow.bold\" \"npm run watch\" \"npm run start-dev-server\" ",
     "watch": "webpack --watch --config conf/webpack.dev.conf.js",
     "start-dev-server": "node server/index.js",
+    "build": "node ./scripts/copy-index-prod.js & webpack --config conf/webpack.prod.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -30,6 +31,7 @@
     "nodejs-websocket": "^1.7.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.5",
     "webpack": "^3.10.0"
   },
   "dependencies": {
