@@ -176,7 +176,7 @@ const mapStateToProps = (state, ownProps) => {
         historyAlarm: $$device.get('history_alarm'),
         realtimeTotal: $$device.get('realtime_total'), 
         realtimeAlarm: $$device.get('realtime_alarm'),
-        requestState: $$device.get('Request_state')
+        requestState: $$device.get('request_state')
     }
 }
 
