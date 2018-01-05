@@ -162,4 +162,9 @@ export const deviceLogs = (devices) => {
     }
 }
 
-
+export const deviceRequestingWork = (devices) => {
+    return {
+        type: ActionTypes.MQ_DEVICE_MONITOR_INFO_REQUESTING_WORK,
+        devices
+    }
+}

@@ -30,7 +30,7 @@ const IMG_MAP = {
 const STATE_MAP = {
     '-1': '',
     [DeviceStates.INIT]: 'Initializing ...',
-    [DeviceStates.WAITING]: 'Waiting',
+    [DeviceStates.WAITING]: 'Standby ...',
     [DeviceStates.SCANNING]: 'Scanning ...',
     [DeviceStates.ERROR]: 'Error',
     [DeviceStates.DIAGNOSING]: 'Diagnosing ...',
@@ -44,9 +44,23 @@ const STATE_CLASS_MAP = {
     [DeviceStates.SCANNING]: 'work',
     [DeviceStates.ERROR]: 'error',
     [DeviceStates.DIAGNOSING]: 'error',
-    [DeviceStates.OFFLINE]: 'off-line',
-    '60': 'requesting'
+    [DeviceStates.OFFLINE]: 'off-line'
 };
+
+
+const getStateClass = (deviceState, requestState) => {
+    if (requestState == 1 || requestState == 2) {
+        return 'requesting';
+    }
+    return STATE_CLASS_MAP[deviceState] || '';
+}
+
+const getStateText = (deviceState, requestState) => {
+    if (requestState == 1 || requestState == 2) {
+        return 'Device is requesting for work.';
+    }
+    return STATE_MAP[deviceState] || '';
+}
 
 const JUDGE_CLASS_MAP= {
     '1': 'suspect',
@@ -59,15 +73,16 @@ const JUDGE_CLASS_MAP= {
 
 class Device extends React.PureComponent {
     static propTypes = {
-        deviceId: PropTypes.string,
-        deviceUser: PropTypes.string,
-        deviceType: PropTypes.string,
-        deviceState: PropTypes.string,
-        judgeType: PropTypes.string,
-        historyTotal: PropTypes.string,
-        historyAlarm: PropTypes.string,
-        realtimeTotal: PropTypes.string,
-        realtimeAlarm: PropTypes.string,
+        deviceId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        deviceUser: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        deviceType: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        deviceState: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        judgeType: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        historyTotal: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        historyAlarm: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        realtimeTotal: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        realtimeAlarm: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        requestState: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),  // 1 请求工作；2，工作请求处理中；3，工作中，4，工作结束
         isCTDevice: PropTypes.bool,
     }
 
@@ -81,13 +96,13 @@ class Device extends React.PureComponent {
 
     render() {
         let { deviceId, deviceUser, deviceType, deviceState,
-            judgeType, historyTotal, historyAlarm,
+            judgeType, historyTotal, historyAlarm, requestState,
             realtimeTotal, realtimeAlarm, isCTDevice
         } = this.props;
         return (
             <div className='device'>
-                <div className={`state ${STATE_CLASS_MAP[deviceState]}`}>
-                    {STATE_MAP[deviceState]}
+                <div className={`state ${getStateClass(deviceState, requestState)}`}>
+                    {getStateText(deviceState, requestState)}
                 </div>
                 <div className={`device-content ${JUDGE_CLASS_MAP[judgeType]}`}>
                     <div className="info">
@@ -98,9 +113,7 @@ class Device extends React.PureComponent {
 
                             <div className="value">
                                 {deviceId}
-                            </div>
-                            
-                            
+                            </div>                           
                         </div>
                         <div className="user">
                             <div className="key">
@@ -152,7 +165,7 @@ const mapStateToProps = (state, ownProps) => {
     const { MQDeviceMonitor} = state;
     const {deviceType} = ownProps;
 
-    let $$device = MQDeviceMonitor.find(val => val.get('device_type') == deviceType);
+    let $$device = MQDeviceMonitor.get('devices').find(val => val.get('device_type') == deviceType);
 
     return {
         deviceId: $$device.get('device_id'), 
@@ -162,7 +175,8 @@ const mapStateToProps = (state, ownProps) => {
         historyTotal: $$device.get('history_total'), 
         historyAlarm: $$device.get('history_alarm'),
         realtimeTotal: $$device.get('realtime_total'), 
-        realtimeAlarm: $$device.get('realtime_alarm')
+        realtimeAlarm: $$device.get('realtime_alarm'),
+        requestState: $$device.get('request_state')
     }
 }
 

@@ -92,8 +92,12 @@ let sessionId = '';
 
 const notifier = {
     init: (dispatch, getState) => {
-        mock_init(dispatch, getState);
-        // stompInit(dispatch, getState);
+        
+        if (process.env.NODE_ENV !== 'production') {
+            mock_init(dispatch, getState);
+        } else {
+            stompInit(dispatch, getState);
+        }
     },
     sendMessage: (msg) => {
 

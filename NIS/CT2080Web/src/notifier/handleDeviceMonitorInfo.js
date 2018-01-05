@@ -29,6 +29,11 @@ const handleDeviceMonitorInfo = (info, dispatch, getState) => {
             dispatch(MQAction.deviceLogs(info.info_content));
             break;
 
+        // requesting work
+        case 6:
+            dispatch(MQAction.deviceRequestingWork(info.info_content));
+            break;
+
         default:
             break;
     }

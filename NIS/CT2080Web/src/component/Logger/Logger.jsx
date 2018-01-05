@@ -2,12 +2,40 @@ import './_Logger.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import * as DeviceTypes from '../../constant/DeviceTypes.js';
+import {fromJS, List} from 'immutable';
+
+
+const DEVICE_MAP = {
+    [DeviceTypes.CT]: '[ CT ]',
+    [DeviceTypes.MW]: '[ MW ]',
+    [DeviceTypes.HT]: '[ HT ]',
+    [DeviceTypes.RT]: '[ RT ]',
+    [DeviceTypes.RM]: '[ RM ]',
+    [DeviceTypes.TR]: '[ TR ]',
+    [DeviceTypes.BXM]: '[ BXM ]',
+}
+
+
 
 
 
 class Logger extends React.PureComponent {
+    static propTypes = {
+        logs: PropTypes.instanceOf(List)
+    }
+
+    static defaultProps = {
+        logs: List()
+    }
+
     constructor(props) {
         super(props);
+    }
+
+    componentDidUpdate() {
+        let node = this.refs.content;
+        node.scrollTop = node.scrollHeight - node.clientHeight;
     }
 
     render() {
@@ -17,15 +45,17 @@ class Logger extends React.PureComponent {
                 <div className="log-header">
                    Work Log
                 </div>
-                <div className="log-content">
+                <div ref="content" className="log-content">
                     {
-                        logs.forEach((item) => {
+                        logs.map((log, index) => {                                                        
                             return (
-                                <div>
-                                    <span>item.log_time</span>
-                                    <span>item.device_log</span>
+                                <div key={`log-${index}`}>
+                                    <span>{log.log_time}</span>
+                                    <span>{DEVICE_MAP[log.device_type]}</span>
+                                    <span>{log.device_log}</span>
                                 </div>
                             )
+                   
                         })
                     }
                 </div>
@@ -38,13 +68,10 @@ class Logger extends React.PureComponent {
 
 
 const mapStateToProps = (state, ownProps) => {
-    const { MQDeviceMonitor } = state;
-    // const { deviceType } = ownProps;
-    let logs = MQDeviceMonitor.map(val => val.get('logs'));
-    debugger;
-    
+    const { MQDeviceMonitor } = state;   
+    let logs = MQDeviceMonitor.get('logs');  
     return {
-        logs: logs.toJS()
+        logs: logs
     }
 }
 
