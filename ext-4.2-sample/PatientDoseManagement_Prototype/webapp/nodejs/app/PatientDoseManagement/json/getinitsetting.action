@@ -1,0 +1,7 @@
+{
+  "locale": "en-US",
+	"dateformat": 1,
+	"usergroup": "Reviewer",
+	"limitation": 1000000,
+	"exportpath": "/temp/uat"
+}

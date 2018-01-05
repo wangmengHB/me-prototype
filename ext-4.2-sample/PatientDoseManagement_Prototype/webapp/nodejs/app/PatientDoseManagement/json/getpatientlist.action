@@ -1,0 +1,85 @@
+
+{
+	"items": [
+		{
+			"patientId": "xxx-0001",
+			"patientName": "xxx-0001",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 01",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}, {
+			"patientId": "xxx-0002",
+			"patientName": "xxx-0002",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 02",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}, {
+			"patientId": "xxx-0003",
+			"patientName": "xxx-0003",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 03",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}, {
+			"patientId": "xxx-0004",
+			"patientName": "xxx-0004",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 04",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}, {
+			"patientId": "xxx-0005",
+			"patientName": "xxx-0005",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 05",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}, {
+			"patientId": "xxx-0006",
+			"patientName": "xxx-0006",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 06",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}, {
+			"patientId": "xxx-0007",
+			"patientName": "xxx-0007",
+			"gender": "M",
+			"age": "31Y",
+			"birthDate": "1984 Oct 02",
+			"bmi": 25.7,
+			"XAStudy": 20,
+			"PSD": 692,
+			"CTStudy": 30,
+			"totalCTDlvol": 852 
+		}
+	]
+}
+
+

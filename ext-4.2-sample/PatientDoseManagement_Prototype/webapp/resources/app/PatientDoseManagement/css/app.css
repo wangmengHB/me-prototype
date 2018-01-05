@@ -1,0 +1,10 @@
+/*       
+	This is the application-specified css file, 
+	all css files needed should be imported here!
+	Including css files in HTML is forbidden!
+*/
+@import "./detail.css";
+@import "./window.css";
+@import "./home.css";
+@import "./grid.css";
+@import "./report.css";

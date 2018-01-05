@@ -1,0 +1,63 @@
+{
+	"items": [
+		{
+			"examDate": "2015 Jan 13 10:00 am",
+			"operator": "AAA",
+			"room": "001",
+			"studyDescription": "Interventional",
+			"protocolName": "Protocol01",
+			"ctdlvol": "",
+			"ssde": "",
+			"dlp": "",
+			"procedureTime": "",
+			"ak": 2900,
+			"psd": 3237,
+			"dap": 56000,
+			"fluoroTime": 100
+		}, {
+			"examDate": "2015 Feb 05 10:00 am",
+			"operator": "AAA",
+			"room": "001",
+			"studyDescription": "Neuro",
+			"protocolName": "Protocol02",
+			"ctdlvol": "",
+			"ssde": "",
+			"dlp": "",
+			"procedureTime": "",
+			"ak": 980,
+			"psd": 220,
+			"dap": 980,
+			"fluoroTime": 5
+		}, {
+			"examDate": "2015 Jan 13 10:00 am",
+			"operator": "AAA",
+			"room": "001",
+			"studyDescription": "CT Head Routine",
+			"protocolName": "Protocol01",
+			"ctdlvol": 1550,
+			"ssde": 1600,
+			"dlp": 1700,
+			"procedureTime": 20,
+			"ak": "",
+			"psd": "",
+			"dap": "",
+			"fluoroTime": ""
+		}, {
+			"examDate": "2015 Feb 05 10:00 am",
+			"operator": "AAA",
+			"room": "001",
+			"studyDescription": "CT Head Routine",
+			"protocolName": "Protocol02",
+			"ctdlvol": 450,
+			"ssde": 420,
+			"dlp": 980,
+			"procedureTime": 5,
+			"ak": "",
+			"psd": "",
+			"dap": "",
+			"fluoroTime": ""
+		}
+
+	]
+	
+}
