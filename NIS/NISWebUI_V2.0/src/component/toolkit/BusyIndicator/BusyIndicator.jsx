@@ -1,7 +1,7 @@
 import './_BusyIndicator.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SHOW_BUSY} from '../../../constant/ActionTypes.js';
+
 
 
 
@@ -12,8 +12,6 @@ export default class BusyIndicator extends React.Component {
             show: false
         }
         this.show = this.show.bind(this);
-        let {controller} = props;
-        controller.register(SHOW_BUSY, this.show);
     }
     
     show(res) {
